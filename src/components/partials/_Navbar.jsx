@@ -5,21 +5,21 @@ import { theme } from "../../styles/style";
 
 const Navbar = () =>  {
   return (
-    <nav className={`${theme.nav.wrapper}p-4 mb-6 bg-sunglow-50/50 border-l-4 border-sunglow-500`} >
-      <h3>
+    <nav className="navbar" >
         <Link to="/">
-          <p>E.R.</p>
+          <h3>E.R.</h3>
         </Link>
-      </h3>
-      <Link to="/projects">
-        <p>Projects</p>
-      </Link>
-      <Link to="/contacts">
-        <p>Contacts</p>
-      </Link>
-      <Link to="/about">
-        <p>About</p>
-      </Link>
+      <p>
+        <Link to="/projects">
+          Projects
+        </Link>
+        <Link to="/contacts">
+          Contacts
+        </Link>
+        <Link to="/about">
+          About
+        </Link>
+      </p>
     </nav>
   )
 }
