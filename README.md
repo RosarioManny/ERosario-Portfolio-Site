@@ -1,8 +1,21 @@
-# React + Vite
+# **_Emmanuel Rosario_** - Personal Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Technologies** - JS, REACT, CSS, Tailwind
 
-Currently, two official plugins are available:
+## As A Software Engineer - AASE
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### MVP
+
+- This website should showcase myself. Personally and technically.
+- Show past, present and future projects.
+- Have an about me.
+- Have a form to contact me - Min. two contacts.
+- Have social media and alternative media links
+
+### POST-MVP
+
+- Have multiple designs that are toggle-able
+- A way to upload blogs.
+-
+
+Designs -

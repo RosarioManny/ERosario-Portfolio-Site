@@ -7,7 +7,7 @@ const Navbar = () =>  {
     <nav>
     <h3>
     <Link to="/">
-      <p>Emmanuel Rosario</p>
+      <p>E.R.</p>
     </Link>
     </h3>
     <Link to="/projects">
@@ -24,3 +24,11 @@ const Navbar = () =>  {
 }
 
 export default Navbar
+
+// Things to do in Navbar 
+// C = Completed && I = Incompleted 
+// About Link - C
+// Contacts 
+// Projects 
+// Home 
+// Aligned 
