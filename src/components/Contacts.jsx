@@ -2,7 +2,9 @@ const Contacts = () => {
 
   return (
     <>
-      <h1>Contacts, Message Me!</h1>
+      <section>
+        <h1>Contacts, Message Me!</h1>
+      </section>
     </>
   )
 }

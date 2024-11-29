@@ -1,6 +1,16 @@
-body, html {
-  margin: 0;
-  padding: 0;
+/* 
+Color Pallete
+Yellow - EEC643
+Dark Blue - 011638
+Blue - 0D21A1
+Black - 141414
+White - EEF0F2 
+*/
+
+
+body {
+  margin: 0; /* Sets the navbar all the way to edge */
+  padding-top: 2rem;
 }
 
 section {
@@ -10,13 +20,16 @@ section {
   display: flex;
   flex-flow: wrap;
   justify-content: space-between;
-  background-color: wheat;
+  background-color: #011638;
+  text-decoration: none;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   box-sizing: border-box;
 }
 
-.navbar p a {
-  color: red;
+.navbar p a, 
+.navbar a h3{
+  text-decoration: none;
+  color: #EEC643;
 }

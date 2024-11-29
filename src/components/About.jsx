@@ -4,9 +4,11 @@ const About = () => {
 
   return(
     <>
-    <h1>
-      About, A page all about me and what I Did!
-    </h1>
+      <section>
+        <h1>
+          About, A page all about me and what I Did!
+        </h1>
+      </section>
     </>
   )
 }
