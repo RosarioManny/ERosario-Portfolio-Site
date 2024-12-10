@@ -5,9 +5,9 @@ const About = () => {
   return(
     <>
       <section>
-        <h1>
-          About, A page all about me and what I Did!
-        </h1>
+        <h1> About Me </h1>
+        <h2>Professional Skillset:</h2>
+        <h2>Resume:</h2>
       </section>
     </>
   )
