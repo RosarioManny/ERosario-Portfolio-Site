@@ -6,7 +6,7 @@ const Home = () => {
   return(
     <>
       <section>
-        <div className="cool">
+        <div >
           <div className="slides">
             </div>
             Incoming error

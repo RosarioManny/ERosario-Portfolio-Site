@@ -5,7 +5,7 @@ import { theme } from "/src/styles/style";
 
 const Navbar = () =>  {
   return (
-    <nav className={`${theme.nav.heading}`} >
+    <nav className={`${theme.sunburst.nav}`} >
         <Link to="/">
           <h3>E.R.</h3>
         </Link>
