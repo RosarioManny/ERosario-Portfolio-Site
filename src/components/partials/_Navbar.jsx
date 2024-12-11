@@ -5,12 +5,12 @@ import { theme } from "/src/styles/style";
 
 const Navbar = () =>  {
   return (
-    <nav className={`${theme.sunburst.nav}`} >
+    <nav className={`${theme.nav.container}`} >
         <Link to="/">
           <h3>E.R.</h3>
         </Link>
       <button> D / L</button>
-      <p>
+      <p className="flex space-x-7 top-0 right-0">
         <Link to="/projects">
           Projects
         </Link>

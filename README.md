@@ -19,3 +19,7 @@
 -
 
 Designs -
+
+Attributions
+
+- VS Code(BW) - Freepik

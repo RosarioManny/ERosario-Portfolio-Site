@@ -17,38 +17,19 @@ Color Pallete:
 */
 
 export const theme = {
-  sunburst: {
-    nav: "bg-midnight text-sunburst p-3 fixed left-0 right-0 top-0 flex space-x-52",
-    important: "text-sunburst",
-    titles: "text-sunburst"
+  nav: {
+    container: "bg-midnight text-sunburst p-3 fixed left-0 right-0 top-0 flex space-x-52",
+    navText: "text-sunburst",
+    navToggle: "text-frost"
   },
-  royal: {
-    background: "bg-royal"
+  home: {
+    headingText: "text-frost",
+    subheadingText: "text-sunburst",
+    bodyText: "text-frost",
   },
-  midnight: {
-
-  },
-  obsidian: {
-
-  },
-  frost: {
-
+  card: {
+    container: "",
   },
   // DARK MODE
-  glacier: {
-
-  },
-  skyline: {
-
-  },
-  charcoal: {
-
-  },
-  tangerine: {
-
-  },
-  onyx: {
-
-  },
 }
 

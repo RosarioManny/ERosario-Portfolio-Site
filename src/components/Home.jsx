@@ -5,23 +5,23 @@ const Home = () => {
 
   return(
     <>
-      <section>
-        <div >
+      <section className="flex-col">
+        <div className="cool">
           <div className="slides">
             </div>
             Incoming error
             <br/>
             Your next Developer
-          </div>
+        </div>
         <div className="container">
           <div className="slides">
-            <h1> Emmanuel Rosario</h1>
-            <h3>Full-Stack Software Developer_</h3> 
+            <h1 className={`${theme.home.headingText} text-9xl`}> Emmanuel <br/>Rosario</h1>
+            <h3 className={`${theme.home.subheadingText} text-3xl`}>Full-Stack Software Developer_</h3> 
           </div>
         </div>
         <div className="container">
           <div className="slides">
-            <p>
+            <p className={`${theme.home.bodyText}`}> 
               <b>Hello,</b> 
                 <br/>
                 I hope to work with you in our next projects. To learn more about me please explore my page. 
