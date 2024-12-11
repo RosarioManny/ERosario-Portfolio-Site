@@ -1,14 +1,15 @@
 // FIRE
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { theme } from "../../styles/style";
+import { theme } from "/src/styles/style";
 
 const Navbar = () =>  {
   return (
-    <nav className="navbar" >
+    <nav className={`${theme.nav.heading}`} >
         <Link to="/">
           <h3>E.R.</h3>
         </Link>
+      <button> D / L</button>
       <p>
         <Link to="/projects">
           Projects

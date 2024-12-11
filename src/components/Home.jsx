@@ -1,11 +1,12 @@
 import { Link } from "react-router-dom";
+import { theme } from "/src/styles/style.js"
 
 const Home = () => {
 
   return(
     <>
       <section>
-        <div className="container">
+        <div className="cool">
           <div className="slides">
             </div>
             Incoming error

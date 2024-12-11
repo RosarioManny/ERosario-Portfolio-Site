@@ -7,6 +7,9 @@ Black - 141414
 White - EEF0F2 
 */
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 body {
   margin: 0; /* Sets the navbar all the way to edge */
