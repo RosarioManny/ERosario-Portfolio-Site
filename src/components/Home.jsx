@@ -3,30 +3,24 @@ import { theme } from "/src/styles/style.js"
 
 const Home = () => {
 
+  
   return(
     <>
       <section className="flex-col">
-        <div className="cool">
-          <div className="slides">
-            </div>
-            Incoming error
-            <br/>
-            Your next Developer
-        </div>
         <div className="container">
           <div className="slides">
-            <h1 className={`${theme.home.headingText} text-9xl`}> Emmanuel <br/>Rosario</h1>
-            <h3 className={`${theme.home.subheadingText} text-3xl`}>Full-Stack Software Developer_</h3> 
+            <h1 className={`${theme.heading.home} `}> Emmanuel <br/>Rosario</h1>
+            <h3 className={`${theme.subheading.home} `}>Full-Stack Software Developer_</h3> 
           </div>
         </div>
         <div className="container">
           <div className="slides">
-            <p className={`${theme.home.bodyText}`}> 
+            <p className={`${theme.bodyText.home}`}> 
               <b>Hello,</b> 
                 <br/>
                 I hope to work with you in our next projects. To learn more about me please explore my page. 
-                I know critical langauges like javascript, python, ejs, html, and more. If interested please, look at my 
-                  <Link to='/about'> About me page </Link>
+                I know critical langauges like <b>JavaScript, Python, EJS, HTML, and more!</b> If interested please, look at my 
+                  <Link to='/about' className="text-sunburst"> About me page </Link>
                 where you will find my resume and further contacts. 
             </p>
           </div>

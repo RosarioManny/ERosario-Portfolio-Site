@@ -5,29 +5,46 @@ export default {
     './src/**/*.{js,jsx,ts,tsx}',
   ],
   theme: {
-    colors: {
-      // vv Crash Site Colors
-      sunburst: '#EEC643',
-      obsidian: '#141414',
-      frost: '#EEF0F2',
-      royal: '#0D21A1',
-      midnight: '#011638',
-      // vv Dark Mode
-      glacier: '#EAF6FF',
-      skyline: '#009FFD',
-      charcoal: '#444140',
-      tangerine: '#FFA400',
-      onyx: '#1E1E24', 
-    },
+    extend:{
+      fontFamily:{
+        handjet :["Handjet", "sans-serif"]
+      },
+      colors: {
+        // vv Crash Site Colors
+        sunburst: '#EEC643',
+        obsidian: '#141414',
+        frost: '#EEF0F2',
+        royal: '#0D21A1',
+        midnight: '#011638',
+        // vv Dark Mode
+        glacier: '#EAF6FF',
+        skyline: '#009FFD',
+        charcoal: '#444140',
+        tangerine: '#FFA400',
+        onyx: '#1E1E24', 
+      },
+      fontFamily: {
+        handjet: ""
+      }
+    }
   },
   plugins: [],
 }
 
 /* 
-Color Pallete
-Yellow - EEC643
-Dark Blue - 011638
-Blue - 0D21A1
-Black - 141414
-White - EEF0F2 
+Color Pallete:
+  Crash Site:
+    Color     -  Hex Code   -  Tailwind
+    Yellow    >  #EEC643    >  sunburst
+    Dark Blue >  #011638    >  midnight
+    Blue      >  #0D21A1    >  royal
+    Black     >  #141414    >  obsidian
+    White     >  #EEF0F2    >  frost
+  Dark Mode:
+    Color     -  Hex Code   -  Tailwind
+    White     >  #EAF6FF    >  glacier 
+    Baby Blue >  #009FFD    >  skyline
+    Grey      >  #444140    >  charcoal
+    Orange    >  #FFA400    >  tangerine
+    Mat Black >  #1E1E24    >  onyx
 */

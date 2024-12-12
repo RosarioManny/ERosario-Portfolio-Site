@@ -19,20 +19,3 @@ body {
 section {
   padding: 2rem
 }
-.navbar {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: space-between;
-  background-color: #011638;
-  text-decoration: none;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  box-sizing: border-box;
-}
-
-.navbar p a, 
-.navbar a h3{
-  text-decoration: none;
-  color: #EEC643;
-}

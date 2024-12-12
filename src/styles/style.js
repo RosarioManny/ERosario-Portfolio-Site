@@ -17,19 +17,28 @@ Color Pallete:
 */
 
 export const theme = {
-  nav: {
-    container: "bg-midnight text-sunburst p-3 fixed left-0 right-0 top-0 flex space-x-52",
-    navText: "text-sunburst",
-    navToggle: "text-frost"
+  heading: {
+    home: "text-frost text-7xl mt-20 font-sans",
+    container: "text-sunburst p-3 fixed left-0 right-0 top-0 flex space-x-52",
   },
-  home: {
-    headingText: "text-frost",
-    subheadingText: "text-sunburst",
-    bodyText: "text-frost",
+  subheading: {
+    home: "text-sunburst text-xl my-2",
+  },
+  bodyText: {
+    home: "text-frost bg-midnight p-5 my-6",
+    nav: "text-sunburst",
+    navToggle: "text-frost",
   },
   card: {
-    container: "",
   },
+  container: {
+    nav: "bg-midnight p-4 space-x-[125px] flex top-0 right-0 left-0"
+  },
+  navMenu: {
+    burger: "bg-sunburst transition-all duration-300 ease-in-out transform h-1 w-11",
+    closed: "bg-midnight h-screen w-full max-w-[450px] fixed top-0 flex flex-col items-center justify-center text-center text-3xl transition-all ease-in-out duration-300 off-screen-menu",
+    open: "",
+  }
   // DARK MODE
 }
 
