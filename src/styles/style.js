@@ -18,10 +18,11 @@ Color Pallete:
 
 export const theme = {
   heading: {
+    default: "text-sunburst text-3xl",
     home: "text-frost text-7xl mt-20 font-sans",
-    container: "text-sunburst p-3 fixed left-0 right-0 top-0 flex space-x-52",
   },
   subheading: {
+    default: "text-frost text-lg",
     home: "text-sunburst text-xl my-2",
   },
   bodyText: {
@@ -32,12 +33,12 @@ export const theme = {
   card: {
   },
   container: {
+    defualt: "text-sunburst p-3 fixed left-0 right-0 top-0 flex space-x-52",
     nav: "bg-midnight p-4 space-x-[125px] flex top-0 right-0 left-0"
   },
   navMenu: {
     burger: "bg-sunburst transition-all duration-300 ease-in-out transform h-1 w-11",
-    closed: "bg-midnight h-screen w-full max-w-[450px] fixed top-0 flex flex-col items-center justify-center text-center text-3xl transition-all ease-in-out duration-300 off-screen-menu",
-    open: "",
+    offScreen: "bg-midnight h-screen w-full max-w-[450px] fixed top-0 flex flex-col space-y-9 items-center justify-center text-center text-3xl transition-all ease-in-out duration-300 off-screen-menu",
   }
   // DARK MODE
 }

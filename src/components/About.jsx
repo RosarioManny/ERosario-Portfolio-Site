@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
+import { theme } from "../styles/style";
 
 const About = () => {
 
   return(
     <>
-      <section>
-        <h1> About Me </h1>
-        <h2>Professional Skillset:</h2>
+      <section className="place-items-center">
+        <h1 className={`${theme.heading.default}`}> About Me </h1>
+        <p></p>
+        <h2 className={`${theme.subheading.default}`}>Professional Skillset:</h2>
         <ul>
-          <img src="src/assets/Python_BlackWhite_logo.png" alt="" />
-          <img src="src/assets/JS_BlackWhite_logo.svg" alt="" />
         </ul>
-        <h2>Resume:</h2>
+        <h2 className={`${theme.subheading.default}`} >Resume:</h2>
         <Link to="/projects/resume">
           <img src="src/assets/Resume_2024.jpg" alt="" />
         </Link>

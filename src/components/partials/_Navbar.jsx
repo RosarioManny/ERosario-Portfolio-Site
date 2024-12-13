@@ -34,7 +34,7 @@ const Navbar = () =>  {
       {/* Off-screen menu */}
       <div 
         className={`
-          ${theme.navMenu.closed} 
+          ${theme.navMenu.offScreen} 
           ${isToggled ? 'right-0' : '-right-[450px]'} transition-all duration-300 ease-in-out`}
       >
         <Link to="/projects" onClick={handleClick}>Projects</Link>
