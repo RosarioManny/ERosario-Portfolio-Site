@@ -17,8 +17,17 @@ const About = () => {
           </p>
         </div>
         <h2 className={`${theme.subheading.default}`}>Professional Skillset:</h2>
-        <ul className={`${theme.container.default} ${theme.bodyText.default}`}>
-          <li>Peace</li>
+        <ul className={`${theme.container.default} ${theme.bodyText.default} flex row-span-3`}>
+          <img className="h-14" src="src/assets/js.png" alt="" />
+          <img className="h-14" src="src/assets/icons8-html-logo-96.png" alt="" />
+          <img className="h-14" src="src/assets/icons8-css-logo-96.png" alt="" />
+          <img className="h-14" src="src/assets/icons8-django-100.png" alt="" />
+          <img className="h-14" src="src/src/assets/icons8-node-js-96.png" alt="" />
+          <img className="h-14" src="src/assets/icons8-postgresql-96.png" alt="" />
+          <img className="h-14" src="src/assets/icons8-python-96.png" alt="" />
+          <img className="h-14" src="src/assets/icons8-react-native-96.png" alt="" />
+          <img className="h-14" src="src/assets/icons8-visual-studio-96.png" alt="" />
+          <img className="h-14" src="src/assets/icons8-figma-96.png" alt="" />
         </ul>
         <h2 className={`${theme.subheading.default}`} >Resume:</h2>
           <div className="m-9">
