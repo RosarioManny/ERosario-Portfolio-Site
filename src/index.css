@@ -11,11 +11,14 @@ White - EEF0F2
 @tailwind components;
 @tailwind utilities;
 
-body {
+body, html {
   margin: 0; /* Sets the navbar all the way to edge */
-  padding-top: 2rem;
+  height: 100%;
+  /* width: 100vw; */
+  /* overflow: scroll; */
+  overscroll-behavior: none;
 }
 
 section {
-  padding: 2rem
+  height: vh;
 }

@@ -9,13 +9,13 @@ const Home = () => {
       <section className="flex-col">
         <div className="container">
           <div className="slides">
-            <h1 className={`${theme.heading.home} `}> Emmanuel <br/>Rosario</h1>
-            <h3 className={`${theme.subheading.home} `}>Full-Stack Software Developer_</h3> 
+            <h1 className={`${theme.heading.home}`}> Emmanuel <br/>Rosario</h1>
+            <h3 className={`${theme.subheading.home}`}>Full-Stack Software Developer_</h3> 
           </div>
         </div>
         <div className="container">
           <div className="slides">
-            <p className={`${theme.bodyText.home}`}> 
+            <p className={`${theme.bodyText.default}`}> 
               <b>Hello,</b> 
                 <br/>
                 I hope to work with you in our next projects. To learn more about me please explore my page. 

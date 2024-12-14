@@ -18,23 +18,24 @@ Color Pallete:
 
 export const theme = {
   heading: {
-    default: "text-sunburst text-3xl",
-    home: "text-frost text-7xl mt-20 font-sans",
+    default: "text-sunburst text-3xl mt-6",
+    home: "text-frost text-7xl mt-20 mx-4 font-sans",
   },
   subheading: {
     default: "text-frost text-lg",
-    home: "text-sunburst text-xl my-2",
+    home: "text-sunburst text-xl my-2 mx-4",
   },
   bodyText: {
-    home: "text-frost bg-midnight p-5 my-6",
+    default: "text-frost bg-midnight p-5 my-6 mx-4",
     nav: "text-sunburst",
     navToggle: "text-frost",
   },
   card: {
   },
   container: {
-    defualt: "text-sunburst p-3 fixed left-0 right-0 top-0 flex space-x-52",
-    nav: "bg-midnight p-4 space-x-[125px] flex top-0 right-0 left-0"
+    default: "bg-midnight p-3 ",
+    img: "bg-midnight p-3",
+    nav: "bg-midnight p-4 space-x-[125px] flex top-0 right-0 left-0",
   },
   navMenu: {
     burger: "bg-sunburst transition-all duration-300 ease-in-out transform h-1 w-11",
