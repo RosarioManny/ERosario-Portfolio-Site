@@ -5,12 +5,18 @@ const Contacts = () => {
   return (
     <>
       <section className="place-items-center bg-royal">
-        <h1 className={`${theme.heading.default}`}>Contacts_</h1>
-        <p className={`${theme.subheading.default}`}>Phone: (718)619-2138</p>
-        <p className={`${theme.subheading.default}`}>Email: rosario.emm47@gmail.com</p>
-        <p className={`${theme.container.socialsLogos}`}>Socials: rosario.emm47@gmail.com</p>
-        <form className={` ${theme.container.default} flex flex-col m-16`}>
-          <p className={`${theme.subheading.default} `}>Contact me!</p>
+        <div className="bg-royal flex-auto flex-col justify-items-center space-y-4">
+          <h1 className={`${theme.heading.default}`}>Contacts_</h1>
+          <p className={`${theme.subheading.default}`}>Phone: (718)619-2138</p>
+          <p className={`${theme.subheading.default}`}>Email: rosario.emm47@gmail.com</p>
+          <div className={`${theme.container.socialsLogos} grid grid-cols-3 gap-2`}>
+            <img className="h-10" src="src/assets/instagram-Black-White.png" alt="" />
+            <img className="h-10" src="src/assets/github_logo_BW.png" alt="" />
+            <img className="h-10" src="src/assets/linkedin_logo_BW.png" alt="" />
+          </div>
+        </div>
+        <form className={` ${theme.container.default} flex flex-col mt-8`}>
+          <p className={`${theme.subheading.default} flex justify-center text-2xl`}>Contact me!</p>
           <label htmlFor="nameInput" className={`${theme.bodyText.default}`}> Name:</label>
           <input 
             type="text" 
