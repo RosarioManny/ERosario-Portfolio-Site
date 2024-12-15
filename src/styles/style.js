@@ -17,6 +17,7 @@ Color Pallete:
 */
 
 export const theme = {
+  
   heading: {
     default: "text-sunburst text-3xl mt-6",
     home: "text-frost text-7xl mt-20 mx-4 font-sans",
@@ -26,16 +27,17 @@ export const theme = {
     home: "text-sunburst text-xl my-2 mx-4",
   },
   bodyText: {
-    default: "text-frost bg-midnight p-5 my-6 mx-4",
+    default: "text-frost bg-midnight",
     nav: "text-sunburst",
     navToggle: "text-frost",
   },
   card: {
   },
   container: {
-    default: "bg-midnight p-3 ",
+    default: "bg-midnight p-5 m-4",
     img: "bg-midnight p-3",
     nav: "bg-midnight p-4 space-x-[125px] flex top-0 right-0 left-0",
+    socialsLogos: "bg-sunburst p-4"
   },
   navMenu: {
     burger: "bg-sunburst transition-all duration-300 ease-in-out transform h-1 w-11",

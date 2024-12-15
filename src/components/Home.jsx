@@ -15,7 +15,7 @@ const Home = () => {
         </div>
         <div className="container">
           <div className="slides">
-            <p className={`${theme.bodyText.default}`}> 
+            <p className={`${theme.bodyText.default} ${theme.container.default}`}> 
               <b>Hello,</b> 
                 <br/>
                 I hope to work with you in our next projects. To learn more about me please explore my page. 
