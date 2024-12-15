@@ -1,7 +1,9 @@
+// import { theme } from "../src/styles/style"
+
 const Projects = () => {
   return (
     <>
-      <section>
+      <section className="place-items-center">
         <h1> Projects_ </h1>
         <section>
           <p>Project 1</p>
