@@ -5,18 +5,18 @@ const Contacts = () => {
 
   return (
     <>
-      <section className="place-items-center bg-royal">
+      <section className="place-items-center ">
         <div className="bg-royal flex-auto flex-col justify-items-center space-y-4">
           <h1 className={`${theme.heading.default}`}>Contacts_</h1>
           <p className={`${theme.subheading.default}`}>Phone: (718)619-2138</p>
           <p className={`${theme.subheading.default}`}>Email: rosario.emm47@gmail.com</p>
           <div className={`${theme.container.socialsLogos} grid grid-cols-3 gap-2`}>
-            <img className="h-10" src="src/assets/instagram-Black-White.png" alt="" />
+            <img className="h-10" src="src/assets/Logos/instagram-Black-White.png" alt="" />
             <Link to='https://github.com/RosarioManny'>
-              <img className="h-10" src="src/assets/github_logo_BW.png" alt="" />
+              <img className="h-10" src="src/assets/Logos/github_logo_BW.png" alt="" />
             </Link>
             <Link to='https://www.linkedin.com/in/emmanuel-rosario-mannys/'>
-              <img className="h-10" src="src/assets/linkedin_logo_BW.png" alt="" />
+              <img className="h-10" src="src/assets/Logos/linkedin_logo_BW.png" alt="" />
             </Link>
           </div>
         </div>

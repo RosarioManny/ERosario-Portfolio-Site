@@ -24,15 +24,15 @@ const About = () => {
         </div>
         <h2 className={`${theme.subheading.default}`}>Professional Skillset:</h2>
         <div className={`${theme.container.default} ${theme.bodyText.default} mb-2 grid grid-cols-3 gap-9 transition ease-in-out duration-500 ${isDropdown ? 'max-h-full' : 'max-h-28 overflow-hidden'}`}>
-          <img className="h-18" src="src/assets/js.png" alt="" />
-          <img className="h-18" src="src/assets/icons8-html-logo-96.png" alt="" />
-          <img className="h-18" src="src/assets/icons8-css-logo-96.png" alt="" />
-          <img className="h-18" src="src/assets/icons8-django-96.png" alt="" />
-          <img className="h-18" src="src/assets/icons8-node-js-96.png" alt="" />
-          <img className="h-18" src="src/assets/icons8-python-96.png" alt="" />
-          <img className="h-18" src="src/assets/icons8-react-native-96.png" alt="" />
-          <img className="h-18" src="src/assets/icons8-visual-studio-96.png" alt="" />
-          <img className="h-18" src="src/assets/icons8-figma-96.png" alt="" />
+          <img className="h-18" src="src/assets/Logos/js.png" alt="" />
+          <img className="h-18" src="src/assets/Logos/icons8-html-logo-96.png" alt="" />
+          <img className="h-18" src="src/assets/Logos/icons8-css-logo-96.png" alt="" />
+          <img className="h-18" src="src/assets/Logos/icons8-django-96.png" alt="" />
+          <img className="h-18" src="src/assets/Logos/icons8-node-js-96.png" alt="" />
+          <img className="h-18" src="src/assets/Logos/icons8-python-96.png" alt="" />
+          <img className="h-18" src="src/assets/Logos/icons8-react-native-96.png" alt="" />
+          <img className="h-18" src="src/assets/Logos/icons8-visual-studio-96.png" alt="" />
+          <img className="h-18" src="src/assets/Logos/icons8-figma-96.png" alt="" />
         </div>
           <button
           onClick={handleClick}
