@@ -21,5 +21,4 @@
 Designs -
 
 Attributions
-
-- VS Code(BW) - Freepik
+-JS Logo - Freepik
