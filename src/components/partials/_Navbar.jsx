@@ -10,7 +10,7 @@ const Navbar = () =>  {
     setIsToggle(!isToggled)
   }
   return (
-    <nav className={`${theme.container.nav} ${theme.bodyText.nav} overflow`}>
+    <nav className={`${theme.container.nav} ${theme.bodyText.nav} grow overflow`}>
         <Link to="/home"> E.R.</Link>
         <button> D/L </button>
         <button onClick={handleClick} className="z-10 relative flex flex-col justify-center items-center space-y-1 p-9;">
