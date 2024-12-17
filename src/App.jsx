@@ -8,6 +8,7 @@ import Contacts from './components/Contacts'
 import About from './components/About'
 import EnterSite from './components/EnterSite'
 import Footer from './components/partials/_Footer'
+import Artfolio from './components/ProjectsDetails/Artfolio'
 
 function App() {
   return (
@@ -15,11 +16,12 @@ function App() {
       <Navbar element={Navbar}/>
       <main className='flex-grow'>
         <Routes>
-          <Route path='/' element={<EnterSite />} />
+          <Route path="/" element={<EnterSite />} />
           <Route path="/home" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/about" element={<About />} />
+          <Route path="/projects/artfolio" element={<Artfolio />} />
         </Routes>
       </main>
       <Footer element={Footer}/>

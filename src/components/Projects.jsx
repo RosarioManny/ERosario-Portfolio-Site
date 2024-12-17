@@ -1,11 +1,12 @@
 import { theme } from "/src/styles/style.js"
+import { Link } from "react-router-dom"
 
 const Projects = () => {
   return (
     <>
       <section className="place-items-center bg-royal">
         <h1 className={`${theme.heading.default}`}> Projects_ </h1>
-        <section >
+        <section className="">
           <div className="max-w-sm max-h-min overflow-hidden m-4 hover:shadow-xl hover:border-solid hover:border-obsidian hover:border-4">
             <img className="w-full"src="src/assets/talkthroughit.png" alt="" />
             <div class="p-4 bg-midnight">
@@ -17,7 +18,7 @@ const Projects = () => {
             </div>
           </div>
           <div className="max-w-sm overflow-hidden m-4 hover:shadow-xl hover:border-solid hover:border-obsidian hover:border-4">
-            <img className="w-full"src="src/assets/artfolio.png" alt="" />
+            <Link to="/projects/artfolio"><img className="w-full"src="src/assets/artfolio.png" alt="" /></Link>
             <div class="p-4 bg-midnight">
               <div class="font-bold text-xl mb-2 text-sunburst">Artfolio</div>
               <p class="text-frost text-base text-[13px]">
