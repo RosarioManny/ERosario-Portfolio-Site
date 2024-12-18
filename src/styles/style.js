@@ -33,7 +33,7 @@ export const theme = {
   card: {
   },
   container: {
-    default: "bg-midnight p-5 m-4",
+    default: "bg-midnight p-5 p m-4",
     img: "bg-midnight p-3",
     nav: "bg-midnight p-4 space-x-[125px] flex top-0 right-0 left-0",
     socialsLogos: "bg-sunburst p-2",
