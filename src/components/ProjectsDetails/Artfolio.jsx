@@ -39,10 +39,10 @@ return (
           </h1>
         </div>
         <div className="mx-4 my-6">
-          <h1 className={`${theme.bodyText.default} p-1 flex justify-center`}>
-            Profile Page 
-          </h1>
             <img src="../src/assets/Artfolio-Profile.png" alt="" />
+          <h1 className={`${theme.bodyText.default} bg-midnight p-2 flex justify-center`}>
+            Profile Page - The profile page. Shows information about you and displays of your works
+          </h1>
         </div>
     </section>
   </>
