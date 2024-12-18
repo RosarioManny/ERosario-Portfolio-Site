@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { theme } from "../../styles/style";
 
-const Artfolio = () => {
+const Talkthroughit = () => {
 
 return (
   <>
     <section className="place-items-center">
       <h1 className={`${theme.heading.default}`}> 
-        Artfolio 
+        Talkthrough.it 
       </h1 >
         <div className="mx-4 mt-6" >
           <img src="../src/assets/artfolio.png" alt="" />
@@ -50,4 +50,4 @@ return (
 
 }
 
-export default Artfolio
+export default Talkthroughit

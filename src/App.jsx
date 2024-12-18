@@ -9,6 +9,8 @@ import About from './components/About'
 import EnterSite from './components/EnterSite'
 import Footer from './components/partials/_Footer'
 import Artfolio from './components/ProjectsDetails/Artfolio'
+import Whataduudle from './components/ProjectsDetails/Whataduudle'
+import Talkthroughit from './components/ProjectsDetails/Talkthrough_it'
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/about" element={<About />} />
           <Route path="/projects/artfolio" element={<Artfolio />} />
+          <Route path="/projects/whataduudle" element={<Whataduudle />} />
+          <Route path="/projects/talkthroughit" element={<Talkthroughit />} />
         </Routes>
       </main>
       <Footer element={Footer}/>
