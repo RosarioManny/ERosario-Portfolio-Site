@@ -1,16 +1,24 @@
 import { Link } from "react-router-dom";
-import { theme } from "/src/styles/style.js"
+import { theme } from "/src/styles/style.js";
+import { useEffect, useState } from "react";
 
 const Home = () => {
-
   
   return(
     <>
       <section className="flex-col">
-        <div className="container">
-          <div className="slides">
-            <h1 className={`${theme.heading.home}`}> Emmanuel <br/>Rosario</h1>
-            <h3 className={`${theme.subheading.home}`}>Full-Stack Software Developer_</h3> 
+        <div className="">
+              <h1 className={`${theme.heading.home} typewriter-firstname `}>
+                <p>Emmanuel</p> 
+              </h1 >
+              <h1 className={`${theme.heading.home} `}>
+                <p>Rosario </p> 
+              </h1 >
+            {/* Typing animation applied to "Full-Stack Software Developer" */}
+          <div className={`${theme.subheading.home}`}>
+            <h3 className="">
+              Full-Stack Software Developer<p className=""></p>
+            </h3>
           </div>
         </div>
         <div className="container">
