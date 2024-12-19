@@ -3,18 +3,31 @@ import { theme } from "/src/styles/style.js";
 import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [firstNameFinished, setFirstNameFinished] = useState(false);
+
+  // This effect will track when the first name finishes its typing animation.
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setFirstNameFinished(true); 
+    }, 1000); 
+
+    return () => clearTimeout(timer); 
+  }, []);
   
   return(
     <>
       <section className="flex-col">
         <div className="">
-              <h1 className={`${theme.heading.home} typewriter-firstname `}>
-                <p>Emmanuel</p> 
+              <h1 className={`${theme.heading.home} flex flex-col`}>
+                <p className="typewriter typewriter-firstname ">Emmanuel</p> 
+                <p className={`typewriter typewriter-lastname` }
+                  style={{
+                    visibility: firstNameFinished ? "visible" : "hidden", 
+                  }}
+                  >
+                  Rosario 
+                </p> 
               </h1 >
-              <h1 className={`${theme.heading.home} `}>
-                <p>Rosario </p> 
-              </h1 >
-            {/* Typing animation applied to "Full-Stack Software Developer" */}
           <div className={`${theme.subheading.home}`}>
             <h3 className="">
               Full-Stack Software Developer<p className=""></p>

@@ -1,37 +1,61 @@
+/* 
+Color Pallete
+Yellow - #EEC643
+Dark Blue - #011638
+Blue - #0D21A1
+Black - #141414
+White - #EEF0F2 
+*/
+
 #root {
   background: #0D21A1;
   height: 100%;
 }
-.wrapper {
-  height: 100vh;
-  /*This part is important for centering*/
-  display: grid;
-  place-items: center;
-}
 
-.typewriter-firstname {
-  width: 8ch;
-  animation: typing .7s steps(8),blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout .5s 1s forwards;
+
+/* General class for shared properties */
+.typewriter {
   white-space: nowrap;
   overflow: hidden;
   border-right: 3px solid #011638;
   font-family: monospace;
+  animation: typing 2s steps(30), blink 1s step-end infinite, cursor-fadeout .5s 1s forwards;
 }
 
+/* Specific classes for different text lengths and timings */
+.typewriter-firstname {
+  width: 8ch;
+  animation: typing .7s steps(8), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout .5s 1s forwards;
+}
+
+.typewriter-lastname {
+  width: 8ch;
+  animation: typing .6s steps(8), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout .5s 1s forwards;
+  animation-delay: 1s; 
+}
+.typewriter-projects {
+  width: 8ch;
+  animation: typing .7s steps(8), blink 1s step-end infinite ;
+  border-right: 3px solid #EEC643;
+  animation-delay: 1s; 
+}
+
+
+/* Reused keyframes */
 @keyframes typing {
   from {
-    width: 0
+    width: 0;
   }
 }
-    
+
 @keyframes blink {
   50% {
-    border-color: transparent
+    border-color: transparent;
   }
 }
 
 @keyframes cursor-fadeout {
-  20%, 100%{
+  20%, 100% {
     border-color: transparent;
   }
 }
