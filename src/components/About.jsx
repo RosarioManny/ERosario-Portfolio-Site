@@ -4,11 +4,19 @@ import { useState } from "react";
 
 const About = () => {
   const [isDropdown, setIsDropdown] = useState(false)
+  const [isAnimated, setIsAnimated] = useState(false)
 
   const handleClick = () => {
     setIsDropdown(!isDropdown)
   }
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsAnimated(true); 
+    }, 1000); 
+
+    return () => clearTimeout(timer); 
+  }, []);
   return(
     <>
       <section className="place-items-center bg-royal">

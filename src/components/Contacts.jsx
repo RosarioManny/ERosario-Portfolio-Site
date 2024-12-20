@@ -2,10 +2,18 @@ import { theme } from "../styles/style";
 import { Link } from "react-router-dom";
 
 const Contacts = () => {
+  const [isAnimated, setIsAnimated] = useState(false)
 
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsAnimated(true); 
+    }, 1000); 
+
+    return () => clearTimeout(timer); 
+  }, []);
   return (
     <>
-      <section className="place-items-center ">
+      <section className="place-items-center">
         <div className="bg-royal flex-auto flex-col justify-items-center space-y-4">
           <h1 className={`${theme.heading.default}`}>Contacts_</h1>
           <p className={`${theme.subheading.default}`}>Phone: (718)619-2138</p>

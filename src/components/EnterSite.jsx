@@ -4,12 +4,10 @@ import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 const EnterSite = () => {
-  
-  // useEffect(() => {
-  //   const navigate = useNavigate()
-  //   console.log("loading")
-  //   navigate("/")
-  // }, [])
+  const navigate = useNavigate();
+
+  useEffect(() => {
+  }, [])
 
   return(
     <>
