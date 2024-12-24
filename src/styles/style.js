@@ -27,7 +27,7 @@ export const theme = {
     home: "text-sunburst text-xl my-2 mx-4",
   },
   bodyText: {
-    default: "text-frost text-base",
+    default: "text-frost text-balance",
     nav: "text-sunburst text-sm",
   },
   card: {
@@ -37,7 +37,8 @@ export const theme = {
     img: "bg-midnight p-3",
     nav: "bg-midnight p-4 space-x-[125px] flex top-0 right-0 left-0",
     socialsLogos: "bg-sunburst p-2",
-    description: "bg-midnight text-frost mx-4 mb-6"
+    description: "bg-midnight text-frost mx-4 mb-6",
+    button: "bg-sunburst p-2 mb-2  w-fit m-5 hover:bg-midnight hover:text-frost transition duration-300 ease-in-out"
   },
   navMenu: {
     burger: "bg-sunburst transition-all duration-300 ease-in-out transform h-1 w-11",

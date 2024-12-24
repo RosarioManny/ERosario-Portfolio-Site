@@ -1,5 +1,5 @@
 // FIRE
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { theme } from "/src/styles/style";
 
@@ -9,33 +9,48 @@ const Navbar = () =>  {
   const handleClick = () => {
     setIsToggle(!isToggled)
   }
+  
+  useEffect(() => {
+    if (isToggled) {
+      document.body.style.overflow = "hidden"; // Disable scrolling
+    } else {
+      document.body.style.overflow = "auto"; // Enable scrolling
+    }
+
+    return () => {
+      // Cleanup when component is unmounted or state changes
+      document.body.style.overflow = "auto"; // Ensure scrolling is re-enabled
+    };
+  }, [isToggled]);
+
+
   return (
-    <nav className={`${theme.container.nav} ${theme.bodyText.nav} grow overflow`}>
+    <nav className={`${theme.container.nav} ${theme.bodyText.nav} z-10 overflow`}>
         <Link to="/home"> E.R.</Link>
         <button> D/L </button>
         <button onClick={handleClick} className="z-10 relative flex flex-col justify-center items-center space-y-1 p-9;">
-        <span 
-          className={`
-            ${theme.navMenu.burger} 
-            ${isToggled ? 'rotate-45 translate-y-2' : ''}`} 
-        ></span>
-        <span 
-          className={`
-            ${theme.navMenu.burger} 
-            ${isToggled ? 'opacity-0' : 'opacity-100'}`} 
-        ></span>
-        <span 
-          className={`
-            ${theme.navMenu.burger} 
-            ${isToggled ? '-rotate-45 -translate-y-2' : 'translate-y-0'}`} 
-        ></span>
-      </button>
+          <span 
+            className={`
+              ${theme.navMenu.burger} 
+              ${isToggled ? 'rotate-45 translate-y-2' : ''}`} 
+          ></span>
+          <span 
+            className={`
+              ${theme.navMenu.burger} 
+              ${isToggled ? 'opacity-0' : 'opacity-100'}`} 
+          ></span>
+          <span 
+            className={`
+              ${theme.navMenu.burger} 
+              ${isToggled ? '-rotate-45 -translate-y-2' : 'translate-y-0'}`} 
+          ></span>
+        </button>
 
       {/* Off-screen menu */}
       <div 
         className={`
           ${theme.navMenu.offScreen} 
-          ${isToggled ? 'right-0' : '-right-[450px]'} transition-all duration-300 ease-in-out`}
+          ${isToggled ? 'right-0' : ' -right-[450px]'} overscroll-none transition-all duration-300 ease-in-out`}
       >
         <Link to="/projects" onClick={handleClick}>Projects</Link>
         <Link to="/contacts" onClick={handleClick}>Contacts</Link>
@@ -46,11 +61,3 @@ const Navbar = () =>  {
 }
 
 export default Navbar
-
-// Things to do in Navbar 
-// C = Completed && I = Incompleted 
-// About Link - C
-// Contacts 
-// Projects 
-// Home 
-// Aligned 
