@@ -12,14 +12,12 @@ White - EEF0F2
 @tailwind utilities;
 
 body, html {
-  margin: 0; /* Sets the navbar all the way to edge */
-  height: 100%;
-  background-color: #0D21A1;
-  /* width: 100vw; */
-  /* overflow: scroll; */
+  /* margin: 0; 
+  /* height: 100%; */
+  /* background-color: #0D21A1; */
   overscroll-behavior: none;
 }
-
+/* 
 section {
   height: vh;
-}
+} */

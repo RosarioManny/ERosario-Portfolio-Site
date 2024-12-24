@@ -12,9 +12,11 @@ const Navbar = () =>  {
   
   useEffect(() => {
     if (isToggled) {
-      document.body.style.overflow = "hidden"; // Disable scrolling
+       // Disable scrolling
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = "auto"; // Enable scrolling
+      
+      document.body.style.overflow = "auto"; 
     }
 
     return () => {

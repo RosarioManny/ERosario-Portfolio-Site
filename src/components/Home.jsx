@@ -2,32 +2,40 @@ import { Link } from "react-router-dom";
 import { theme } from "/src/styles/style.js";
 import { useEffect, useState } from "react";
 
+const ANIMATION_TIMING = {
+  firstName: 901,
+  lastName: 2001
+};
 const Home = () => {
-  const [firstNameFinished, setFirstNameFinished] = useState(false);
-  const [lastNameFinished, setLastNameFinished] = useState(false)
+  const [nameAnimations, setNameAnimations] = useState({
+    firstName: false,
+    lastName: false
+  });
 
-  // This effect will track when the first name finishes its typing animation.
   useEffect(() => {
-    const firstTimer = setTimeout(() => {
-      setFirstNameFinished(true); 
-    }, 1001); 
+    const timers = [
+      setTimeout(
+        () => setNameAnimations(prev => ({ ...prev, firstName: true })),
+        ANIMATION_TIMING.firstName
+      ),
+      setTimeout(
+        () => setNameAnimations(prev => ({ ...prev, lastName: true })),
+        ANIMATION_TIMING.lastName
+      )
+    ];
 
-    const secondTimer = setTimeout(() => {
-      setLastNameFinished(true);
-    }, 2001)
-
-    return () => clearTimeout(firstTimer, secondTimer); 
+    return () => timers.forEach(clearTimeout);
   }, []);
-  
+
   return(
-    <>
+    <section className="bg-onyx h-screen">
       <section className="flex-col">
         <div className="">
-              <h1 className={`${theme.heading.home} flex flex-col`}>
-                <p className="typewriter typewriter-firstname ">Emmanuel</p> 
+              <h1 className={`${theme.heading.home} mt-20 flex flex-col`}>
+                <p className="typewriter typewriter-firstname">Emmanuel</p> 
                 <p className={`typewriter typewriter-lastname` }
                   style={{
-                    visibility: firstNameFinished ? "visible" : "hidden", 
+                    visibility: nameAnimations.firstName ? "visible" : "hidden", 
                   }}
                   >
                   Rosario 
@@ -37,7 +45,7 @@ const Home = () => {
             <h3 className="">
             <p className={`typewriter typewriter-title` }
                   style={{
-                    visibility: lastNameFinished ? "visible" : "hidden", 
+                    visibility: nameAnimations.lastName ? "visible" : "hidden", 
                   }}
                   >
                   Full-Stack Software Developer
@@ -45,9 +53,9 @@ const Home = () => {
             </h3>
           </div>
         </div>
-        <div className="container">
-          <div className="slides">
-            <p className={`${theme.bodyText.default} ${theme.container.default}`}> 
+        <div className="">
+          <div className="">
+            <p className={`${theme.bodyText.default} ${theme.container.default} my-16`}> 
               <b>Hello,</b> 
                 <br/>
                 I hope to work with you in our next projects. To learn more about me please explore my page. 
@@ -58,7 +66,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-    </>
+    </section>
   )
 }
 

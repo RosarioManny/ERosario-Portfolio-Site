@@ -14,9 +14,9 @@ import Talkthroughit from './components/ProjectsDetails/Talkthrough_it'
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="bg-onyx min-h-screen flex flex-col">
       <Navbar element={Navbar}/>
-      <main className='flex-grow'>
+      <main className=''>
         <Routes>
           <Route path="/" element={<EnterSite />} />
           <Route path="/home" element={<Home />} />
