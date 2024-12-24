@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { theme } from "../styles/style";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const About = () => {
   const [isDropdown, setIsDropdown] = useState(false)
@@ -13,14 +13,20 @@ const About = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsAnimated(true); 
-    }, 1000); 
+    }, 501); 
 
     return () => clearTimeout(timer); 
   }, []);
+
   return(
     <>
       <section className="place-items-center bg-royal">
-        <h1 className={`${theme.heading.default}`}> About Me </h1>
+      <h1 className={`${theme.heading.default} 
+        typewriter typewriter-projects`
+        }
+        style={{ visibility: isAnimated ? "visible" : "hidden", }}>
+          About Me 
+        </h1>
         <div>
           <p className={`${theme.bodyText.default} ${theme.container.default}`}>
             Creativity has always driven my journey from artist to software engineer. In the art world, I learned to approach challenges from different perspectives, pushing the boundaries of my work. 

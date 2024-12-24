@@ -12,38 +12,47 @@ White - #EEF0F2
   height: 100%;
 }
 
-
 /* General class for shared properties */
 .typewriter {
   white-space: nowrap;
   overflow: hidden;
-  border-right: 3px solid #011638;
   font-family: monospace;
-  animation: typing 2s steps(30), blink 1s step-end infinite, cursor-fadeout .5s 1s forwards;
+  /* animation: typing 2s steps(30), blink 1s step-end infinite; */
 }
 
 /* Specific classes for different text lengths and timings */
 .typewriter-firstname {
   width: 8ch;
+  border-right: 3px solid #EEC643;
   animation: typing .7s steps(8), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout .5s 1s forwards;
 }
 
+
 .typewriter-lastname {
-  width: 8ch;
-  animation: typing .6s steps(8), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout .5s 1s forwards;
-  animation-delay: 1s; 
-}
-.typewriter-projects {
-  width: 8ch;
-  animation: typing .7s steps(8), blink 1s step-end infinite ;
+  width: 7ch;
   border-right: 3px solid #EEC643;
-  animation-delay: 1s; 
+  animation: typing .8s steps(7), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout .5s 2s alternate;
+  animation-delay: .9s; 
+}
+
+.typewriter-title {
+  width: 29.2ch;
+  animation: typing 1.5s steps(29), blink 1s step-end infinite ;
+  animation-delay: 2s; 
+  border-right: 2px solid #EEC643;
+}
+
+.typewriter-projects {
+  width: 8.1ch;
+  animation: typing .7s steps(8), blink 1s step-end infinite ;
+  border-right: 2px solid #EEC643;
+  animation-delay: .5s; 
 }
 
 
 /* Reused keyframes */
 @keyframes typing {
-  from {
+  0% {
     width: 0;
   }
 }
@@ -55,7 +64,7 @@ White - #EEF0F2
 }
 
 @keyframes cursor-fadeout {
-  20%, 100% {
+  1%, 100% {
     border-color: transparent;
   }
 }

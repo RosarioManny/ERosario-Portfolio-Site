@@ -1,5 +1,6 @@
 import { theme } from "../styles/style";
 import { Link } from "react-router-dom";
+import { useState, useEffect } from "react"
 
 const Contacts = () => {
   const [isAnimated, setIsAnimated] = useState(false)
@@ -7,15 +8,21 @@ const Contacts = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsAnimated(true); 
-    }, 1000); 
+    }, 501); 
 
     return () => clearTimeout(timer); 
   }, []);
+
   return (
     <>
       <section className="place-items-center">
         <div className="bg-royal flex-auto flex-col justify-items-center space-y-4">
-          <h1 className={`${theme.heading.default}`}>Contacts_</h1>
+        <h1 className={`${theme.heading.default} 
+        typewriter typewriter-projects`
+        }
+        style={{ visibility: isAnimated ? "visible" : "hidden", }}>
+            Contacts
+            _</h1>
           <p className={`${theme.subheading.default}`}>Phone: (718)619-2138</p>
           <p className={`${theme.subheading.default}`}>Email: rosario.emm47@gmail.com</p>
           <div className={`${theme.container.socialsLogos} grid grid-cols-3 gap-2`}>

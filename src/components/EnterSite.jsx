@@ -7,6 +7,7 @@ const EnterSite = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
+    
   }, [])
 
   return(

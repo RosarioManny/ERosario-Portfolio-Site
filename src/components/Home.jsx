@@ -4,14 +4,19 @@ import { useEffect, useState } from "react";
 
 const Home = () => {
   const [firstNameFinished, setFirstNameFinished] = useState(false);
+  const [lastNameFinished, setLastNameFinished] = useState(false)
 
   // This effect will track when the first name finishes its typing animation.
   useEffect(() => {
-    const timer = setTimeout(() => {
+    const firstTimer = setTimeout(() => {
       setFirstNameFinished(true); 
-    }, 1000); 
+    }, 1001); 
 
-    return () => clearTimeout(timer); 
+    const secondTimer = setTimeout(() => {
+      setLastNameFinished(true);
+    }, 2001)
+
+    return () => clearTimeout(firstTimer, secondTimer); 
   }, []);
   
   return(
@@ -30,7 +35,13 @@ const Home = () => {
               </h1 >
           <div className={`${theme.subheading.home}`}>
             <h3 className="">
-              Full-Stack Software Developer<p className=""></p>
+            <p className={`typewriter typewriter-title` }
+                  style={{
+                    visibility: lastNameFinished ? "visible" : "hidden", 
+                  }}
+                  >
+                  Full-Stack Software Developer
+                </p> 
             </h3>
           </div>
         </div>

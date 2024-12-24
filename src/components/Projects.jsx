@@ -8,7 +8,7 @@ const Projects = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsAnimated(true); 
-    }, 1000); 
+    }, 501); 
 
     return () => clearTimeout(timer); 
   }, []);
