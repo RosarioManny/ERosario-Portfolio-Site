@@ -37,7 +37,7 @@ const About = () => {
 
   return(
     <>
-      <section className="place-items-center bg-royal">
+      <section className="place-items-center">
       <h1 className={`${theme.heading.default} 
         typewriter typewriter-projects`
         }
@@ -61,14 +61,16 @@ const About = () => {
             return (
               <img 
               key={logo.alt}
-              className={`h-18 transition-opacity duration-300 ease-in ${
+              className={`h-18 transition-opacity duration-300 ease-in overflow-hidden ${
                 !visible ? `delay-${logo.delay} ${isDropdown ? 'opacity-100' : 'opacity-0'}` : ''
-              } overflow-hidden`}
+                }`
+              }
               src={logo.src}
               alt={logo.alt}
               />
             )
-          })}
+            })
+          }
         </div>
         <div className={`${theme.container.button}`}>
           <button
@@ -77,9 +79,12 @@ const About = () => {
           {isDropdown ? "Show Less" : "Show More"}
           </button>
         </div>
-        <h2 className={`${theme.subheading.default}`} >Resume:</h2>
+        <h2 className={`${theme.subheading.default}`}>Resume:</h2>
           <div className="m-9">
-            <img className={`${theme.container.img}`} src="src/assets/Resume_2024.jpg" alt="" />
+            <img className={`${theme.container.img}`} 
+            src="src/assets/Resume_2024.jpg" 
+            alt="Emmanuel Rosario's Resume" 
+          />
           </div>
       </section>
     </>

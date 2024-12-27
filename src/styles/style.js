@@ -17,7 +17,7 @@ Color Pallete:
 */
 
 export const theme = {
-  
+  // Text
   heading: {
     default: "text-sunburst text-3xl mt-6 font-semibold",
     home: "text-frost text-7xl mt-20 mx-4 font-sans",
@@ -25,15 +25,19 @@ export const theme = {
   subheading: {
     default: "text-frost text-lg",
     home: "text-sunburst text-xl my-2 mx-4",
+    card: "font-bold text-xl mb-2 text-sunburst",
   },
   bodyText: {
     default: "text-frost text-balance",
     nav: "text-sunburst text-sm",
+    card: "text-frost text-base text-[13px]",
   },
+  // Containers
   card: {
+    projects: "max-w-sm overflow-hidden mx-4 my-6 hover:shadow-xl hover:border-solid hover:border-obsidian hover:border-4"
   },
   container: {
-    default: "bg-midnight p-5 p m-4",
+    default: "bg-midnight p-5 p m-4 border-[1px] border-frost",
     img: "bg-midnight p-3",
     nav: "bg-midnight p-4 space-x-[125px] flex top-0 right-0 left-0",
     footer: "bg-midnight items-center m-max flex flex-col space-y-1 text-frost text-sm p-2 flex position-fixed bottom-0 right-0 left-0",
@@ -44,6 +48,9 @@ export const theme = {
   navMenu: {
     burger: "bg-sunburst transition-all duration-300 ease-in-out transform h-1 w-11",
     offScreen: "bg-midnight h-screen w-full max-w-[450px] fixed top-0 flex flex-col space-y-9 items-center justify-center text-center text-3xl font-medium transition-all ease-in-out duration-300 off-screen-menu",
+  },
+  hoverState: {
+
   },
   // DARK MODE
   dkHeading: {

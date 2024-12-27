@@ -16,7 +16,7 @@ const Contacts = () => {
   return (
     <>
       <section className="place-items-center">
-        <div className="bg-royal flex-auto flex-col justify-items-center space-y-4">
+        <div className=" flex-auto flex-col justify-items-center space-y-4">
         <h1 className={`${theme.heading.default} 
         typewriter typewriter-projects`
         }

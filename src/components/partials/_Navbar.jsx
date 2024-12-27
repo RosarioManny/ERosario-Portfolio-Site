@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { theme } from "/src/styles/style";
 
-const Navbar = () =>  {
+const Navbar = ({darkMode, onDarkModeToggle}) =>  {
   const [isToggled, setIsToggle] = useState(false)
 
   const handleClick = () => {
@@ -15,7 +15,6 @@ const Navbar = () =>  {
        // Disable scrolling
       document.body.style.overflow = "hidden";
     } else {
-      
       document.body.style.overflow = "auto"; 
     }
 
@@ -27,9 +26,16 @@ const Navbar = () =>  {
 
 
   return (
-    <nav className={`${theme.container.nav} ${theme.bodyText.nav} z-10 overflow`}>
+    <nav className={`${theme.container.nav} ${theme.bodyText.nav} ${darkMode && "dark"} dark:bg-skyline z-10 overflow`}>
         <Link to="/home"> E.R.</Link>
-        <button> D/L </button>
+        <button 
+        onClick={onDarkModeToggle}
+        className='
+        w-6 h-6 text-sm rounded-full bg-sunburst text-midnight font-semibold 
+        dark:text-onyx dark:bg-frost'
+        >
+          {darkMode ? "L" : "D"}
+        </button>
         <button onClick={handleClick} className="z-10 relative flex flex-col justify-center items-center space-y-1 p-9;">
           <span 
             className={`

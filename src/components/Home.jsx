@@ -28,7 +28,7 @@ const Home = () => {
   }, []);
 
   return(
-    <section className="bg-onyx h-screen">
+    <section className="h-screen">
       <section className="flex-col">
         <div className="">
               <h1 className={`${theme.heading.home} mt-20 flex flex-col`}>
