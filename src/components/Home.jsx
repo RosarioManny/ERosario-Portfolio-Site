@@ -57,12 +57,12 @@ const Home = () => {
           </div>
         </div>
           <div className="">
-            <p className={`${theme.bodyText.default} ${theme.container.default} ${darkMode && theme.dark.nav} my-16`}> 
+            <p className={`${theme.bodyText.default} ${theme.container.default} ${darkMode && theme.dark.bodyText} my-16`}> 
               <b>Hello,</b> 
                 <br/>
                 I hope to work with you in our next projects. To learn more about me please explore my page. 
                 I know critical langauges like <b>JavaScript, Python, EJS, HTML, and more!</b> If interested please, look at my 
-                  <Link to='/about' className="text-sunburst"> About me page </Link>
+                  <Link to='/about' className="text-skyline"> About me page </Link>
                 where you will find my resume and further contacts. 
             </p>
           </div>

@@ -10,6 +10,7 @@ White - #EEF0F2
 #root {
   /* background: #0D21A1; */
   height: 100%;
+  overscroll-behavior: none;
 }
 
 /* General class for shared properties */
@@ -23,29 +24,29 @@ White - #EEF0F2
 /* Specific classes for different text lengths and timings */
 .typewriter-firstname {
   width: 8ch;
-  border-right: 3px solid #EEC643;
+  border-right: 3px solid;
   animation: typing .7s steps(8), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout .5s 1s forwards;
 }
 
 
 .typewriter-lastname {
   width: 7ch;
-  border-right: 3px solid #EEC643;
-  animation: typing .8s steps(7), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout 2s 3s forwards;
-  animation-delay: .9s; 
+  border-right: 3px solid;
+  animation: typing .6s steps(7), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout 2s 3s forwards;
+  animation-delay: .8s; 
 }
 
 .typewriter-title {
   width: 29.2ch;
-  animation: typing 1.5s steps(29), blink 1s step-end infinite ;
+  animation: typing 2s steps(29), blink 1s step-end infinite ;
   animation-delay: 2s; 
-  border-right: 2px solid #EEC643;
+  border-right: 2px solid;
 }
 
 .typewriter-projects {
   width: 8.1ch;
   animation: typing .7s steps(8), blink 1s step-end infinite ;
-  border-right: 2px solid #EEC643;
+  border-right: 2px solid;
   animation-delay: .5s; 
 }
 

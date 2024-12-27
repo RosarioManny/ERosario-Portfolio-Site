@@ -6,7 +6,7 @@ import { useDarkMode } from "../../darkModeContext";
 
 const Navbar = () =>  {
   const [isToggled, setIsToggle] = useState(false);
-  const { darkMode, toggleDarkMode } = useDarkMode();
+  const {darkMode, toggleDarkMode } = useDarkMode();
 
   const handleClick = () => {
     setIsToggle(!isToggled)
