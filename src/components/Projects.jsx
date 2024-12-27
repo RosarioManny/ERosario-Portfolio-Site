@@ -15,16 +15,17 @@ const Projects = () => {
 
   return (
     <>
-      <section className="place-items-center">
-        <h1 className={`${theme.heading.default} 
+      <section className="place-items-center ">
+        <h1 className={`${theme.heading.default}
+        dark:text-tangerine
         typewriter typewriter-projects`
         }
         style={{ visibility: isAnimated ? "visible" : "hidden", }}>
           Projects 
         </h1>
         <section className="">
-          <div className={`${theme.card.projects}`}>
-            <Link to="/projects/talkthroughit">
+          <div className={`${theme.card.projects} `}>
+            <Link to="projects/talkthroughit">
               <img 
                 className="w-full"
                 src="src/assets/Talkthroughit/talkthroughit.png" 
@@ -59,7 +60,7 @@ const Projects = () => {
             </div>
           </div>
           <div className={`${theme.card.projects}`}>
-            <Link to="/projects/whatduudle">
+            <Link to="projects/whatduudle">
               <img 
                 className="w-full"
                 src="src/assets/Whataduudle/whataduudle.png" 

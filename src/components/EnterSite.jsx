@@ -12,14 +12,13 @@ const EnterSite = () => {
 
   return(
     <>
-      <section className="flex-col">
-        <div className={`${theme.bodyText.home}`}>
-          <div className="slides">
-            </div>
+      <section className={`${theme.heading.default} flex flex-col place-items-center`}>
+          <h1 className={``}>
             Incoming error
-            <br/>
+          </h1>
+          <h1>
             Your next Developer...
-        </div>
+          </h1>
       </section>
     </>
   )

@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import { theme } from "/src/styles/style.js";
 import { useEffect, useState } from "react";
+import { useDarkMode } from "../darkModeContext";
 
 const ANIMATION_TIMING = {
   firstName: 901,
   lastName: 2001
 };
+
 const Home = () => {
+  const { darkMode, toggleDarkMode } = useDarkMode();
   const [nameAnimations, setNameAnimations] = useState({
     firstName: false,
     lastName: false
@@ -31,7 +34,7 @@ const Home = () => {
     <section className="h-screen">
       <section className="flex-col">
         <div className="">
-              <h1 className={`${theme.heading.home} mt-20 flex flex-col`}>
+              <h1 className={`${theme.heading.home} ${darkMode && theme.dark.home} mt-20 flex flex-col`}>
                 <p className="typewriter typewriter-firstname">Emmanuel</p> 
                 <p className={`typewriter typewriter-lastname` }
                   style={{
@@ -41,7 +44,7 @@ const Home = () => {
                   Rosario 
                 </p> 
               </h1 >
-          <div className={`${theme.subheading.home}`}>
+          <div className={`${theme.subheading.home} ${darkMode && theme.dark.subheading}`}>
             <h3 className="">
             <p className={`typewriter typewriter-title` }
                   style={{
@@ -53,9 +56,8 @@ const Home = () => {
             </h3>
           </div>
         </div>
-        <div className="">
           <div className="">
-            <p className={`${theme.bodyText.default} ${theme.container.default} my-16`}> 
+            <p className={`${theme.bodyText.default} ${theme.container.default} ${darkMode && theme.dark.nav} my-16`}> 
               <b>Hello,</b> 
                 <br/>
                 I hope to work with you in our next projects. To learn more about me please explore my page. 
@@ -64,7 +66,6 @@ const Home = () => {
                 where you will find my resume and further contacts. 
             </p>
           </div>
-        </div>
       </section>
     </section>
   )
