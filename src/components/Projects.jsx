@@ -24,11 +24,13 @@ const Projects = () => {
         </h1>
         <section className="">
           <div className={`${theme.card.projects}`}>
+            <Link to="/projects/talkthroughit">
               <img 
                 className="w-full"
-                src="src/assets/talkthroughit.png" 
+                src="src/assets/Talkthroughit/talkthroughit.png" 
                 alt="Talk through it - Therapy website" 
               />
+            </Link>
             <div className="p-4 bg-midnight">
               <div className={`${theme.subheading.card}`}>
                 TalkThrough.It
@@ -43,7 +45,7 @@ const Projects = () => {
             <Link to="/projects/artfolio">
               <img 
                 className="w-full"
-                src="src/assets/artfolio.png"
+                src="src/assets/Artfolio/artfolio.png"
                 alt="Artfolio - Art portfolio website" 
               />
             </Link>
@@ -57,11 +59,13 @@ const Projects = () => {
             </div>
           </div>
           <div className={`${theme.card.projects}`}>
+            <Link to="/projects/whatduudle">
               <img 
                 className="w-full"
-                src="src/assets/whataduudle.png" 
+                src="src/assets/Whataduudle/whataduudle.png" 
                 alt="What a doodle - AI drawing game website" 
               />
+            </Link >
             <div className="p-4 bg-midnight">
               <div className={`${theme.subheading.card}`}>
                 Whataduudle
