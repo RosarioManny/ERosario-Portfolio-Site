@@ -62,7 +62,7 @@ const Home = () => {
                 <br/>
                 I hope to work with you in our next projects. To learn more about me please explore my page. 
                 I know critical langauges like <b>JavaScript, Python, EJS, HTML, and more!</b> If interested please, look at my 
-                  <Link to='/about' className="text-skyline"> About me page </Link>
+                  <Link to='/about' className="text-sunburst"> About me page </Link>
                 where you will find my resume and further contacts. 
             </p>
           </div>

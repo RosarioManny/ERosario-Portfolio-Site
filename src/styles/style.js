@@ -20,7 +20,7 @@ export const theme = {
   // Text
   heading: {
     default: "text-sunburst text-3xl mt-6 font-semibold",
-    home: "text-frost text-7xl mt-20 mx-4 font-sans border-inherit",
+    home: "text-frost text-7xl mt-20 mx-4 font-sans",
     drkDefault: "text-tangerine",
     drkHome: "text-skyline"
   },
@@ -42,7 +42,7 @@ export const theme = {
   container: {
     default: "bg-midnight p-5 p m-4 border-[1px] border-frost",
     img: "bg-midnight p-3",
-    nav: "bg-midnight p-4 space-x-[125px] flex top-0 right-0 left-0 transition-colors duration-300 ease-out",
+    nav: "bg-midnight p-4 space-x-[125px] flex top-0 right-0 left-0",
     footer: "bg-midnight items-center mt-auto flex flex-col space-y-1 text-frost text-sm p-2 flex position-fixed ",
     socialsLogos: "bg-sunburst p-2",
     description: "bg-midnight text-frost mx-4 mb-6",
@@ -53,14 +53,12 @@ export const theme = {
     offScreen: "bg-midnight h-screen w-full max-w-[450px] fixed top-0 flex flex-col space-y-9 items-center justify-center text-center text-3xl font-medium transition-all ease-in-out duration-300 off-screen-menu",
   },
   dark: {
-    home: "text-skyline transition-colors duration-500 ease-out",
-    subheading: "text-tangerine transition-colors duration-500 ease-out",
-    bodyText: "text-glacier border-skyline bg-charcoal transition-colors duration-500 ease-out",
-    nav: "text-tangerine bg-charcoal transition-colors duration-500 ease-out",
-    footer: "text-glacier bg-charcoal transition-colors duration-500 ease-out",
-    burger: "bg-tangerine transition-colors duration-500 ease-out",
-    container: "bg-charcoal transition-colors duration-500 ease-out",
-    bg: "bg-onyx border-skyline transition-colors duration-500 ease-out"
+    home: "text-skyline",
+    subheading: "text-tangerine",
+    bodyText: "text-glacier",
+    nav: "text-tangerine bg-charcoal transition-colors duration-500 ",
+    burger: "bg-tangerine",
+    container: "bg-charcoal",
+    bg: "bg-onyx"
   },
 }
-

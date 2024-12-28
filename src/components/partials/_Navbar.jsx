@@ -1,12 +1,12 @@
 // FIRE
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { theme } from "/src/styles/style";
+import { theme } from "../../styles/style";
 import { useDarkMode } from "../../darkModeContext";
 
 const Navbar = () =>  {
   const [isToggled, setIsToggle] = useState(false);
-  const {darkMode, toggleDarkMode } = useDarkMode();
+  const { darkMode, toggleDarkMode } = useDarkMode();
 
   const handleClick = () => {
     setIsToggle(!isToggled)
