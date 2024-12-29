@@ -6,21 +6,21 @@ export default {
   ],
   theme: {
     extend:{
-      keyframes: {
-        typewriter: {
-          '0%': { width: '0%' },
-          '100%': { width: '100%' },
-        },
-        blink: {
-          '50%': { opacity: '0' },
-        },
-      },
-      animation: {
-        typing: 'typewriter 2s 1s forwards',
-        typing2: 'typewriter 2s 3s forwards',
-        typing3: 'typewriter 2s 6s forwards',
-        blink: 'blink 1s step-end infinite',
-      },
+      // keyframes: {
+      //   typewriter: {
+      //     '0%': { width: '0%' },
+      //     '100%': { width: '100%' },
+      //   },
+      //   blink: {
+      //     '50%': { opacity: '0' },
+      //   },
+      // },
+      // animation: {
+      //   typing: 'typewriter 2s 1s forwards',
+      //   typing2: 'typewriter 2s 3s forwards',
+      //   typing3: 'typewriter 2s 6s forwards',
+      //   blink: 'blink 1s step-end infinite',
+      // },
       // Color Scheme
       colors: {
         // vv Crash Site Colors

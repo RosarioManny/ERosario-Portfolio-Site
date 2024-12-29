@@ -27,8 +27,8 @@ function App() {
     <DarkModeContext.Provider value={{darkMode, toggleDarkMode}}>
       <main >
         <div className={`
-        bg-royal min-h-screen transition-colors duration-300 flex flex-grow flex-col
-        ${darkMode ? theme.dark.bg : ""}
+        min-h-screen transition-colors duration-300 flex flex-grow flex-col
+        ${darkMode ? theme.dark.bg : "bg-royal"}
         `}>
           <Navbar element={Navbar} />
           <div className=''>

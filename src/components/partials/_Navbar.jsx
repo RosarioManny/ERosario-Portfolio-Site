@@ -27,7 +27,7 @@ const Navbar = () =>  {
 
 
   return (
-    <nav className={`${theme.container.nav} ${theme.subheading.nav} ${darkMode && theme.dark.nav} z-10 overflow`}>
+    <nav className={`${theme.container.nav} ${theme.subheading.nav} ${darkMode ? theme.dark.nav : "bg-midnight"} z-10 overflow`}>
         <Link to="/home"> E.R.</Link>
         <button 
         onClick={toggleDarkMode}
@@ -58,7 +58,7 @@ const Navbar = () =>  {
       {/* Off-screen menu */}
       <div 
         className={`
-          ${theme.navMenu.offScreen}  ${darkMode && theme.dark.container} 
+          ${theme.navMenu.offScreen}  ${darkMode ? theme.dark.container : "bg-midnight"} 
           ${isToggled ? 'right-0' : ' -right-[450px]'} overscroll-none transition-all duration-300 ease-in-out`}
       >
         <Link to="/projects" onClick={handleClick}>Projects</Link>
