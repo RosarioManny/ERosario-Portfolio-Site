@@ -40,8 +40,8 @@ export const theme = {
     hover: ""
   },
   container: {
-    default: "bg-midnight p-5 p m-4 border-[1px] border-frost",
-    img: "bg-midnight p-3",
+    default: "p-5 p m-4 border-[1px] border-frost",
+    img: " p-3",
     nav: "p-4 space-x-[125px] flex top-0 right-0 left-0",
     footer: "items-center mt-auto flex flex-col space-y-1 text-frost text-sm p-2 flex position-fixed ",
     socialsLogos: "bg-sunburst p-2",
@@ -58,7 +58,7 @@ export const theme = {
     bodyText: "text-glacier",
     nav: "text-tangerine bg-charcoal transition-colors duration-500 ",
     burger: "bg-tangerine",
-    container: "bg-charcoal",
+    container: "bg-charcoal text-glacier transition-colors duration-500",
     bg: "bg-onyx",
     footer: "bg-charcoal"
   },

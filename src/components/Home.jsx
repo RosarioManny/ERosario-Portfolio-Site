@@ -57,7 +57,7 @@ const Home = () => {
           </div>
         </div>
           <div className="">
-            <p className={`${theme.bodyText.default} ${theme.container.default} ${darkMode && theme.dark.bodyText} my-16`}> 
+            <p className={`${theme.bodyText.default} ${theme.container.default} ${darkMode ? theme.dark.container : "bg-midnight"} my-16`}> 
               <b>Hello,</b> 
                 <br/>
                 I hope to work with you in our next projects. To learn more about me please explore my page. 

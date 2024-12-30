@@ -29,14 +29,17 @@ const Navbar = () =>  {
   return (
     <nav className={`${theme.container.nav} ${theme.subheading.nav} ${darkMode ? theme.dark.nav : "bg-midnight"} z-10 overflow`}>
         <Link to="/home"> E.R.</Link>
-        <button 
+        <div 
         onClick={toggleDarkMode}
-        className='
-        w-6 h-6 text-sm rounded-full bg-sunburst text-midnight font-semibold 
-        dark:text-onyx dark:bg-frost'
+        className=
+        {` w-6 h-6 p-[2px] text-center text-sm rounded-full font-semibold transition-all duration-700 
+        ${darkMode ? "bg-midnight text-frost " : "bg-charcoal"} 
+        `}
         >
-          {darkMode ? "L" : "D"}
-        </button>
+          {darkMode ?  "L" : "D"}
+        </div>
+
+        {/* Burger  */}
         <button onClick={handleClick} className="z-10 relative flex flex-col justify-center items-center space-y-1 p-9;">
           <span 
             className={`
