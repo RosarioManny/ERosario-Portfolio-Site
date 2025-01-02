@@ -1,9 +1,11 @@
 import { theme } from "../styles/style";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react"
+import { useDarkMode } from "../darkModeContext";
 
 const Contacts = () => {
-  const [isAnimated, setIsAnimated] = useState(false)
+  const [isAnimated, setIsAnimated] = useState(false);
+  const { darkMode, toggleDarkMode } = useDarkMode();
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -35,28 +37,33 @@ const Contacts = () => {
             </Link>
           </div>
         </div>
-        <form className={` ${theme.container.default} flex flex-col mt-8`}>
-          <p className={`${theme.subheading.default} flex justify-center text-2xl`}>Contact me!</p>
-          <label htmlFor="nameInput" className={`${theme.bodyText.default}`}> Name:</label>
+        <form className={` ${theme.container.default} ${darkMode ? "bg-charcoal" : "bg-midnight"} flex flex-col mt-8`}>
+          <p className={`${theme.subheading.default}  flex justify-center text-2xl`}>Contact me!</p>
+          <label htmlFor="nameInput" className={`${theme.bodyText.default} mb-1`}> Name:</label>
           <input 
             type="text" 
             name="nameInput" 
             id="nameInput"
             size="5"
-            className="flex"
+            className="p-1"
+            placeholder="Name"
           />
-          <label htmlFor="emailInput"  className={`${theme.bodyText.default}`}> Email:</label>
+          <label htmlFor="emailInput"  className={`${theme.bodyText.default} mt-2 mb-1`}> Email:</label>
           <input 
             type="email" 
             name="emailInput" 
             id="emailInput"
+            placeholder="Email address"
+            className="p-1"
           />
-          <label htmlFor="message" className={`${theme.bodyText.default}`}> Message:</label>
+          <label htmlFor="message" className={`${theme.bodyText.default} mt-2 mb-1`}> Message:</label>
           <textarea 
             name="message" 
             id="message"
             rows="15"
             cols="35"
+            placeholder="Your message"
+            className="p-1"
           >
 
           </textarea>
