@@ -35,7 +35,7 @@ const Projects = () => {
                 alt="Talk through it - Therapy website" 
               />
             </Link>
-            <div className={`${theme.container.img} ${theme.bodyText.card} ${darkMode && theme.dark.bodyText} `}>
+            <div className={`${theme.container.img} ${theme.bodyText.card} ${darkMode ? theme.dark.container :"bg-midnight"} `}>
               <div className={`${theme.subheading.card} ${darkMode && theme.dark.subheading}`}>
                 TalkThrough.It
               </div>
@@ -54,7 +54,7 @@ const Projects = () => {
                 alt="Artfolio - Art portfolio website" 
               />
             </Link>
-            <div className={`${theme.container.img} ${theme.bodyText.card} ${darkMode && theme.dark.bodyText}`}>
+            <div className={`${theme.container.img} ${theme.bodyText.card} ${darkMode ? theme.dark.container :"bg-midnight"}`}>
               <div className={`${theme.subheading.card} ${darkMode && theme.dark.subheading}`}>
                 Artfolio
               </div>
@@ -72,7 +72,7 @@ const Projects = () => {
                 alt="What a doodle - AI drawing game website" 
               />
             </Link >
-            <div className={`${theme.container.img} ${theme.bodyText.card} ${darkMode && theme.dark.bodyText}`}>
+            <div className={`${theme.container.img} ${theme.bodyText.card} ${darkMode ? theme.dark.container :"bg-midnight"}`}>
               <div className={`${theme.subheading.card} ${darkMode && theme.dark.subheading}`}>
                 Whataduudle
               </div>
