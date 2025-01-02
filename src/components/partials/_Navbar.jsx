@@ -38,7 +38,7 @@ const Navbar = () =>  {
         >
           {darkMode ?  "L" : "D"}
         </div>
-
+        
         {/* Burger  */}
         <button onClick={handleClick} className="z-10 relative flex flex-col justify-center items-center space-y-1 p-9;">
           <span 
