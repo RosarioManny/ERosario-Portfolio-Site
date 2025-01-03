@@ -28,7 +28,7 @@ const Projects = () => {
         <section>
 
           <div className={`${theme.card.projects}`}>
-            <Link to="projects/talkthroughit">
+            <Link to="talkthroughit">
               <img 
                 className="w-full"
                 src="src/assets/Talkthroughit/talkthroughit.png" 
@@ -47,7 +47,7 @@ const Projects = () => {
           </div>
 
           <div className={`${theme.card.projects} `}>
-            <Link to="/projects/artfolio">
+            <Link to="artfolio">
               <img 
                 className="w-full"
                 src="src/assets/Artfolio/artfolio.png"
@@ -65,7 +65,7 @@ const Projects = () => {
           </div>
 
           <div className={`${theme.card.projects}`}>
-            <Link to="projects/whatduudle">
+            <Link to="whataduudle">
               <img 
                 className="w-full"
                 src="src/assets/Whataduudle/whataduudle.png" 

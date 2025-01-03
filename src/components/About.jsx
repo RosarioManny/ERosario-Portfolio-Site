@@ -55,7 +55,7 @@ const About = () => {
             I’m dedicated to blending creativity with technical precision to build user-centric solutions that make a meaningful impact.
           </p>
         </div>
-        <h2 className={`${theme.subheading.default}`}>Professional Skillset:</h2>
+        <h2 className={`${theme.subheading.default}`}>Technical Proficiencies:</h2>
         <div className={`
         ${theme.container.default} 
         ${theme.bodyText.default} 
