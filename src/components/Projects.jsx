@@ -20,21 +20,21 @@ const Projects = () => {
     {
       name: "TalkThrough.It",
       description: "The value of Therapy and Mental health is immense. Clients & Therapists can create accounts, book appointments, browse therapists, etc!",
-      link: "talkthroughit",
+      link: "/projects/talkthroughit",
       image: "src/assets/Talkthroughit/talkthroughit.png",
       alt: "Talk through it - Therapy website"
     },
     {
       name: "Artfolio",
       description: "A place for artists to share their portfolio and artwork. Create an account, upload your photos and manage your profile!",
-      link: "artfolio",
+      link: "/projects/artfolio",
       image: "src/assets/Artfolio/artfolio.png",
       alt: "Artfolio - Art portfolio website"
     },
     {
       name: "Whataduudle",
       description: "Have fun and play with AI! A drawing game where AI guesses what you've drawn. If it guesses your drawing, YOU WIN!",
-      link: "whataduudle",
+      link: "/projects/whataduudle",
       image: "src/assets/Whataduudle/whataduudle.png",
       alt: "What a doodle - AI drawing game website"
     }

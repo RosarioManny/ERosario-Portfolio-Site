@@ -49,8 +49,9 @@ return (
               </div>
             <div className="flex justify-center gap-2  place-items-center  inline-block bg-sunburst py-1 text-sm font-bold text-midnight">
                 <img className="h-8" src="../src/assets/Logos/github_logo_BW.png" />
-                <Link to=""> Github </Link>
-                
+                <Link to="https://github.com/Nottimlim/whataduudle-frontend">FrontEnd</Link>
+                |
+                <Link to="https://github.com/RosarioManny/duudle-backend">BackEnd</Link>
             </div>
           </div>
         </div>

@@ -27,7 +27,7 @@ const Navbar = () =>  {
 
 
   return (
-    <nav className={`${theme.container.nav} ${theme.subheading.nav} ${darkMode ? theme.dark.nav : "bg-midnight"} z-10 overflow`}>
+    <nav className={`${theme.container.nav} ${theme.subheading.nav} ${darkMode ? theme.dark.nav : "bg-midnight"} h-14 z-10 overflow`}>
         <Link to="/home"> E.R.</Link>
         <div 
         onClick={toggleDarkMode}
@@ -38,37 +38,43 @@ const Navbar = () =>  {
         >
           {darkMode ?  "L" : "D"}
         </div>
-        {/* Burger  */}
-        <button onClick={handleClick} className="z-10 relative flex flex-col justify-center items-center space-y-1 p-9;">
-          <span 
-            className={`
-              ${theme.navMenu.burger} ${darkMode && theme.dark.burger} 
-              ${isToggled ? 'rotate-45 translate-y-2' : ''}`} 
-          ></span>
-          <span 
-            className={`
-              ${theme.navMenu.burger} ${darkMode && theme.dark.burger} 
-              ${isToggled ? 'opacity-0' : 'opacity-100'}`} 
-          ></span>
-          <span 
-            className={`
-              ${theme.navMenu.burger} ${darkMode && theme.dark.burger} 
-              ${isToggled ? '-rotate-45 -translate-y-2' : 'translate-y-0'}`} 
-          ></span>
-        </button>
+         {/* Burger */}
+      <button onClick={handleClick} className="relative flex flex-col justify-center items-center space-y-1 p-2 z-10">
+        <BurgerLine isToggled={isToggled} darkMode={darkMode} index={1} />
+        <BurgerLine isToggled={isToggled} darkMode={darkMode} index={2} />
+        <BurgerLine isToggled={isToggled} darkMode={darkMode} index={3} />
+      </button>
 
-      {/* Off-screen menu */}
+       {/* Off-screen menu */}
       <div 
         className={`
-          ${theme.navMenu.offScreen}  ${darkMode ? theme.dark.container : "bg-midnight"} 
-          ${isToggled ? 'right-0' : ' -right-[450px]'} overscroll-none transition-all duration-300 ease-in-out`}
+        ${theme.navMenu.offScreen} 
+        ${darkMode ? "bg-gradient-to-t from-onyx to-charcoal" : "bg-gradient-to-t from-midnight to-royal"} 
+        ${isToggled ? 'right-0' : '-right-[450px]'} transition-all duration-300 ease-in-out`}
       >
-        <Link to="/projects" onClick={handleClick}>Projects</Link>
-        <Link to="/contacts" onClick={handleClick}>Contacts</Link>
-        <Link to="/about" onClick={handleClick}>About</Link>
+        {["projects", "contacts", "about"].map((link) => (
+          <Link 
+            key={link} 
+            to={`/${link}`} 
+            onClick={handleClick} 
+            className="hover:border-2 hover:border-glacier p-2"
+          >
+            {link.charAt(0).toUpperCase() + link.slice(1)}
+          </Link>
+        ))}
       </div>
     </nav>
   )
 }
+
+const BurgerLine = ({ isToggled, darkMode, index }) => {
+  const lineClass = `block h-1 w-6 transition-transform duration-300 ease-in-out ${theme.navMenu.burger} ${darkMode && theme.dark.burger}`;
+  const transforms = [
+    isToggled ? "rotate-45 translate-y-2" : "",
+    isToggled ? "opacity-0" : "opacity-100",
+    isToggled ? "-rotate-45 -translate-y-2" : "",
+  ];
+  return <span className={`${lineClass} ${transforms[index - 1]}`} />;
+};
 
 export default Navbar

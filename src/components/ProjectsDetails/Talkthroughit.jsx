@@ -47,10 +47,11 @@ return (
                 <img className="h-12" src="../src/assets/Logos/icons8-react-native-96.png"/>
                 <img className="h-12" src="../src/assets/Logos/icons8-tailwind-css-96.png"/>
               </div>
-            <div className="flex justify-center gap-2  place-items-center  inline-block bg-sunburst py-1 text-sm font-bold text-midnight">
+              <div className={`${theme.button.largeButton}`}>
                 <img className="h-8" src="../src/assets/Logos/github_logo_BW.png" />
-                <Link to=""> Github </Link>
-                
+                <Link to="https://github.com/RosarioManny/TalkThrough.it-Front-End">FrontEnd</Link>
+                |
+                <Link to="https://github.com/Nottimlim/TalkThroughIt-Backend">BackEnd</Link>
             </div>
           </div>
         </div>
