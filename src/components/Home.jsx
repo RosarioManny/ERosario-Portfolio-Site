@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { theme } from "/src/styles/style.js";
 import { useEffect, useState } from "react";
-import { useDarkMode } from "../darkModeContext";
+import { useDarkMode } from "../utils/DarkModeContext";
 
 const ANIMATION_TIMING = {
   firstName: 901,

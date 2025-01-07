@@ -1,7 +1,7 @@
 import { theme } from "/src/styles/style.js"
 import { Link } from "react-router-dom"
 import { useEffect, useState } from "react";
-import { useDarkMode } from "../darkModeContext";
+import { useDarkMode } from "../utils/DarkModeContext";
 
 const Projects = () => {
   const [isAnimated, setIsAnimated] = useState(false)

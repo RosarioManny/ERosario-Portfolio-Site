@@ -1,7 +1,7 @@
 import { theme } from "../styles/style";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react"
-import { useDarkMode } from "../darkModeContext";
+import { useDarkMode } from "../utils/DarkModeContext";
 
 const Contacts = () => {
   const [isAnimated, setIsAnimated] = useState(false);

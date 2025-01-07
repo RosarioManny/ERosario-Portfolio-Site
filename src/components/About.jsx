@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { theme } from "../styles/style";
 import { useEffect, useState } from "react";
-import { useDarkMode } from "../darkModeContext";
+import { useDarkMode } from "../utils/DarkModeContext";
 
 const About = () => {
   const [isDropdown, setIsDropdown] = useState(false);

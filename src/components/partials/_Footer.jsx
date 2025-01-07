@@ -1,6 +1,6 @@
 import { theme } from "../../styles/style";
 import { Link } from "react-router-dom";
-import { useDarkMode } from "../../darkModeContext";
+import { useDarkMode } from "../../utils/DarkModeContext";
 
 const Footer = () => {
   const { darkMode, toggleDarkMode } = useDarkMode();
