@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { theme } from "../../styles/style";
-import { useDarkMode } from "../../darkModeContext";
+import { useDarkMode } from "../../utils/DarkModeContext";
 import { useState, useEffect} from "react"
 
 const Whataduudle = () => {

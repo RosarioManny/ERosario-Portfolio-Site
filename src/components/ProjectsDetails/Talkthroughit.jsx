@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { theme } from "../../styles/style";
-import { useDarkMode } from "../../darkModeContext";
+import { useDarkMode } from "../../utils/DarkModeContext";
 import { useState, useEffect} from "react"
 
 const TalkThorughtit = () => {
@@ -36,7 +36,7 @@ return (
               </h2>
                 An app made to help therapist and clients keep track of connect and get better mental health. Therapist and clients have their own portals.
                 Therapist portal allows them to create dynamic schedules, accept bookings and list their services.
-                Clients can browse therapist, favorite ones they like, book appointments and view upcoming ones. 
+                Clients can browse therapist, favorites ones they like, book appointments and view upcoming ones. 
               </p>
               <hr className="m-2 border-[1px]" />
             <p>
