@@ -42,7 +42,7 @@ export const theme = {
   container: {
     default: "p-5 p m-4 border-[1px] border-frost",
     img: "p-3",
-    nav: "p-2 space-x-[125px] flex top-0 right-0 left-0",
+    nav: "p-2 justify-between items-center flex top-0 right-0 left-0",
     footer: "items-center mt-auto flex flex-col space-y-1 text-frost text-sm p-2 flex position-fixed ",
     socialsLogos: "bg-sunburst p-2",
     description: "text-frost mx-4 mb-6 flex ",
