@@ -32,23 +32,20 @@ export const theme = {
   },
   bodyText: {
     default: "text-frost text-balance",
-    card: "text-frost text-auto text-[13px]",
+    card: " text-frost text-auto text-[13px]",
   },
   // Containers
   card: {
-    projects: "max-w-sm overflow-hidden mx-4 my-6 hover:shadow-xl hover:border-solid hover:border-obsidian hover:border-4",
+    projects: "min-w-sm max-w-2xl box-border transition-all overflow-hidden mx-4 my-6 hover:shadow-xl hover:border-solid hover:border-frost hover:border-2",
     hover: ""
   },
   container: {
     default: "p-5 p m-4 border-[1px] border-frost",
     img: "p-3",
     nav: "sticky p-2 justify-between items-center flex top-0 right-0 left-0",
-    footer: "items-center mt-auto flex flex-col space-y-1 text-frost text-sm p-2 flex position-fixed ",
+    footer: "items-center text-frost text-sm p-2 grid  grid-cols-2 transition-all duration-500",
     socialsLogos: "bg-sunburst p-2",
     description: "text-frost mx-4 mb-6 flex ",
-    
-    // button: "bg-sunburst p-2 mb-2  w-fit m-5 hover:bg-midnight hover:text-frost transition duration-300 ease-in-out"
-    //  hover:bg-midnight hover:text-frost transition duration-300 ease-in-out
   },
   button: {
     default: "flex bg-sunburst w-fit p-2 mb-2 place-items-center inline-block py-1 text-sm font-bold",
@@ -68,8 +65,4 @@ export const theme = {
     bg: "bg-onyx",
     footer: "bg-charcoal"
   },
-  hover: {
-    default: "hover:bg-royal hover:text-frost hover:border-frost hover:border-2 transition-all duration-300 ease-in",
-    darkMode: "hover:bg-midnight hover:text-frost transition duration-300 ease-in-out",
-  } 
 }

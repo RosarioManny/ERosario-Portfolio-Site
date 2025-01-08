@@ -35,16 +35,18 @@ const Navbar = () =>  {
           <Link to="/home"> 
             E.R.
           </Link>
-          <div className="bg-white">
-            <div 
+          <div className="font-semibold transition-all duration-700 ">
+            <button 
               onClick={toggleDarkMode}
               className=
-              {`p-2 font-semibold transition-all duration-700 
+              {`p-2 rounded hover:border hover:border-frost hover:border-2
               ${darkMode ? "bg-midnight text-frost " : "bg-charcoal"} 
               `}
             >
+              <p>
               {darkMode ?  "Light Mode" : "Dark Mode"}
-            </div>
+              </p>
+            </button>
           </div>
           <div>
           {["projects", "contacts", "about"].map((link) => (
