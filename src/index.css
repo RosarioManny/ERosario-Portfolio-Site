@@ -13,5 +13,5 @@ White - EEF0F2
 
 body, html {
   overscroll-behavior: none;
-  overflow: auto;
+  /* overflow: auto; */
 }

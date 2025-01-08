@@ -35,15 +35,17 @@ const Navbar = () =>  {
           <Link to="/home"> 
             E.R.
           </Link>
-          <div className=" font-semibold transition-all duration-700 ">
+          <div className="font-semibold transition-all duration-700 ">
             <button 
               onClick={toggleDarkMode}
               className=
-              {`p-2 rounded
+              {`p-2 rounded hover:border hover:border-frost hover:border-2
               ${darkMode ? "bg-midnight text-frost " : "bg-charcoal"} 
               `}
             >
+              <p>
               {darkMode ?  "Light Mode" : "Dark Mode"}
+              </p>
             </button>
           </div>
           <div>
