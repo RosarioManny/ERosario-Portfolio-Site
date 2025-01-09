@@ -36,7 +36,7 @@ White - #EEF0F2
 
 .typewriter-title {
   width: 26ch;
-  animation: typing 2s steps(29), blink 1s step-end infinite ;
+  animation: typing 1.5s steps(29), blink 1s step-end infinite ;
   animation-delay: 2s; 
   border-right: 2px solid;
 }

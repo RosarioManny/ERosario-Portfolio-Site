@@ -83,13 +83,11 @@ const Home = () => {
               ${darkMode ? theme.dark.container : "bg-midnight"} my-16`
               }
             > 
-              <b>Hello,</b> 
-                <br/>
-                Welcome to my portfolio! As a passionate full-stack developer, I specialize in building dynamic, user-centered applications using <b>JavaScript, Python, HTML, and other key technologies.</b>
-                Dive into my projects to see how I bring ideas to life through code. Interested in learning more? Head over to the  <br/>
-                <Link to='/about' className={`font-semibold tranisition-color duration-500 ${ darkMode ? "text-tangerine hover:text-midnight" : "text-sunburst hover:text-skyline "}`}> 
+              <p className="text-2xl">Hello,</p>
+                Welcome to my portfolio! As a passionate full-stack developer, I specialize in building dynamic, user-centered applications using <b>JavaScript, Python, HTML, and other key technologies.</b> Dive 
+                into my projects to see how I bring ideas to life through code. Interested in learning more? Head over to the <Link to='/about' className={`font-semibold tranisition-color duration-500 ${ darkMode ? "text-tangerine hover:text-midnight" : "text-sunburst hover:text-skyline "}`}> 
                   About me page 
-                </Link> for my resume and further contact details. I look forward to collaborating on exciting new projects!"
+                </Link> for my resume and further contact details. I look forward to collaborating on exciting new projects with you or joining your team!"
             </p>
           </div>
       </section>

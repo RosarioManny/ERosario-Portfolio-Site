@@ -21,8 +21,13 @@ const Projects = () => {
   return (
     <>
       <section className="place-items-center">
-          <h1 className={`${theme.heading.default} ${darkMode && theme.dark.subheading} typewriter typewriter-projects`} 
-          style={{ visibility: isAnimated ? "visible" : "hidden" }}>
+        <h1 className={`
+          ${theme.heading.default} 
+          ${darkMode ? "text-tangerine" : "text-sunburst"} 
+          typewriter typewriter-projects`
+        } 
+          style={{ visibility: isAnimated ? "visible" : "hidden" }}
+        >
           Projects
         </h1>
         {isMobile ? (

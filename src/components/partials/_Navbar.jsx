@@ -32,15 +32,15 @@ const Navbar = () =>  {
       {isMobile ? (
         // Desktop View 
         <>
-          <Link to="/home" className="!text-lg"> 
+          <Link to="/" className="!text-lg"> 
             E.R.
           </Link>
           <div className="font-semibold transition-all duration-700 ">
             <button 
               onClick={toggleDarkMode}
               className=
-              {`p-2 rounded hover:border hover:border-frost hover:border-2
-              ${darkMode ? "bg-midnight text-frost " : "bg-charcoal"} 
+              {`p-2 rounded h-fit text-base hover:border hover:border-2
+              ${darkMode ? "bg-midnight text-frost hover:border-sunburst  " : "bg-frost text-onyx hover:border-tangerine "} 
               `}
             >
               <p>
@@ -66,7 +66,7 @@ const Navbar = () =>  {
       ) : (
         <> 
         {/* Mobile View  */}
-        <Link to="/home"> E.R.</Link>
+        <Link to="/"> E.R.</Link>
         <div 
           onClick={toggleDarkMode}
           className=
@@ -94,7 +94,7 @@ const Navbar = () =>  {
           key={link} 
           to={`/${link}`} 
           onClick={handleClick} 
-          className="hover:border-2 hover:border-glacier p-2"
+          className="hover:box-border hover:max-w-min hover:overflow-hidden hover:border-2 hover:border-glacier p-2"
         >
           {link.charAt(0).toUpperCase() + link.slice(1)}
         </Link>
