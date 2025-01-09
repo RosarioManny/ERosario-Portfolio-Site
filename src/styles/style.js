@@ -31,7 +31,7 @@ export const theme = {
     nav: "text-sunburst text-sm",
   },
   bodyText: {
-    default: "text-frost text-balance",
+    default: "text-frost text-base font-Pixelify",
     card: " text-frost text-auto text-[13px]",
   },
   // Containers

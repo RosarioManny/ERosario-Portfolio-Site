@@ -36,6 +36,7 @@ const Home = () => {
       <section className="flex-col">
         <div className="">
               <h1 className={`
+                
                   ${ isMobile ? 
                     `${theme.heading.home} text-8xl `
                     : 
@@ -46,7 +47,7 @@ const Home = () => {
                 `
                 }
               >
-                <p className="typewriter typewriter-firstname">Emmanuel</p> 
+                <p className="typewriter typewriter-firstname ">Emmanuel</p> 
                 <p className={`typewriter typewriter-lastname` }
                   style={{
                     visibility: nameAnimations.firstName ? "visible" : "hidden", 
