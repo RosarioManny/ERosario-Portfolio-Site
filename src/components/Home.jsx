@@ -34,7 +34,7 @@ const Home = () => {
   return(
     <section className="h-screen mx-9">
       <section className="flex-col">
-        <div className="">
+        <div>
               <h1 className={`
                 
                   ${ isMobile ? 
@@ -47,7 +47,7 @@ const Home = () => {
                 `
                 }
               >
-                <p className="typewriter typewriter-firstname ">Emmanuel</p> 
+                <p className="typewriter typewriter-firstname font-Pixelify ">Emmanuel</p> 
                 <p className={`typewriter typewriter-lastname` }
                   style={{
                     visibility: nameAnimations.firstName ? "visible" : "hidden", 

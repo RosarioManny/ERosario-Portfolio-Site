@@ -32,7 +32,7 @@ const Navbar = () =>  {
       {isMobile ? (
         // Desktop View 
         <>
-          <Link to="/home"> 
+          <Link to="/home" className="!text-lg"> 
             E.R.
           </Link>
           <div className="font-semibold transition-all duration-700 ">

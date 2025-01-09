@@ -16,7 +16,7 @@ const Footer = () => {
             <p className={` ${theme.heading.default} ${darkMode ? `!text-tangerine` : "" }`}>
               Emmanuel Rosario | Portfolio
             </p>
-          <p className={` py-3 text-center text-base ${isMobile ? "w-1/2" : ""}`}>
+          <p className={`${isMobile ? "w-1/2" : ""}`}>
             My personal website, created to showcase my skills and projects as a full-stack software developer. 
             See my credentials like resume, certifications, degrees and more. Contact me at the given socials and contacts. 
           </p> 

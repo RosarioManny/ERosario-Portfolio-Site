@@ -16,13 +16,12 @@ White - #EEF0F2
 .typewriter {
   white-space: nowrap;
   overflow: hidden;
-  font-family: monospace;
   /* animation: typing 2s steps(30), blink 1s step-end infinite; */
 }
 
 /* Specific classes for different text lengths and timings */
 .typewriter-firstname {
-  width: 8ch;
+  width: 8.5ch;
   border-right: 3px solid;
   animation: typing .7s steps(8), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout .5s 1s forwards;
 }
@@ -36,7 +35,7 @@ White - #EEF0F2
 }
 
 .typewriter-title {
-  width: 29.2ch;
+  width: 26ch;
   animation: typing 2s steps(29), blink 1s step-end infinite ;
   animation-delay: 2s; 
   border-right: 2px solid;

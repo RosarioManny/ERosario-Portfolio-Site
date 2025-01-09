@@ -19,20 +19,20 @@ Color Pallete:
 export const theme = {
   // Text
   heading: {
-    default: "text-sunburst text-3xl mt-6 font-semibold",
-    home: "text-frost text-7xl mt-20 mx-4 font-sans",
+    default: "text-sunburst text-3xl mt-6 font-Pixelify",
+    home: "text-frost text-7xl mt-20 mx-4 font-Pixelify",
     drkDefault: "text-tangerine",
     drkHome: "text-skyline"
   },
   subheading: {
-    default: "text-frost text-lg",
-    home: "text-sunburst text-xl my-2 mx-4",
+    default: "text-frost text-base font-Pixelify",
+    home: "text-sunburst text-xl my-2 mx-4 font-Pixelify",
     card: "font-bold text-xl mb-2 text-sunburst",
-    nav: "text-sunburst text-sm",
+    nav: "text-sunburst text-2xl font-Pixelify",
   },
   bodyText: {
-    default: "text-frost text-base font-Pixelify",
-    card: " text-frost text-auto text-[13px]",
+    default: "text-frost text-lg font-Pixelify",
+    card: "text-frost text-auto text-[13px] font-Pixelify",
   },
   // Containers
   card: {
@@ -43,8 +43,8 @@ export const theme = {
     default: "p-5 p m-4 border-[1px] border-frost",
     img: "p-3",
     nav: "sticky p-2 justify-between items-center flex top-0 right-0 left-0",
-    footer: "items-center text-frost text-sm p-2 grid  grid-cols-2 transition-all duration-500",
-    socialsLogos: "bg-sunburst p-2",
+    footer: "items-center text-frost text-base font-Pixelify p-2 grid  grid-cols-2 transition-all duration-500",
+    socialsLogos: "p-2",
     description: "text-frost mx-4 mb-6 flex ",
   },
   button: {
