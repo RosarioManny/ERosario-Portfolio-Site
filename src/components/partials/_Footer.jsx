@@ -9,11 +9,17 @@ const Footer = () => {
   
   return (
     <>
-      <div className={` space-y-4 grid grid-cols-1 justify-items-center  ${theme.container.footer} 
-            ${darkMode ? theme.dark.footer : "bg-midnight"}
-            `}>
+      <div className={` 
+        space-y-4 grid grid-cols-1 justify-items-center  
+        ${theme.container.footer} 
+        ${darkMode ? theme.lightMode.background : theme.darkMode.background}
+        `}
+      >
         <section className="place-items-center w-fit">
-            <p className={` ${theme.heading.default} ${darkMode ? `!text-tangerine` : "" }`}>
+            <p className={`
+              ${theme.heading.default} 
+              ${darkMode ? `!text-tangerine` : "" }`}
+            >
               Emmanuel Rosario | Portfolio
             </p>
           <p className={`${isMobile ? "w-1/2" : ""}`}>
@@ -27,7 +33,7 @@ const Footer = () => {
                 <h1 className="font-semibold text-lg py-2"> Socials:</h1>
                 <div className={` grid grid-cols-3 gap-2`}>
                   <Link to="https://www.instagram.com/it_sjustman.ny/">
-                  <img className="h-10 hover:animate-pulse" src="src/assets/Logos/Instagram_Glyph_White.png" alt="" />
+                    <img className="h-10 hover:animate-pulse" src="src/assets/Logos/Instagram_Glyph_White.png" alt="" />
                   </Link>
                   <Link to='https://github.com/RosarioManny'>
                     <img className="h-10 hover:animate-pulse" src="src/assets/Logos/github-mark-white.png" alt="" />

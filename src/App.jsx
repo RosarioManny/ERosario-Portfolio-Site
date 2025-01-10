@@ -29,7 +29,7 @@ function App() {
         <main >
           <div className={`
           min-h-screen transition-colors duration-300 flex flex-grow flex-col
-          ${darkMode ? theme.dark.bg : "bg-royal"}
+          ${darkMode ? theme.darkMode.background : theme.lightMode.background}
           `}>
             <Navbar element={Navbar} />
             <div className=''>

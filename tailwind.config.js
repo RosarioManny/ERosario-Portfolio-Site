@@ -10,7 +10,7 @@ export default {
       colors: {
         // vv Crash Site Colors
         sunburst: '#EEC643',
-        obsidian: '#141414',
+        aqua: '#97DBFF',
         frost: '#EEF0F2',
         royal: '#0D21A1',
         midnight: '#011638',
@@ -23,7 +23,7 @@ export default {
       },
       fontFamily: {
         Handjet: ['Handjet'],
-        Pixelify: ['Pixelify Sans']
+        Pixelify: ['Pixelify Sans, mono']
 
       }
     }

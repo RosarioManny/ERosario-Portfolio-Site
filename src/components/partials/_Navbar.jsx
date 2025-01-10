@@ -28,7 +28,11 @@ const Navbar = () =>  {
   }, [isToggled]);
 
   return (
-    <nav className={`${theme.container.nav} ${theme.subheading.nav} ${darkMode ? theme.dark.nav : "bg-midnight"} h-14 z-10 overflow`}>
+    <nav className={`
+      ${theme.container.nav} 
+      ${theme.subheading.nav} 
+      ${darkMode ? theme.darkMode.background : "bg-midnight"} h-14 z-10 overflow`}
+    >
       {isMobile ? (
         // Desktop View 
         <>
@@ -40,7 +44,7 @@ const Navbar = () =>  {
               onClick={toggleDarkMode}
               className=
               {`p-2 rounded h-fit text-base hover:border hover:border-2
-              ${darkMode ? "bg-midnight text-frost hover:border-sunburst  " : "bg-frost text-onyx hover:border-tangerine "} 
+              ${darkMode ? "" : ""} 
               `}
             >
               <p>
@@ -54,7 +58,7 @@ const Navbar = () =>  {
             key={link} 
             to={`/${link}`} 
             onClick={handleClick} 
-            className="hover:border-2 hover:border-glacier  p-2"
+            className=""
           >
             {link.charAt(0).toUpperCase() + link.slice(1)}
           </Link>

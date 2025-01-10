@@ -5,7 +5,7 @@ Color Pallete:
     Yellow    >  #EEC643    >  sunburst
     Dark Blue >  #011638    >  midnight
     Blue      >  #0D21A1    >  royal
-    Black     >  #141414    >  obsidian
+    Light Blue > #97DBFF    >  aqua
     White     >  #EEF0F2    >  frost
   Dark Mode:
     Color     -  Hex Code   -  Tailwind
@@ -24,13 +24,13 @@ export const theme = {
   },
   subheading: {
     default: "text-frost text-lg font-Pixelify transition-all duration-500",
-    home: "text-sunburst text-xl my-2 mx-4 font-Pixelify transition-all duration-500",
-    card: "font-bold text-xl mb-2 text-sunburst transition-all duration-500",
-    nav: "text-sunburst text-2xl font-Pixelify transition-all duration-500",
+    home: "text-xl my-2 mx-4 font-Pixelify transition-all duration-500",
+    card: "font-bold text-xl mb-2 transition-all duration-500",
+    nav: "text-2xl font-Pixelify transition-all duration-500",
   },
   bodyText: {
-    default: "text-frost text-lg font-Pixelify transition-all duration-500",
-    card: "text-frost text-auto text-[13px] font-Pixelify transition-all duration-500",
+    default: "text-lg font-Pixelify transition-all duration-500",
+    card: "text-auto text-[13px] font-Pixelify transition-all duration-500",
   },
   // Containers
   card: {
@@ -54,13 +54,17 @@ export const theme = {
   },
   // Colors
   lightMode: {
-    heading: "text-frost",
-    subheading: "text-frost",
-    bodyText: "text-frost",
-    background: "bg-midnight",
-
+    mainText: "text-frost",
+    highlight: "text-sunburst",
+    subheading: "text-aqua",
+    background: "bg-royal",
+    container: "bg-midnight"
   }, 
   darkMode: {
-    
+    mainText: "text-glacier",
+    subheading: "text-tangerine",
+    highlight: "text-skyline",
+    background: "bg-onyx",
+    container: "bg-charcoal"
   },
 }

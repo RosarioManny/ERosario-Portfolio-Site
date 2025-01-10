@@ -19,7 +19,7 @@ return (
   <>
     <section className="place-items-center">
     <h1 className={`${theme.heading.default}
-        ${darkMode && theme.dark.subheading}
+        ${darkMode ? "" : theme.dark.subheading }
         typewriter typewriter-projects-whataduudle`
         }
         style={{ visibility: isAnimated ? "visible" : "hidden", }}>
