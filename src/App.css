@@ -36,26 +36,26 @@ White - #EEF0F2
 
 .typewriter-title {
   width: 26ch;
-  animation: typing 1.5s steps(29), blink 1s step-end infinite ;
+  animation: typing 1.5s steps(26), blink 1s step-end infinite ;
   animation-delay: 2s; 
   border-right: 2px solid;
 }
 
 .typewriter-projects {
-  width: 8.1ch;
+  width: 8ch;
   animation: typing .7s steps(8), blink 1s step-end infinite ;
   border-right: 2px solid;
   animation-delay: .5s; 
 }
 .typewriter-projects-talkthroughit {
-  width: 15.2ch;
+  width: 13.6ch;
   animation: typing .8s steps(15), blink 1s step-end infinite ;
   border-right: 2px solid;
   animation-delay: .6s; 
 }
 
 .typewriter-projects-whataduudle {
-  width: 11.2ch;
+  width: 11ch;
   animation: typing 1s steps(11), blink 1s step-end infinite ;
   border-right: 2px solid;
   animation-delay: .6s; 

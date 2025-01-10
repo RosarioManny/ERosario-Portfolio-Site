@@ -12,7 +12,7 @@ const Footer = () => {
       <div className={` 
         space-y-4 grid grid-cols-1 justify-items-center  
         ${theme.container.footer} 
-        ${darkMode ? theme.lightMode.background : theme.darkMode.background}
+        ${darkMode ? theme.darkMode.container : theme.lightMode.container}
         `}
       >
         <section className="place-items-center w-fit">

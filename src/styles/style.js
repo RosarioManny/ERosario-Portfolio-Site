@@ -19,7 +19,7 @@ Color Pallete:
 export const theme = {
   // Text
   heading: {
-    default: "text-3xl mt-6 font-Pixelify transition-colors duration-500",
+    default: "text-4xl mt-6 font-Pixelify transition-colors duration-500",
     home: "text-frost text-7xl mt-20 mx-4 font-Pixelify transition-colors duration-500",
   },
   subheading: {
@@ -46,7 +46,7 @@ export const theme = {
   },
   button: {
     default: "flex w-fit p-3 rounded mb-2 place-items-center inline-block py-1 text-base font-Pixelify transition-all duration-500",
-    largeButton: "flex justify-center gap-2  place-items-center  inline-block bg-sunburst py-1 text-sm font-bold text-midnight transition-all duration-500"
+    largeButton: "flex justify-center gap-2  place-items-center inline-block  py-1 text-sm font-bold transition-all duration-500"
   }, 
   navMenu: {
     burger: "bg-sunburst transition-all duration-300 ease-in-out transform h-1 w-7",
@@ -55,16 +55,18 @@ export const theme = {
   // Colors
   lightMode: {
     mainText: "text-frost",
-    highlight: "text-sunburst",
-    subheading: "text-aqua",
+    subheading: "text-sunburst",
+    highlight: "text-aqua",
     background: "bg-royal",
-    container: "bg-midnight"
+    container: "bg-midnight",
+    button: "bg-sunburst text-midnight"
   }, 
   darkMode: {
     mainText: "text-glacier",
     subheading: "text-tangerine",
     highlight: "text-skyline",
     background: "bg-onyx",
-    container: "bg-charcoal"
+    container: "bg-charcoal",
+    button: "bg-tangerine text"
   },
 }

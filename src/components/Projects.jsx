@@ -41,8 +41,17 @@ const Projects = () => {
                   alt={project.alt}
                 />
               </Link>
-              <div className={`${theme.container.img} ${theme.bodyText.card} ${darkMode ? theme.dark.container : "bg-midnight"}`}>
-                <div className={`${theme.subheading.card} ${darkMode && theme.dark.subheading}`}>
+              <div className={`
+                ${theme.container.img} 
+                ${theme.bodyText.card} 
+                ${darkMode ? `${theme.darkMode.container } ${theme.darkMode.mainText}`: `${theme.lightMode.container } ${theme.lightMode.mainText}`}`
+                }
+              >
+                <div className={`
+                  ${theme.subheading.card} 
+                  ${darkMode ? theme.darkMode.subheading :  theme.lightMode.subheading}`
+                  }
+                >
                   {project.name}
                 </div>
                   <p>{project.description}</p>

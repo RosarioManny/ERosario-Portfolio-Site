@@ -61,7 +61,7 @@ const Home = () => {
             :
             `${theme.subheading.home}`
           }
-          ${darkMode ? theme.darkMode.highlight : theme.lightMode.highlight}`
+          ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading}`
           }
         >
         <h3 className="">

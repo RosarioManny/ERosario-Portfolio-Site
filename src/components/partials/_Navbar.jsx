@@ -29,9 +29,15 @@ const Navbar = () =>  {
 
   return (
     <nav className={`
-      ${theme.container.nav} 
-      ${theme.subheading.nav} 
-      ${darkMode ? theme.darkMode.background : "bg-midnight"} h-14 z-10 overflow`}
+        h-14 z-10 overflow
+        ${theme.container.nav} 
+        ${theme.subheading.nav} 
+        ${darkMode ? 
+          `${theme.darkMode.container} ${theme.darkMode.subheading}`
+          : 
+          `${theme.lightMode.container} ${theme.lightMode.subheading}`
+        } 
+      `}
     >
       {isMobile ? (
         // Desktop View 
@@ -44,7 +50,7 @@ const Navbar = () =>  {
               onClick={toggleDarkMode}
               className=
               {`p-2 rounded h-fit text-base hover:border hover:border-2
-              ${darkMode ? "" : ""} 
+              ${darkMode ?  `${theme.darkMode.background}`:`${theme.lightMode.background}` } 
               `}
             >
               <p>
@@ -58,7 +64,14 @@ const Navbar = () =>  {
             key={link} 
             to={`/${link}`} 
             onClick={handleClick} 
-            className=""
+            className={`
+              p-3
+              ${darkMode ? 
+                "hover:text-skyline"
+                : 
+                "hover:text-aqua"
+              }`
+            }
           >
             {link.charAt(0).toUpperCase() + link.slice(1)}
           </Link>
@@ -71,22 +84,22 @@ const Navbar = () =>  {
         <> 
         {/* Mobile View  */}
         <Link to="/"> E.R.</Link>
-        <div 
-          onClick={toggleDarkMode}
-          className=
-          {` w-6 h-6 p-[2px] text-center text-sm rounded-full font-semibold transition-all duration-700 
-          ${darkMode ? "bg-midnight text-frost " : "bg-charcoal"} 
-          `}
-        >
-          {darkMode ?  "L" : "D"}
-        </div>
+          <div 
+            onClick={toggleDarkMode}
+            className=
+            {` w-6 h-6 p-[2px] text-center text-sm rounded-full font-semibold transition-all duration-700 
+            ${darkMode ? "bg-midnight text-frost " : "bg-charcoal"} 
+            `}
+          >
+            {darkMode ?  "L" : "D"}
+          </div>
         {/* Burger */}
         <button onClick={handleClick} className="relative flex flex-col justify-center items-center space-y-1 p-2 z-10">
           <BurgerLine isToggled={isToggled} darkMode={darkMode} index={1} />
           <BurgerLine isToggled={isToggled} darkMode={darkMode} index={2} />
           <BurgerLine isToggled={isToggled} darkMode={darkMode} index={3} />
         </button>
-      {/* Off-screen menu */}
+        {/* Off-screen menu */}
         <div 
           className={`
           ${theme.navMenu.offScreen} 
