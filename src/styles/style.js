@@ -34,7 +34,7 @@ export const theme = {
   },
   // Containers
   card: {
-    projects: "min-w-sm max-w-2xl box-border transition-all overflow-hidden mx-4 my-6 hover:shadow-xl hover:border-solid hover:border-frost hover:border-2",
+    projects: "min-w-sm max-w-2xl box-border transition-all overflow-hidden mx-4 my-6",
   },
   container: {
     default: "p-3 p m-4 border-[1px] border-frost transition-all duration-500",
@@ -59,7 +59,9 @@ export const theme = {
     highlight: "text-aqua",
     background: "bg-royal",
     container: "bg-midnight",
-    button: "bg-sunburst text-midnight"
+    button: "bg-sunburst text-midnight",
+    hoverCard: "hover:shadow-2xl hover:border-solid hover:border-aqua hover:border-2",
+    hoverText: "hover:text-aqua"
   }, 
   darkMode: {
     mainText: "text-glacier",
@@ -67,6 +69,8 @@ export const theme = {
     highlight: "text-skyline",
     background: "bg-onyx",
     container: "bg-charcoal",
-    button: "bg-tangerine text"
+    button: "bg-tangerine text",
+    hoverCard: "hover:shadow-2xl hover:border-solid hover:border-skyline hover:border-2",
+    hoverText: "hover:text-skyline"
   },
 }

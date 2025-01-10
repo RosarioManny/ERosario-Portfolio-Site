@@ -62,7 +62,7 @@ return (
             </p>
               <hr className="m-2 border-[1px]" />
             <p>
-              <b>Tech Stack:</b>
+              Tech Stack:
             </p>
               <div className="flex flex-cols space-x-10 justify-center my-3">
                 <img className="h-12" src="../src/assets/Logos/js.png"/>

@@ -30,6 +30,7 @@ const Projects = () => {
         >
           Projects
         </h1>
+        {/* Desktop View */}
         {isMobile ? (
         <section className="grid grid-cols-2 max-w-6xl">
           {projects.map((project, index) => (
@@ -60,6 +61,7 @@ const Projects = () => {
           ))}
         </section>
         ) : (
+          // Mobile View
           <section className="">
           {projects.map((project, index) => (
             <div key={index} className={`${theme.card.projects} `}>
