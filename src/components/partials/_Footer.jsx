@@ -10,13 +10,14 @@ const Footer = () => {
   return (
     <>
       <div className={` 
-        space-y-4 grid grid-cols-1 justify-items-center  
+        space-y-4 grid grid-cols-1 justify-items-center py-5
         ${theme.container.footer} 
         ${darkMode ? theme.darkMode.container : theme.lightMode.container}
         `}
       >
         <section className="place-items-center w-fit">
             <p className={`
+            py-2
               ${theme.heading.default} 
               ${darkMode ? `!text-tangerine` : "" }`}
             >
@@ -30,8 +31,8 @@ const Footer = () => {
           {isMobile ? 
             (
               <div className="text-center py-2">
-                <h1 className="font-semibold text-lg py-2"> Socials:</h1>
-                <div className={` grid grid-cols-3 gap-2`}>
+                <h1 className="font-semibold text-2xl py-4"> Socials:</h1>
+                <div className={`grid grid-cols-3 gap-7`}>
                   <Link to="https://www.instagram.com/it_sjustman.ny/">
                     <img className="h-10 hover:animate-pulse" src="src/assets/Logos/Instagram_Glyph_White.png" alt="" />
                   </Link>
@@ -49,9 +50,13 @@ const Footer = () => {
               <p></p>  
             )
           }
-            <button className={` 
-              inline-flex justify-center p-1 
-              ${darkMode ?  "bg-tangerine text-charcoal" : "text-xs bg-sunburst text-midnight"}
+            <button className={`
+            !px-4
+              ${theme.button.default}
+              ${darkMode ?  
+                `${theme.darkMode.button} hover:bg` 
+                : 
+                `${theme.lightMode.button} hover:bg-royal hover:text-sunburst` }
               ${isMobile ? "w-1/4" : "w-1/2"}`
               }
               >

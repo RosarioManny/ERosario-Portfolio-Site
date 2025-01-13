@@ -34,7 +34,7 @@ export const theme = {
   },
   // Containers
   card: {
-    projects: "min-w-sm max-w-2xl box-border transition-all overflow-hidden mx-4 my-6",
+    projects: "min-w-sm max-w-2xl h-min box-border transition-all overflow-hidden mx-4 my-6",
   },
   container: {
     default: "p-3 p m-4 border-[1px] border-frost transition-all duration-500",
@@ -45,8 +45,8 @@ export const theme = {
     description: "text-frost mx-4 mb-6 flex ",
   },
   button: {
-    default: "flex w-fit p-3 rounded mb-2 place-items-center inline-block py-1 text-base font-Pixelify transition-all duration-500",
-    largeButton: "flex justify-center gap-2  place-items-center inline-block  py-1 text-sm font-bold transition-all duration-500"
+    default: "flex w-fit p-3 rounded mb-2 place-items-center inline-block py-1 text-base font-Pixelify transition-color duration-500",
+    largeButton: "flex justify-center gap-2  place-items-center inline-block  py-1 text-sm font-bold transition-color duration-500"
   }, 
   navMenu: {
     burger: "bg-sunburst transition-all duration-300 ease-in-out transform h-1 w-7",
@@ -61,6 +61,7 @@ export const theme = {
     container: "bg-midnight",
     button: "bg-sunburst text-midnight",
     hoverCard: "hover:shadow-2xl hover:border-solid hover:border-aqua hover:border-2",
+    hoverButton: "hover:box-border hover:bg-midnight hover:text-sunburst ",
     hoverText: "hover:text-aqua"
   }, 
   darkMode: {
@@ -69,8 +70,9 @@ export const theme = {
     highlight: "text-skyline",
     background: "bg-onyx",
     container: "bg-charcoal",
-    button: "bg-tangerine text",
+    button: "bg-tangerine text-onyx",
     hoverCard: "hover:shadow-2xl hover:border-solid hover:border-skyline hover:border-2",
+    hoverButton: "hover:box-border hover:bg-charcoal hover:text-tangerine ",
     hoverText: "hover:text-skyline"
   },
 }

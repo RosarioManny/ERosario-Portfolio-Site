@@ -51,7 +51,14 @@ const About = () => {
           About Me 
         </h1>
         <div>
-          <p className={`${theme.bodyText.default} ${theme.container.default}  ${darkMode ? "bg-charcoal" : "bg-midnight"}`}>
+          <p className={`
+            ${theme.bodyText.default} 
+            ${theme.container.default}  
+            ${darkMode ? 
+              `${theme.darkMode.mainText} ${theme.darkMode.container}` 
+              : 
+              `${theme.lightMode.mainText} ${theme.lightMode.container}`}`}
+          >
             Creativity has always driven my journey from artist to software engineer. In the art world, I learned to approach challenges from different perspectives, pushing the boundaries of my work. 
             That same mindset led me to explore software engineering, where I apply creative thinking to technology. In my transition to full-stack software engineering, 
             I’ve developed strong technical expertise in JavaScript, React, Node.js, Python, and MongoDB, among other technologies.
@@ -87,7 +94,10 @@ const About = () => {
         </div>
         <div className={`
           ${theme.button.default}
-          ${darkMode ? "bg-charcoal text-tangerine" : "bg-midnight text-sunburst"} 
+          ${darkMode ? 
+            `${theme.darkMode.button} ${theme.darkMode.hoverButton}` 
+            : 
+            `${theme.lightMode.button}  ${theme.lightMode.hoverButton}`} 
           `}
           >
           <button

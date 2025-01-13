@@ -80,12 +80,15 @@ const Home = () => {
               my-16
               ${theme.bodyText.default} 
               ${theme.container.default} 
-              ${darkMode ? `${theme.darkMode.container} ${theme.darkMode.mainText}` : `${theme.lightMode.container} ${theme.lightMode.mainText}`} `
-              }
-            > 
+              ${darkMode ? 
+                `${theme.darkMode.container} ${theme.darkMode.mainText}` 
+                : 
+                `${theme.lightMode.container} ${theme.lightMode.mainText}`} `
+            }> 
               <p className="text-2xl ">Hello,</p>
                 Welcome to my portfolio! As a passionate full-stack developer, I specialize in building dynamic, user-centered applications using <b>JavaScript, Python, HTML, and other key technologies.</b> Dive 
-                into my projects to see how I bring ideas to life through code. Interested in learning more? Head over to the <Link to='/about' className={`font-semibold tranisition-color duration-500 ${ darkMode ? theme.darkMode.highlight : theme.lightMode.highlight}`}> 
+                into my projects to see how I bring ideas to life through code. Interested in learning more? 
+                Head over to the <Link to='/about' className={`font-semibold tranisition-color duration-500 ${ darkMode ? `${theme.darkMode.highlight} hover:text-tangerine` : `${theme.lightMode.highlight} hover:text-sunburst`}`}> 
                   About me page 
                 </Link> for my resume and further contact details. I look forward to collaborating on exciting new projects with you or joining your team!"
             </p>

@@ -49,8 +49,11 @@ const Navbar = () =>  {
             <button 
               onClick={toggleDarkMode}
               className=
-              {`p-2 rounded h-fit text-base hover:border hover:border-2
-              ${darkMode ?  `${theme.darkMode.background}`:`${theme.lightMode.background}` } 
+              {`p-2 rounded h-fit text-base 
+              ${darkMode ?  
+                `${theme.darkMode.background} hover:border hover:border-2 hover:border-skyline`
+                :
+                `${theme.lightMode.background} hover:border hover:border-2 hover:border-skyline` } 
               `}
             >
               <p>
@@ -67,9 +70,9 @@ const Navbar = () =>  {
             className={`
               p-3
               ${darkMode ? 
-                "hover:text-skyline"
+                theme.darkMode.hoverText
                 : 
-                "hover:text-aqua"
+                theme.lightMode.hoverText
               }`
             }
           >
