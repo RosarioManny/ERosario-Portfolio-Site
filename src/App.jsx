@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import { Routes, Route } from 'react-router-dom'
 import { theme } from './styles/style'
 import { DarkModeContext } from './utils/DarkModeContext'
@@ -14,11 +14,10 @@ import Artfolio from './components/ProjectsDetails/Artfolio'
 import Whataduudle from './components/ProjectsDetails/Whataduudle'
 import Talkthroughit from './components/ProjectsDetails/Talkthroughit'
 
-// darkMode={darkMode} onDarkModeToggle={() => setDarkMode(!darkMode)} 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
 
-
+ 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
   };

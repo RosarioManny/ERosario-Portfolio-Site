@@ -45,7 +45,7 @@ export const theme = {
     description: "text-frost mx-4 mb-6 flex ",
   },
   button: {
-    default: "flex w-fit p-3 rounded mb-2 place-items-center inline-block py-1 text-base font-Pixelify transition-color duration-500",
+    default: "flex w-fit p-3 rounded mb-2 py-1 text-base font-Pixelify transition-color duration-500",
     largeButton: "flex justify-center gap-2  place-items-center inline-block  py-1 text-sm font-bold transition-color duration-500"
   }, 
   navMenu: {
