@@ -2,11 +2,13 @@ import { Link } from "react-router-dom";
 import { theme } from "../styles/style";
 import { useEffect, useState } from "react";
 import { useDarkMode } from "../utils/DarkModeContext";
+import { useResponsive } from "../utils/ResponsiveContext";
 
 const About = () => {
   const [isDropdown, setIsDropdown] = useState(false);
   const [isAnimated, setIsAnimated] = useState(false);
   const { darkMode, toggleDarkMode } = useDarkMode(); 
+  const isMobile = useResponsive();
 
   const logos = [
     { src: 'src/assets/Logos/js.png', alt: 'JavaScript Logo', delay: 150},
@@ -24,7 +26,7 @@ const About = () => {
     { src: 'src/assets/Logos/icons8-postgresql-96.png', alt: 'PostgreSQL Logo', delay: 500},
   ]
 
-  const topThreeLogos = 3;
+  const topThreeLogos = isMobile ? "4" : "3"
   const handleClick = () => {
     setIsDropdown(!isDropdown)
   }
@@ -40,14 +42,23 @@ const About = () => {
   return(
     <>
       <section className="place-items-center">
-      <h1 className={`${theme.heading.default} 
+      <h1 className={`
+        ${theme.heading.default} 
+        ${darkMode ? "text-tangerine" : "text-sunburst"} 
         typewriter typewriter-projects`
         }
         style={{ visibility: isAnimated ? "visible" : "hidden", }}>
           About Me 
         </h1>
         <div>
-          <p className={`${theme.bodyText.default} ${theme.container.default}  ${darkMode ? "bg-charcoal" : "bg-midnight"}`}>
+          <p className={`
+            ${theme.bodyText.default} 
+            ${theme.container.default}  
+            ${darkMode ? 
+              `${theme.darkMode.mainText} ${theme.darkMode.container}` 
+              : 
+              `${theme.lightMode.mainText} ${theme.lightMode.container}`}`}
+          >
             Creativity has always driven my journey from artist to software engineer. In the art world, I learned to approach challenges from different perspectives, pushing the boundaries of my work. 
             That same mindset led me to explore software engineering, where I apply creative thinking to technology. In my transition to full-stack software engineering, 
             I’ve developed strong technical expertise in JavaScript, React, Node.js, Python, and MongoDB, among other technologies.
@@ -59,7 +70,9 @@ const About = () => {
         <div className={`
         ${theme.container.default} 
         ${theme.bodyText.default} 
-        overflow-hidden grid grid-cols-3 gap-9 transform ease-in-out duration-700 
+        overflow-hidden transform ease-in-out grid gap-9 duration-700  
+        ${isMobile ? "grid-cols-4" : "grid-cols-3"}
+        
         ${darkMode ? "bg-charcoal" : "bg-midnight"}
         ${isDropdown ? 'max-h-[800px]' : 'max-h-28'} `}
         >
@@ -68,7 +81,7 @@ const About = () => {
             return (
               <img 
               key={logo.alt}
-              className={`h-18 transition-opacity duration-300 ease-in overflow-hidden ${
+              className={`h-20 transition-opacity duration-300 ease-in overflow-hidden ${
                 !visible ? `delay-${logo.delay} ${isDropdown ? 'opacity-100' : 'opacity-0'}` : ''}
                 `
               }
@@ -79,7 +92,14 @@ const About = () => {
             })
           }
         </div>
-        <div className={`${theme.container.button}`}>
+        <div className={`
+          ${theme.button.default}
+          ${darkMode ? 
+            `${theme.darkMode.button} ${theme.darkMode.hoverButton}` 
+            : 
+            `${theme.lightMode.button}  ${theme.lightMode.hoverButton}`} 
+          `}
+          >
           <button
           onClick={handleClick}
           >

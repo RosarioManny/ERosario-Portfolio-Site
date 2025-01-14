@@ -6,6 +6,7 @@ Blue - 0D21A1
 Black - 141414
 White - EEF0F2 
 */
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -13,5 +14,4 @@ White - EEF0F2
 
 body, html {
   overscroll-behavior: none;
-  /* overflow: auto; */
 }

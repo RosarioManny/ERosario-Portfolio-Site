@@ -21,14 +21,27 @@ const Projects = () => {
   return (
     <>
       <section className="place-items-center">
-          <h1 className={`${theme.heading.default} ${darkMode && theme.dark.subheading} typewriter typewriter-projects`} 
-          style={{ visibility: isAnimated ? "visible" : "hidden" }}>
+        <h1 className={`
+          ${theme.heading.default} 
+          ${darkMode ? "text-tangerine" : "text-sunburst"} 
+          typewriter typewriter-projects`
+        } 
+          style={{ visibility: isAnimated ? "visible" : "hidden" }}
+        >
           Projects
         </h1>
+        {/* Desktop View */}
         {isMobile ? (
         <section className="grid grid-cols-2 max-w-6xl">
           {projects.map((project, index) => (
-            <div key={index} className={`${theme.card.projects} `}>
+            <div key={index} className={`
+            ${theme.card.projects} 
+            ${darkMode ? 
+              `${theme.darkMode.hoverCard}`
+              : 
+              `${theme.lightMode.hoverCard}`}
+            `
+        }>
               <Link to={project.link}>
                 <img 
                   className="w-full"
@@ -36,8 +49,19 @@ const Projects = () => {
                   alt={project.alt}
                 />
               </Link>
-              <div className={`${theme.container.img} ${theme.bodyText.card} ${darkMode ? theme.dark.container : "bg-midnight"}`}>
-                <div className={`${theme.subheading.card} ${darkMode && theme.dark.subheading}`}>
+              <div className={`
+                ${theme.container.img} 
+                ${theme.bodyText.card} 
+                ${darkMode ? 
+                  `${theme.darkMode.container } ${theme.darkMode.mainText} `
+                  : 
+                  `${theme.lightMode.container } ${theme.lightMode.mainText}`}`
+              }>
+                <div className={`
+                  ${theme.subheading.card} 
+                  ${darkMode ? theme.darkMode.subheading :  theme.lightMode.subheading}`
+                  }
+                >
                   {project.name}
                 </div>
                   <p>{project.description}</p>
@@ -46,6 +70,7 @@ const Projects = () => {
           ))}
         </section>
         ) : (
+          // Mobile View
           <section className="">
           {projects.map((project, index) => (
             <div key={index} className={`${theme.card.projects} `}>
@@ -56,8 +81,15 @@ const Projects = () => {
                   alt={project.alt}
                 />
               </Link>
-              <div className={`${theme.container.img} ${theme.bodyText.card} ${darkMode ? theme.dark.container : "bg-midnight"}`}>
-                <div className={`${theme.subheading.card} ${darkMode && theme.dark.subheading}`}>
+              <div className={`
+                ${theme.container.img} 
+                ${theme.bodyText.card} 
+                ${darkMode ? 
+                theme.darkMode.container 
+                : 
+                theme.lightMode.container}`
+              }>
+                <div>
                   {project.name}
                 </div>
                 <p>{project.description}</p>
