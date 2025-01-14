@@ -5,7 +5,7 @@ import { useDarkMode } from "../utils/DarkModeContext";
 import { useResponsive } from "../utils/ResponsiveContext";
 
 const ANIMATION_TIMING = {
-  firstName: 901,
+  firstName: 801,
   lastName: 2001
 };
 
@@ -46,9 +46,11 @@ const Home = () => {
               `
               }
             >
-              <p className="typewriter typewriter-firstname font-Pixelify ">Emmanuel</p> 
+              <p className="typewriter typewriter-firstname font-Pixelify ">
+                Emmanuel
+              </p> 
               <p className={`typewriter typewriter-lastname` }
-                  tyle={{
+                  style={{
                   visibility: nameAnimations.firstName ? "visible" : "hidden", 
                 }}
                 >

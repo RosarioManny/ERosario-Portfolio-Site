@@ -8,7 +8,6 @@ const Footer = () => {
   const isMobile = useResponsive();
   
   return (
-    <>
       <div className={` 
         space-y-4 grid grid-cols-1 justify-items-center py-5
         ${theme.container.footer} 
@@ -17,9 +16,8 @@ const Footer = () => {
       >
         <section className="place-items-center w-fit">
             <p className={`
-            py-2
               ${theme.heading.default} 
-              ${darkMode ? `!text-tangerine` : "" }`}
+              ${darkMode ? `${theme.darkMode.subheading}` : `${theme.lightMode.subheading}` }`}
             >
               Emmanuel Rosario | Portfolio
             </p>
@@ -28,10 +26,8 @@ const Footer = () => {
             See my credentials like resume, certifications, degrees and more. Contact me at the given socials and contacts. 
           </p> 
         </section>
-          {isMobile ? 
-            (
               <div className="text-center py-2">
-                <h1 className="font-semibold text-2xl py-4"> Socials:</h1>
+                <h1 className={`font-semibold text-2xl py-4 ${darkMode ? `${theme.darkMode.highlight}`:`${theme.lightMode.highlight}`}`}> Socials:</h1>
                 <div className={`grid grid-cols-3 gap-7`}>
                   <Link to="https://www.instagram.com/it_sjustman.ny/">
                     <img className="h-10 hover:animate-pulse" src="src/assets/Logos/Instagram_Glyph_White.png" alt="" />
@@ -44,22 +40,15 @@ const Footer = () => {
                   </Link>
                 </div>
               </div>
-            ) 
-            : 
-            (
-              <p></p>  
-            )
-          }
             <button className={`
-            !px-4
+              !px-4
               ${theme.button.default}
               ${darkMode ?  
                 `${theme.darkMode.button} hover:bg` 
                 : 
                 `${theme.lightMode.button} hover:bg-royal hover:text-sunburst` }
               ${isMobile ? "w-1/4" : "w-1/2"}`
-              }
-              >
+            }>
               <Link to="https://github.com/RosarioManny/My-Website.git" className="font-semibold"> 
                 Website Code
               </Link>
@@ -68,7 +57,6 @@ const Footer = () => {
             Created by: Emmanuel Rosario 
           </div>
       </div>
-    </>
   )
 }
 

@@ -29,14 +29,19 @@ const Contacts = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, e.target, process.env.REACT_APP_PUBLIC_KEY)
+    emailjs.sendForm(
+      process.env.REACT_APP_SERVICE_ID, 
+      process.env.REACT_APP_TEMPLATE_ID, 
+      e.target, 
+      process.env.REACT_APP_PUBLIC_KEY
+    )
     .then((result) => {
       alert('Message Sent Successfully!');
     }, (error) => {
       alert('Message Failed to Send.');
     });
 
-    e.target.reset(); // Optional: Reset form after submission
+    e.target.reset(); 
   };
   useEffect(() => {
     const timer = setTimeout(() => {

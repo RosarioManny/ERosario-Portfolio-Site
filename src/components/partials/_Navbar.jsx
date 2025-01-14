@@ -39,12 +39,12 @@ const Navbar = () =>  {
         } 
       `}
     >
+          <Link to="/" className="text-2xl"> 
+            E.R.
+          </Link>
       {isMobile ? (
         // Desktop View 
         <>
-          <Link to="/" className="!text-lg"> 
-            E.R.
-          </Link>
           <div className="font-semibold transition-all duration-700 ">
             <button 
               onClick={toggleDarkMode}
@@ -86,7 +86,6 @@ const Navbar = () =>  {
       ) : (
         <> 
         {/* Mobile View  */}
-        <Link to="/"> E.R.</Link>
           <div 
             onClick={toggleDarkMode}
             className=
@@ -128,7 +127,7 @@ const Navbar = () =>  {
 }
 
 const BurgerLine = ({ isToggled, darkMode, index }) => {
-  const lineClass = `block h-1 w-6 transition-transform duration-300 ease-in-out ${theme.navMenu.burger} ${darkMode && theme.dark.burger}`;
+  const lineClass = `block h-1 w-6 transition-transform duration-300 ease-in-out ${theme.navMenu.burger} ${darkMode ? theme.darkMode.button : ""}`;
   const transforms = [
     isToggled ? "rotate-45 translate-y-2" : "",
     isToggled ? "opacity-0" : "opacity-100",
