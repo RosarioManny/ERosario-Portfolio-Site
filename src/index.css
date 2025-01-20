@@ -12,6 +12,6 @@ White - EEF0F2
 @tailwind components;
 @tailwind utilities;
 
-body, html {
+body {
   overscroll-behavior: none;
 }

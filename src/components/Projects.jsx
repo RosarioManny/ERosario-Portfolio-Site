@@ -30,9 +30,7 @@ const Projects = () => {
         >
           Projects
         </h1>
-        {/* Desktop View */}
-        {isMobile ? (
-        <section className="grid grid-cols-2 max-w-6xl">
+        <section className={isMobile ? "grid grid-cols-2 max-w-6xl" : ""}>
           {projects.map((project, index) => (
             <div key={index} className={`
             ${theme.card.projects} 
@@ -41,7 +39,7 @@ const Projects = () => {
               : 
               `${theme.lightMode.hoverCard}`}
             `
-        }>
+            }>
               <Link to={project.link}>
                 <img 
                   className="w-full"
@@ -69,36 +67,6 @@ const Projects = () => {
             </div>
           ))}
         </section>
-        ) : (
-          // Mobile View
-          <section className="">
-          {projects.map((project, index) => (
-            <div key={index} className={`${theme.card.projects} `}>
-              <Link to={project.link}>
-                <img 
-                  className="w-full"
-                  src={project.image}
-                  alt={project.alt}
-                />
-              </Link>
-              <div className={`
-                ${theme.container.img} 
-                ${theme.bodyText.card} 
-                ${darkMode ? 
-                theme.darkMode.container 
-                : 
-                theme.lightMode.container}`
-              }>
-                <div>
-                  {project.name}
-                </div>
-                <p>{project.description}</p>
-              </div>
-            </div>
-          ))}
-        </section>
-        )}
-        
       </section>
     </>
   )

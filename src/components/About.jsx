@@ -109,7 +109,7 @@ const About = () => {
         <h2 className={`${theme.subheading.default}`}>Resume:</h2>
           <div className="m-9">
             <img className={`${theme.container.img}  ${darkMode ? "bg-charcoal" : "bg-midnight"}`} 
-            src="src/assets/Resume_2024.jpg" 
+            src="src/assets/Rosario_Emmanuel_Resume_2025.jpg" 
             alt="Emmanuel Rosario's Resume" 
           />
           </div>

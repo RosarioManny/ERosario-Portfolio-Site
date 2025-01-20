@@ -134,6 +134,11 @@ return (
             </h2>
             Where users can upload their artworks, edit their profile and view their works. They can go into the artworks and see the art's details.
           </p>
+          <div className="flex justify-end mt-3">
+            <Link to="/projects" className={`${theme.button.default} ${darkMode ? `${theme.darkMode.button}` : `${theme.lightMode.button}`}`}> 
+              Back To Projects
+            </Link>
+          </div>
         </div>
     </section>
   </div>

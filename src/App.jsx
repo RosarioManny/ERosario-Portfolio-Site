@@ -16,8 +16,6 @@ import Talkthroughit from './components/ProjectsDetails/Talkthroughit'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-
- 
   const toggleDarkMode = () => {
     setDarkMode(!darkMode)
   };

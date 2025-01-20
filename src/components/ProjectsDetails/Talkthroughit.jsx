@@ -128,6 +128,11 @@ return (
             </h2>
             The page where clients and Therapist can view. You can book appointments and favorite on this page. 
           </p>
+          <div className="flex justify-end mt-3">
+            <Link to="/projects" className={`${theme.button.default} ${darkMode ? `${theme.darkMode.button}` : `${theme.lightMode.button}`}`}> 
+              Back To Projects
+            </Link>
+          </div>
         </div>
     </section>
   </div>

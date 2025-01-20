@@ -14,18 +14,6 @@ const Navbar = () =>  {
     setIsToggle(!isToggled)
   }
   
-  useEffect(() => {
-    if (isToggled) {
-       // Disable scrolling
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "auto"; 
-    }
-    return () => {
-      // Cleanup when component is unmounted or state changes
-      document.body.style.overflow = "auto"; // Ensure scrolling is re-enabled
-    };
-  }, [isToggled]);
 
   return (
     <nav className={`
@@ -66,7 +54,7 @@ const Navbar = () =>  {
           <Link 
             key={link} 
             to={`/${link}`} 
-            onClick={handleClick} 
+            // onClick={handleClick} 
             className={`
               p-3
               ${darkMode ? 

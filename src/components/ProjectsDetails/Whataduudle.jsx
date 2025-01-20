@@ -63,7 +63,7 @@ return (
             </p>
               <hr className="m-2 border-[1px]" />
             <p>
-              <b>Tech Stack:</b>
+              Tech Stack:
             </p>
             <div className="flex flex-cols space-x-10 justify-center my-3">
               <img className="h-12" src="../src/assets/Logos/icons8-python-96.png"/>
@@ -130,7 +130,13 @@ return (
               Drawing Phase
             </h2>
             This is where the game takes place. The user now has 20 seconds to draw on the canvas. 
-            Let's hope that the AI can identify your drawing as the word given.          </p>
+            Let's hope that the AI can identify your drawing as the word given. 
+          </p>
+          <div className="flex justify-end mt-3">
+            <Link to="/projects" className={`${theme.button.default} ${darkMode ? `${theme.darkMode.button}` : `${theme.lightMode.button}`}`}> 
+              Back To Projects
+            </Link>
+          </div>
         </div>
     </section>
   </div>
