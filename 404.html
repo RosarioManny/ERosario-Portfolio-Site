@@ -1,0 +1,8 @@
+<script type="text/javascript">
+  // Redirect all 404 errors to the index.html
+  var target = window.location.pathname;
+  if (!target.startsWith("/ERosario-Portfolio-Site/")) {
+    target = "/ERosario-Portfolio-Site" + target;
+  }
+  window.location.replace("/ERosario-Portfolio-Site" + "/#" + target);
+</script>
