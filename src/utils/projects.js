@@ -23,7 +23,7 @@ export const projects = [
   {
     name: "Personal Website!",
     description: "My personal website that showcases how my software engineer development. Click this card or the Github link in the footer to learn how I made this website!",
-    link: "",
+    link: "https://github.com/RosarioManny/My-Website.git",
     image: "/assets/MoretoCome.png",
     alt: "More to Come - Placeholder"
   },
