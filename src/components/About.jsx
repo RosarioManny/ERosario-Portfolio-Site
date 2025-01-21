@@ -11,19 +11,19 @@ const About = () => {
   const isMobile = useResponsive();
 
   const logos = [
-    { src: 'src/assets/Logos/js.png', alt: 'JavaScript Logo', delay: 150},
-    { src: 'src/assets/Logos/icons8-python-96.png', alt: 'Python Logo', delay: 150},
-    { src: 'src/assets/Logos/icons8-tailwind-css-96.png', alt: 'Tailwind CSS Logo', delay: 150},
-    { src: 'src/assets/Logos/postman-icon.png', alt: 'Postman API Logo', delay: 150},
-    { src: 'src/assets/Logos/icons8-html-logo-96.png', alt: 'HTML Logo', delay: 150},
-    { src: 'src/assets/Logos/icons8-css-logo-96.png', alt: 'CSS Logo', delay: 150},
-    { src: 'src/assets/Logos/icons8-node-js-96.png', alt: 'Node JS Logo', delay: 150},
-    { src: 'src/assets/Logos/icons8-react-native-96.png', alt: 'React Native Logo', delay: 300},
-    { src: 'src/assets/Logos/icons8-figma-96.png', alt: 'Figma Logo', delay: 300},
-    { src: 'src/assets/Logos/icons8-visual-studio-96.png', alt: 'Visual Studio Code Logo', delay: 300},
-    { src: 'src/assets/Logos/icons8-ejs-96.png', alt: 'EJS Logo', delay: 500},
-    { src: 'src/assets/Logos/icons8-django-100.png', alt: 'Django Logo', delay: 500},
-    { src: 'src/assets/Logos/icons8-postgresql-96.png', alt: 'PostgreSQL Logo', delay: 500},
+    { src: '/assets/Logos/js.png', alt: 'JavaScript Logo', delay: 150},
+    { src: '/assets/Logos/icons8-python-96.png', alt: 'Python Logo', delay: 150},
+    { src: '/assets/Logos/icons8-tailwind-css-96.png', alt: 'Tailwind CSS Logo', delay: 150},
+    { src: '/assets/Logos/postman-icon.png', alt: 'Postman API Logo', delay: 150},
+    { src: '/assets/Logos/icons8-html-logo-96.png', alt: 'HTML Logo', delay: 150},
+    { src: '/assets/Logos/icons8-css-logo-96.png', alt: 'CSS Logo', delay: 150},
+    { src: '/assets/Logos/icons8-node-js-96.png', alt: 'Node JS Logo', delay: 150},
+    { src: '/assets/Logos/icons8-react-native-96.png', alt: 'React Native Logo', delay: 300},
+    { src: '/assets/Logos/icons8-figma-96.png', alt: 'Figma Logo', delay: 300},
+    { src: '/assets/Logos/icons8-visual-studio-96.png', alt: 'Visual Studio Code Logo', delay: 300},
+    { src: '/assets/Logos/icons8-ejs-96.png', alt: 'EJS Logo', delay: 500},
+    { src: '/assets/Logos/icons8-django-100.png', alt: 'Django Logo', delay: 500},
+    { src: '/assets/Logos/icons8-postgresql-96.png', alt: 'PostgreSQL Logo', delay: 500},
   ]
 
   const topThreeLogos = isMobile ? "4" : "3"
@@ -85,7 +85,7 @@ const About = () => {
                 !visible ? `delay-${logo.delay} ${isDropdown ? 'opacity-100' : 'opacity-0'}` : ''}
                 `
               }
-              src={logo.src}
+              src={`${import.meta.env.BASE_URL}${logo.src}`}
               alt={logo.alt}
               />
             )
@@ -109,7 +109,7 @@ const About = () => {
         <h2 className={`${theme.subheading.default}`}>Resume:</h2>
           <div className="m-9">
             <img className={`${theme.container.img}  ${darkMode ? "bg-charcoal" : "bg-midnight"}`} 
-            src="src/assets/Rosario_Emmanuel_Resume_2025.jpg" 
+            src={`${import.meta.env.BASE_URL}/assets/Rosario_Emmanuel_Resume_2025.jpg`}
             alt="Emmanuel Rosario's Resume" 
           />
           </div>

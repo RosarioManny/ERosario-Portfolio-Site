@@ -12,6 +12,24 @@ const Contacts = () => {
   const [isAnimated, setIsAnimated] = useState(false);
   const { darkMode, toggleDarkMode } = useDarkMode();
   const form = useRef();
+  const socials = [
+    {
+      href: "https://www.instagram.com/it_sjustman.ny/",
+      src: "/assets/Logos/Instagram_Glyph_White.png",
+      alt: "Instagram Logo",
+    },
+    {
+      href: "https://github.com/RosarioManny",
+      src: "/assets/Logos/github-mark-white.png",
+      alt: "Github Logo",
+    },
+    {
+      href: "https://www.linkedin.com/in/emmanuel-rosario-mannys/",
+      src: "/assets/Logos/Linked-In-White-96.png",
+      alt: "LinkedIn Logo",
+    },
+  ];
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -53,15 +71,11 @@ const Contacts = () => {
         <p className={`${theme.subheading.default} !text-xl`}>Phone: (718)619-2138</p>
         <p className={`${theme.subheading.default} !text-xl`}>Email: rosario.emm47@gmail.com</p>
         <div className={`${theme.container.socialsLogos} grid grid-cols-3 gap-6`}>
-          <Link to='https://github.com/RosarioManny'>
-            <img className="h-10" src="src/assets/Logos/github-mark-white.png" alt="" />
-          </Link>
-          <Link to='https://www.linkedin.com/in/emmanuel-rosario-mannys/'>
-            <img className="h-10" src="src/assets/Logos/In-White-96.png" alt="" />
-          </Link>
-          <Link to="https://www.instagram.com/it_sjustman.ny/">
-            <img className="h-10 hover:animate-pulse" src="src/assets/Logos/Instagram_Glyph_White.png" alt="" />
-          </Link>
+          {socials.map(({ href, src, alt }) => (
+            <Link key={href} to={href}>
+              <img className="h-12 hover:animate-pulse" src={`${import.meta.env.BASE_URL}${src}`} alt={alt} />
+            </Link>
+          ))}
         </div>
         </div>
           <form 

@@ -34,7 +34,7 @@ return (
       Whataduudle
     </h1>
         <div className="mx-4 mt-6" >
-          <img src="../src/assets/Whataduudle/whataduudle.png" alt="What a doodle - Landing Page"/>
+          <img src={`${import.meta.env.BASE_URL}/assets/Whataduudle/whataduudle.png`} alt="What a doodle - Landing Page"/>
         </div>
         <div className={`
           ${theme.container.description} 
@@ -66,11 +66,11 @@ return (
               Tech Stack:
             </p>
             <div className="flex flex-cols space-x-10 justify-center my-3">
-              <img className="h-12" src="../src/assets/Logos/icons8-python-96.png"/>
-              <img className="h-12" src="../src/assets/Logos/icons8-react-native-96.png"/>
-              <img className="h-12" src="../src/assets/Logos/icons8-tailwind-css-96.png"/>
-              <img className="h-12" src="../src/assets/Logos/icons8-django-100.png"/>
-              <img className="h-12" src="../src/assets/Logos/icons8-figma-96.png"/>
+              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-python-96.png`}/>
+              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-react-native-96.png`}/>
+              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-tailwind-css-96.png`}/>
+              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-django-100.png`}/>
+              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-figma-96.png`}/>
             </div>
             <div className={`
               ${theme.button.largeButton}
@@ -81,7 +81,7 @@ return (
               }`
               }
             >
-              <img className="h-8" src="../src/assets/Logos/github-mark-white.png" />
+              <img className="h-8" src={`${import.meta.env.BASE_URL}/assets/Logos/github-mark-white.png`} />
               <Link to="https://github.com/Nottimlim/whataduudle-frontend">FrontEnd</Link>
               |
               <Link to="https://github.com/RosarioManny/duudle-backend">BackEnd</Link>
@@ -89,7 +89,7 @@ return (
           </div>
         </div>
         <div className="mx-4 my-6">
-          <img src="../src/assets/Whataduudle/whataduudle_start.png" alt="Prompt Phase" />
+          <img src={`${import.meta.env.BASE_URL}/assets/Whataduudle/whataduudle_start.png`} alt="Prompt Phase" />
           <p className={`
               p-2  
               ${theme.bodyText.default} 
@@ -111,7 +111,7 @@ return (
             The word given is what you want to draw.           </p>
         </div>
         <div className="mx-4 my-6">
-        <img src="../src/assets/Whataduudle/whataduudle_drawing.png" alt="Drawing Phase" />
+        <img src={`${import.meta.env.BASE_URL}/assets/Whataduudle/whataduudle_drawing.png`} alt="Drawing Phase" />
           <p className={`
             p-2
               ${theme.bodyText.default} 

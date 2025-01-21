@@ -48,10 +48,10 @@ const Footer = () => {
         </section>
               <div className="text-center py-2">
                 <h1 className={`font-semibold text-2xl  ${darkMode ? `${theme.darkMode.highlight}`:`${theme.lightMode.highlight}`}`}> Socials:</h1>
-                <div className={`grid grid-cols-3 gap-7`}>
+                <div className={`grid grid-cols-3 gap-7 py-3`}>
                 {socials.map(({ href, src, alt }) => (
                   <Link key={href} to={href}>
-                    <img className="h-10 hover:animate-pulse" src={`${import.meta.env.BASE_URL}${src}`} alt={alt} />
+                    <img className="h-10 hohover:animate-pulse" src={`${import.meta.env.BASE_URL}${src}`} alt={alt} />
                   </Link>
                 ))}
                 </div>
