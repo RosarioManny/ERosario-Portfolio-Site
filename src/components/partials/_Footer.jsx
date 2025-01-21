@@ -2,6 +2,7 @@ import { theme } from "../../styles/style";
 import { Link } from "react-router-dom";
 import { useDarkMode } from "../../utils/DarkModeContext";
 import { useResponsive } from "../../utils/ResponsiveContext";
+import Linkedin from "../../assets/Logos/In-White-96.png"
 
 const Footer = () => {
   const { darkMode, toggleDarkMode } = useDarkMode();
@@ -30,13 +31,13 @@ const Footer = () => {
                 <h1 className={`font-semibold text-2xl py-4 ${darkMode ? `${theme.darkMode.highlight}`:`${theme.lightMode.highlight}`}`}> Socials:</h1>
                 <div className={`grid grid-cols-3 gap-7`}>
                   <Link to="https://www.instagram.com/it_sjustman.ny/">
-                    <img className="h-10 hover:animate-pulse" src={`${import.meta.env.BASE_URL}/assets/Logos/Instagram_Glyph_White.png`} alt="" />
+                    <img className="h-10 hover:animate-pulse" src={`${import.meta.env.BASE_URL}/assets/Logos/Instagram_Glyph_White.png`} alt="Instagram Logo" />
                   </Link>
                   <Link to='https://github.com/RosarioManny'>
-                    <img className="h-10 hover:animate-pulse" src="../../assets/Logos/github-mark-white.png" alt="" />
+                    <img className="h-10 hover:animate-pulse" src="../../assets/Logos/github-mark-white.png" alt="Github Logo" />
                   </Link>
                   <Link to='https://www.linkedin.com/in/emmanuel-rosario-mannys/'>
-                    <img className="h-10 hover:animate-pulse" src="./assets/Logos/In-White-96.png" alt="" />
+                    <img className="h-10 hover:animate-pulse" src={Linkedin} alt="LinkedIn Logo" />
                   </Link>
                 </div>
               </div>
