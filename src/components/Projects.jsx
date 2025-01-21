@@ -43,27 +43,27 @@ const Projects = () => {
               <Link to={project.link}>
                 <img 
                   className="w-full"
-                  src={project.image}
-                  alt={project.alt}
+                  src={`${import.meta.env.BASE_URL}${project.image}`}
+                  alt={`${import.meta.env.BASE_URL}${project.alt}`}
                 />
-              </Link>
-              <div className={`
-                ${theme.container.img} 
-                ${theme.bodyText.card} 
-                ${darkMode ? 
-                  `${theme.darkMode.container } ${theme.darkMode.mainText} `
-                  : 
-                  `${theme.lightMode.container } ${theme.lightMode.mainText}`}`
-              }>
                 <div className={`
-                  ${theme.subheading.card} 
-                  ${darkMode ? theme.darkMode.subheading :  theme.lightMode.subheading}`
+                  ${theme.container.img} 
+                  ${theme.bodyText.card} 
+                  ${darkMode ? 
+                    `${theme.darkMode.container } ${theme.darkMode.mainText} `
+                    : 
+                    `${theme.lightMode.container } ${theme.lightMode.mainText}`}`
+                  }>
+                  <div className={`
+                    ${theme.subheading.card} 
+                    ${darkMode ? theme.darkMode.subheading :  theme.lightMode.subheading}`
                   }
-                >
-                  {project.name}
+                  >
+                    {project.name}
+                  </div>
+                    <p>{project.description}</p>
                 </div>
-                  <p>{project.description}</p>
-              </div>
+              </Link>
             </div>
           ))}
         </section>

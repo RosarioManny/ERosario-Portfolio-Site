@@ -35,7 +35,7 @@ return (
       Artfolio
     </h1>
         <div className="mx-4 mt-6" >
-          <img src="../src/assets/Artfolio/artfolio.png" alt="Talk Throught It - Landing Page" />
+          <img src={`${import.meta.env.BASE_URL}/assets/Artfolio/artfolio.png`} alt="Talk Throught It - Landing Page" />
         </div>
         <div className={`
           ${theme.container.description} 
@@ -69,9 +69,9 @@ return (
               Tech Stack:
             </p>
             <div className="flex flex-cols space-x-10 justify-center my-3">
-              <img className="h-12" src="../src/assets/Logos/icons8-ejs-96.png"/>
-              <img className="h-12" src="../src/assets/Logos/icons8-html-logo-96.png"/>
-              <img className="h-12" src="../src/assets/Logos/icons8-css-logo-96.png"/>
+              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-ejs-96.png`}/>
+              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-html-logo-96.png`}/>
+              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-css-logo-96.png`} />
             </div>
             <div className={`
               ${theme.button.largeButton}
@@ -84,7 +84,7 @@ return (
             >
               <Link to="https://github.com/RosarioManny/Artfolio.git">  
                 <div className={`${theme.button.largeButton}`}>
-                    <img className="h-8" src="../src/assets/Logos/github-mark-white.png" />
+                    <img className="h-8" src={`${import.meta.env.BASE_URL}/assets/Logos/github-mark-white.png`}g />
                     Github
                 </div>
               </Link>
@@ -92,7 +92,7 @@ return (
           </div>
         </div>
         <div className="mx-4 my-6">
-          <img src="../src/assets/Artfolio/Artfolio-PostDetails.png" alt="Artfolio - Art Details" />
+          <img src={`${import.meta.env.BASE_URL}/assets/Artfolio/Artfolio-PostDetails.png`} alt="Artfolio - Art Details" />
           <p className={`
               p-2  
               ${theme.bodyText.default} 
@@ -114,7 +114,7 @@ return (
           </p>
         </div>
         <div className="mx-4 my-6">
-        <img src="../src/assets/Artfolio/Artfolio-Profile.png" alt="Artfolio - Profile page" />
+        <img src={`${import.meta.env.BASE_URL}/assets/Artfolio/Artfolio-Profile.png `}alt="Artfolio - Profile page" />
           <p className={`
             p-2
               ${theme.bodyText.default} 

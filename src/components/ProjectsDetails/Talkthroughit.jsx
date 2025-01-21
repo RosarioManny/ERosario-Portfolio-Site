@@ -32,7 +32,7 @@ return (
           TalkThorught_it 
         </h1>
         <div className="mx-4 mt-6" >
-          <img src="../src/assets/Talkthroughit/talkthroughit.png" alt="Talk Throught It - Landing Page" />
+          <img src={`${import.meta.env.BASE_URL}/assets/Talkthroughit/talkthroughit.png `}alt="Talk Throught It - Landing Page" />
         </div>
         <div className={`
           ${theme.container.description} 
@@ -65,9 +65,9 @@ return (
               Tech Stack:
             </p>
               <div className="flex flex-cols space-x-10 justify-center my-3">
-                <img className="h-12" src="../src/assets/Logos/js.png"/>
-                <img className="h-12" src="../src/assets/Logos/icons8-react-native-96.png"/>
-                <img className="h-12" src="../src/assets/Logos/icons8-tailwind-css-96.png"/>
+                <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/js.png`}/>
+                <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-react-native-96.png`}/>
+                <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-tailwind-css-96.png`}/>
               </div>
               <div className={`
                 ${theme.button.largeButton}
@@ -78,7 +78,7 @@ return (
                 }`
                 }
               >
-                <img className="h-8" src="../src/assets/Logos/github-mark-white.png" />
+                <img className="h-8" src={`${import.meta.env.BASE_URL}/assets/Logos/github-mark-white.png `}/>
                 <Link to="https://github.com/RosarioManny/TalkThrough.it-Front-End">FrontEnd</Link>
                 |
                 <Link to="https://github.com/Nottimlim/TalkThroughIt-Backend">BackEnd</Link>
@@ -86,7 +86,7 @@ return (
           </div>
         </div>
         <div className="mx-4 my-6">
-            <img src="../src/assets/Talkthroughit/ClientDashboard_Talkthroughit.png" alt="Talk Through it - Client Dashboard" />
+            <img src={`${import.meta.env.BASE_URL}/assets/Talkthroughit/ClientDashboard_Talkthroughit.png`}alt="Talk Through it - Client Dashboard" />
           <p className={`
               p-2  
               ${theme.bodyText.default} 
@@ -108,7 +108,7 @@ return (
           </p>
         </div>
         <div className="mx-4 my-6">
-            <img src="../src/assets/Talkthroughit/BrowseTherapist_Talkthroughit.png" alt="Talk Through it - Browse Page" />
+            <img src={`${import.meta.env.BASE_URL}/assets/Talkthroughit/BrowseTherapist_Talkthroughit.png`} alt="Talk Through it - Browse Page" />
           <p className={`
             p-2
               ${theme.bodyText.default} 
