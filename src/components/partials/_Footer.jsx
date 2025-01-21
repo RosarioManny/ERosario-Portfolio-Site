@@ -33,10 +33,10 @@ const Footer = () => {
                     <img className="h-10 hover:animate-pulse" src="./src/assets/Logos/Instagram_Glyph_White.png" alt="" />
                   </Link>
                   <Link to='https://github.com/RosarioManny'>
-                    <img className="h-10 hover:animate-pulse" src="src/assets/Logos/github-mark-white.png" alt="" />
+                    <img className="h-10 hover:animate-pulse" src="../../assets/Logos/github-mark-white.png" alt="" />
                   </Link>
                   <Link to='https://www.linkedin.com/in/emmanuel-rosario-mannys/'>
-                    <img className="h-10 hover:animate-pulse" src="src/assets/Logos/In-White-96.png" alt="" />
+                    <img className="h-10 hover:animate-pulse" src="/Users/emmanuelr/Projects/myWebsite.React/src/assets/Logos/In-White-96.png" alt="" />
                   </Link>
                 </div>
               </div>
