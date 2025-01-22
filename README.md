@@ -11,10 +11,15 @@ _Front-end project_
 **Technologies**
 
 <img src="./public/assets/Logos/js.png" alt="JavaScript Logo" width="60"/>
+
 <img src="./public/assets/Logos/icons8-react-native-96.png" alt="React-Native Logo" width="60"/>
+
 <img src="public/assets/Logos/icons8-tailwind-css-96.png" alt="Tailwind Logo" width="60"/>
+
 <img src="./public/assets/Logos/icons8-css-logo-96.png" alt="CSS Logo" width="60"/>
+
 <img src="./public/assets/Logos/icons8-html-logo-96.png" alt="HTML Logo" width="60"/>
+
 <img src="./public/assets/Logos/icons8-figma-96.png" alt="Figma Logo" width="60"/>
 
 **_Javascript, React, Tailwind, CSS, HTML, Vite, Figma_**
