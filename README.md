@@ -135,6 +135,20 @@ Below are mock-ups created within Figma. They show my thought process and planni
 
 **_They are general layouts that were planned for the website. Some alterations were made due to personal preferences._**
 
+## All Mock-ups
+
+<details>
+<summary><b>Entire website mock-up</b></summary>
+
+### Default Website
+
+<img src="./public/Website-Design/Original.png" alt="Entire website mock-up" />
+
+### Dark Mode Website
+
+<img src="./public/Website-Design/Dark-Mode-Site/Dark-Mode.png" alt="Entire website mock-up - Dark"/>
+</details>
+
 ### Mobile📱
 
 #### Navbar
