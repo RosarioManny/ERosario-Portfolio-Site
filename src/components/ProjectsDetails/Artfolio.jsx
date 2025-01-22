@@ -69,9 +69,9 @@ return (
               Tech Stack:
             </p>
             <div className="flex flex-cols space-x-10 justify-center my-3">
-              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-ejs-96.png`}/>
-              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-html-logo-96.png`}/>
-              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-css-logo-96.png`} />
+              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-ejs-96.png`} alt='EJS Logo' />
+              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-html-logo-96.png`} alt='HTML Logo'/>
+              <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-css-logo-96.png`} alt='CSS Logo'/>
             </div>
             <div className={`
               ${theme.button.largeButton}

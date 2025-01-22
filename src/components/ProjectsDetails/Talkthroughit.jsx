@@ -65,9 +65,10 @@ return (
               Tech Stack:
             </p>
               <div className="flex flex-cols space-x-10 justify-center my-3">
-                <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/js.png`}/>
-                <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-react-native-96.png`}/>
-                <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-tailwind-css-96.png`}/>
+                <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/js.png`} alt='JavaScript Logo'/>
+                <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-react-native-96.png`} alt='React Logo'/>
+                <img className="h-12" src={`${import.meta.env.BASE_URL}/assets/Logos/icons8-tailwind-css-96.png`} alt='Tailwind Logo'/>
+                <img className="h-12" src={`${import.meta.env.BASE_URL}/vite.svg`} alt="Vite Logo"/>
               </div>
               <div className={`
                 ${theme.button.largeButton}

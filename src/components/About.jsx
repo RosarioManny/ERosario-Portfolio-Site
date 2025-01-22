@@ -24,6 +24,7 @@ const About = () => {
     { src: '/assets/Logos/icons8-ejs-96.png', alt: 'EJS Logo', delay: 500},
     { src: '/assets/Logos/icons8-django-100.png', alt: 'Django Logo', delay: 500},
     { src: '/assets/Logos/icons8-postgresql-96.png', alt: 'PostgreSQL Logo', delay: 500},
+    { src: '/vite.svg', alt: 'Vite Logo', delay: 500}
   ]
 
   const topThreeLogos = isMobile ? "4" : "3"
