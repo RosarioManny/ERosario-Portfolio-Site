@@ -10,19 +10,21 @@ _Front-end project_
 
 **Technologies**
 
-<img src="./public/assets/Logos/js.png" alt="JavaScript Logo" width="60"/><img src="./public/assets/Logos/icons8-react-native-96.png" alt="React-Native Logo" width="60"/>
+<img src="./public/assets/Logos/js.png" alt="JavaScript Logo" width="60"/>
+<img src="./public/assets/Logos/icons8-react-native-96.png" alt="React-Native Logo" width="60"/>
 <img src="public/assets/Logos/icons8-tailwind-css-96.png" alt="Tailwind Logo" width="60"/>
 <img src="./public/assets/Logos/icons8-css-logo-96.png" alt="CSS Logo" width="60"/>
 <img src="./public/assets/Logos/icons8-html-logo-96.png" alt="HTML Logo" width="60"/>
 <img src="./public/assets/Logos/icons8-figma-96.png" alt="Figma Logo" width="60"/>
 
-Javascript, React, Tailwind, CSS, HTML, Vite, Figma
+**_Javascript, React, Tailwind, CSS, HTML, Vite, Figma_**
 
 # Project Goals
 
-_Goals set forth for the project. What I want for the Minimum Viable Product and Post Minimum Viable Product_
+_Goals set forth for the project._
+_What I want for the Minimum Viable Product and Post Minimum Viable Product_
 
-## MVP
+### 🔴 MVP
 
 - **Landing Page**
   - The first page a visitor sees.
@@ -50,7 +52,9 @@ _Goals set forth for the project. What I want for the Minimum Viable Product and
     - Technologies used in the project.
     - Access to the code, that the project used.
 
-## POST-MVP
+<hr width="450"/>
+
+### 🟢 POST-MVP
 
 - **Landing Page**
   - A way to display my coding activity via Github or Leetcode.
@@ -68,36 +72,188 @@ _Goals set forth for the project. What I want for the Minimum Viable Product and
 - **General Website**
   - An active blog / updates section.
 
-## Ongoing
+## ♾ Ongoing 🔄
 
-- Optimizations of code
-- Insertion of new features. Including post-mvp and unannounced ones.
+    - Optimizations of code
+    - Insertion of new features. Including post-mvp and unannounced ones.
 
-## Designs
+## ✨ Inspiration 🌟
 
-### Inspiration
+<details> 
+<summary>  <b> Design</b> </summary>
 
-Mobile Design
-Desktop Design
-Color Scheme
+My inspiration for my website was to be reminscent of the older desktop's crash screens. Primarily with the color scheme, fonts and overall feel that was provided. Below are some examples that I took inspiration from.
 
-Routes
-About Page
-Landing Page
-Contacts Page
-Navbar
-Footer
-<img src="" alt="JavaScript Logo" width="60"/>
+### vv Windows 11 Crash vv
+
+<img src="./public/Website-Design/Windows-11-Crash.webp" alt="Windows 11 Crash Screen"/>
+
+### vv Windows 9x Crash vv
+
+<img src="./public/Website-Design/Windows_9X_BSOD.png" alt="Windos 9X Crash"/>
+
+<br>
+
+These screens were created to be simple yet invoke a sense of urgancy to the user. Displaying text that just described to the issue with the computer.
+
+_Within the website, I didn't want to give that sense of urgency at that level of intensity. Rather, give the feeling of professional yet simple. So I implemented more colors and used shape to help display that. Curving edges, softer type and using warm and inviting colors._
+
+</details>
+
+<details>
+  <summary> <b>Color Schemes</b> </summary>
+  <br>
+
+### Default Color Scheme
+
+ <img src="./public/Website-Design/Portfolio-Scheme.png" alt="Website Color Scheme - Yellow, Dark Blue, Blue, Light Blue, White " />
+
+### Default Color Scheme Guidelines
+
+ <img src="./public/Website-Design/Color-Scheme-Guidelines.png" alt="Website Color Scheme Guidelines" />
+<hr/>
+
+### Dark Color Scheme
+
+<img src="./public/Website-Design/Dark-Mode-Site/Serious-Pop.png" alt="Website Color Scheme - Gold, Matt Black, Grey, Baby Blue, White " />
+
+### Dark Color Scheme Guidelines
+
+ <img src="./public/Website-Design/Dark-Mode-Site/Color-Scheme-Guide-Dark.png" alt="Website Color Scheme Guidelines" />
+
+### Alternate Themes / Draft Themes
+
+<img src="./public/Website-Design/Alt-Colors.png" alt="Alternate Website Color Schemes - Brainstorming" />
+
+</details>
+
+## Layouts
+
+Below are mock-ups created within Figma. They show my thought process and planning phase before embarking on this project.
+
+**_I started with a mobile design first before going to the desktop design. I did this because I knew I wanted to use Tailwind within this project._**
+
+**_They are general layouts that were planned for the website. Some alterations were made due to personal preferences._**
+
+### Mobile📱
+
+#### Navbar
+
+<img src="./public/Website-Design/Nav.png" alt="Navigation View"/>
+
+<details>
+<summary><b>Dark Mode</b></summary>
+<img src="./public/Website-Design/Dark-Mode-Site/ Nav-Dark.png" alt="Navigation View - Mobile - Dark"/>
+</details>
+<hr width="450"/>
+
+#### Home
+
+<img src="./public/Website-Design/Mobile-Home.png" alt="Homepage" />
+
+<details>
+<summary><b>Dark Mode</b></summary>
+<img src="./public/Website-Design/Dark-Mode-Site/Mobile-Home-Dark.png" alt="Homepage - Mobile - Dark"/>
+</details>
+<hr width="450"/>
+
+#### About Me
+
+<img src="./public/Website-Design/Mobile-About-Me.png" alt="About Me" />
+<details>
+<summary><b>Dark Mode</b></summary>
+<img src="./public/Website-Design/Dark-Mode-Site/Mobile-About-Me-Dark.png" alt="About Me Page - Mobile - Dark"/>
+</details>
+<hr width="450"/>
+
+#### Contacts
+
+<img src="./public/Website-Design/Mobile-Contacts.png" alt="Contacts" />
+<details>
+<summary><b>Dark Mode</b></summary>
+<img src="./public/Website-Design/Dark-Mode-Site/Mobile-Contacts-Dark.png" alt="Contacts Page - Mobile - Dark"/>
+</details>
+<hr width="450"/>
+
+#### Projects
+
+<img src="./public/Website-Design/Mobile-Projects.png" alt="Projects" />
+<details>
+<summary><b>Dark Mode</b></summary>
+<img src="./public/Website-Design/Dark-Mode-Site/Mobile-Projects-Dark.png" alt="Projects Page - Mobile - Dark "/>
+</details>
+<hr width="450"/>
+
+#### Individual Projects
+
+<img src="./public/Website-Design/Mobile-Individual-Project.png" alt="Individual Project" />
+<details>
+<summary><b>Dark Mode</b></summary>
+<img src="./public/Website-Design/Dark-Mode-Site/Mobile-Single-Project-Dark.pngg" alt="Individual Project - Mobile - Dark"/>
+</details>
+
+## Desktop 💻
+
+#### Home / Nav / Footer
+
+<img src="./public/Website-Design/Homepage.png" alt="Homepage" />
+
+<details>
+<summary><b>Dark Mode</b></summary>
+<img src="./public/Website-Design/Dark-Mode-Site/Dark-Homepage.png" alt="Homepage - Dark" />
+</details>
+<hr width="450"/>
+
+#### About Page
+
+<img src="./public/Website-Design/About-Me-Page.png" alt="About Me Page" />
+
+<details>
+<summary><b>Dark Mode</b></summary>
+<img src="./public/Website-Design/Dark-Mode-Site/About-Me-Page-Dark.png" alt="About Me Page - Dark" />
+</details>
+<hr width="450"/>
+
+#### Contacts Page
+
+<img src="./public/Website-Design/Contacts.png" alt="Contacts" />
+
+<details>
+<summary><b>Dark Mode</b></summary>
+<img src="./public/Website-Design/Dark-Mode-Site/Dark-Contacts.png" alt="Contacts - Dark" />
+</details>
+<hr width="450"/>
+
+#### Projects
+
+<img src="./public/Website-Design/Projects.png" alt="Projects" />
+
+<details>
+<summary><b>Dark Mode</b></summary>
+<img src="./public/Website-Design/Dark-Mode-Site/Projects-Page-Dark.png" alt=" Project - Dark" />
+</details>
+<hr width="450"/>
+
+#### Individual Projects
+
+<img src="./public/Website-Design/Individual-Projec.png" alt="Individual Project" />
+
+<details>
+<summary><b>Dark Mode</b></summary>
+<img src="./public/Website-Design/Dark-Mode-Site/Indivdual-Project-Dark.png" alt="Individual Project - Dark" />
+</details>
 
 ## Attributions
 
 #### Images:
 
 - [All Tech & Software Logos](icons8.com)
-- [Instagram Logo](https://about.meta.com/brand/resources/instagram/instagram-brand/)
-- [LinkedIn Logo](brand.linkedin.com)
-- [Github Logo](https://github.com/logos)
+- [Instagram ⟹ Official logo](https://about.meta.com/brand/resources/instagram/instagram-brand/)
+- [LinkedIn ⟹ Official logo](brand.linkedin.com)
+- [Github ⟹ Official logo](https://github.com/logos)
+- [Favicon](https://favicon.io/)
 
 #### Services & Resources:
 
-- [Emailjs](https://www.emailjs.com/)
+- [Emailjs ⟹ Emailing service](https://www.emailjs.com/)
+- [Github Pages ⟹ Website hosting](https://pages.github.com/)
