@@ -20,10 +20,13 @@ function App() {
     setDarkMode(!darkMode)
   };
 
+  console.log("dMode?", darkMode)
   return (
     <ResponsiveProvider>
-      <DarkModeContext.Provider value={{darkMode, toggleDarkMode}}>
-        <main >
+      <DarkModeContext.Provider 
+      id={`${darkMode ? 'dark' : 'light'}`}
+      value={{darkMode, toggleDarkMode}}>
+        <main>
           <div className={`
           min-h-screen transition-colors duration-300 flex flex-grow flex-col
           ${darkMode ? theme.darkMode.background : theme.lightMode.background}

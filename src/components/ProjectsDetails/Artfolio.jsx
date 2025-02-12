@@ -84,7 +84,7 @@ return (
             >
               <Link to="https://github.com/RosarioManny/Artfolio.git">  
                 <div className={`${theme.button.largeButton}`}>
-                    <img className="h-8" src={`${import.meta.env.BASE_URL}/assets/Logos/github-mark-white.png`}g />
+                    <img className="h-8" src={`${import.meta.env.BASE_URL}/assets/Logos/github-mark-white.png`} />
                     Github
                 </div>
               </Link>

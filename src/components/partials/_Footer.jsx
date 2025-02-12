@@ -27,8 +27,7 @@ const Footer = () => {
   
   return (
       <div className={` 
-        ${isMobile ? "space-y-4 grid grid-cols-2 justify-items-center py-5" : "grid grid-cols space-y-5 place-items-center"}
-        
+        ${isMobile ? "space-y-4 grid grid-cols-2 justify-items-center py-5 mt-16" : "grid grid-cols space-y-5 place-items-center mt-96"}
         ${theme.container.footer} 
         ${darkMode ? theme.darkMode.container : theme.lightMode.container}
         `}
