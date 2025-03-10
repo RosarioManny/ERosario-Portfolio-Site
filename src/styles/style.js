@@ -38,7 +38,7 @@ export const theme = {
   },
   container: {
     default: "p-3 p m-4 border-[1px] border-frost transition-all duration-500",
-    img: "p-3 transition-all duration-500",
+    img: "p-3 transition-all duration-500 border-10 border-solid border-white ",
     nav: "sticky p-2 justify-between items-center flex top-0 right-0 left-0 transition-all duration-500",
     footer: "items-center text-frost text-base font-Pixelify p-2 transition-all duration-500",
     socialsLogos: "p-2",
@@ -58,7 +58,7 @@ export const theme = {
     subheading: "text-sunburst",
     highlight: "text-aqua",
     background: "bg-royal",
-    container: "bg-midnight",
+    container: "bg-midnight rounded ",
     button: "bg-sunburst text-midnight",
     hoverCard: "hover:shadow-2xl hover:border-solid hover:border-aqua hover:border-2",
     hoverButton: "hover:box-border hover:bg-midnight hover:text-sunburst ",

@@ -4,11 +4,13 @@ import { useState, useEffect} from "react"
 import { useResponsive } from "../utils/ResponsiveContext";
 import { projects } from "../utils/projects";
 import { theme } from "../styles/style";
+import Card from "./ProjectCards";
 
 const ProjectDetails = () => {
 const {darkMode, toggleDarkMode } = useDarkMode();
 const [isAnimated, setIsAnimated] = useState(false)
 const isMobile = useResponsive();
+const [loading, setLoading] = useState(true);
 
 const meta_BASE_URL = import.meta.env.BASE_URL;
 const [project, setProject] = useState({})
@@ -21,15 +23,17 @@ const fetchProject = async () => {
     const project_data = await projects[projectId]
     console.log(project_data)
     setProject(project_data)
+    setLoading(false)
   } catch (error){
     console.log(error)
+    setLoading(false)
   }
 }
 // fetch the project details once
 useEffect(() => {
   fetchProject();
 }, [])
-
+// Timer for title Animation
 useEffect(() => {
   const timer = setTimeout(() => {
     setIsAnimated(true); 
@@ -38,22 +42,35 @@ useEffect(() => {
   return () => clearTimeout(timer); 
 }, []);
 
-if (project.card1){
-  console.log("Card 1 >>", project.card1)
-}
-else {
-  console.log("No Card >>", project)
+if (loading) {
+  return <div>Loading...</div>;
 }
 return (
-  <div>
-    <h1>{project.title}</h1>
-    {project.card1 && (
-      <div>
-        <img src={`${meta_BASE_URL}${project.card1.image}`}/>
-        <h2>{project.card1.header}</h2>
-        <p>{project.card1.desc}</p>
-      </div>
-    )}
+  <div className="place-items-center"> 
+    <section className={`place-items-center ${isMobile ? "w-1/2" : ""}`}>
+        <h1 className={`${theme.heading.default} ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} typewriter typewriter-projects-talkthroughit`}
+          style={{ visibility: isAnimated ? "visible" : "hidden" }}>
+          {project.title || "Loading..."}
+        </h1>
+
+        {/* Loop through cards and render each one */}
+        {project.cards && project.cards.map((card, index) => (
+          <Card
+            key={index}
+            card={card}
+            meta_BASE_URL={meta_BASE_URL}
+            darkMode={darkMode}
+            theme={theme}
+          />
+        ))}
+
+        {/* Back to Projects Link */}
+        <div className="flex justify-end mt-3">
+          <Link to="/projects" className={`${theme.button.default} ${darkMode ? `${theme.darkMode.button}` : `${theme.lightMode.button}`}`}>
+            Back To Projects
+          </Link>
+        </div>
+      </section>
   </div>
 )
 }

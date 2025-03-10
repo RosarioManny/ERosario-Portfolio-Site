@@ -14,25 +14,27 @@ export const projects = [
     id: 1,
     title: "TalkThrough.It",
     tech_stack: [react_logo, javascript_logo, tailwind_logo, vite_logo],
-    card1: {
-      header: "Landing Page",
-      desc: "An app made to help therapist and clients keep track of connect and get better mental health. Therapist and clients have their own portals. Therapist portal allows them to create dynamic schedules, accept bookings and list their services. Clients can browse therapist, favorites ones they like, book appointments and view upcoming ones.",
-      image: "/assets/Talkthroughit/talkthroughit.png",
-      alt: "Talk Through it - Landing Page",
-    },
     github: "https://github.com/RosarioManny/TalkThrough.it-Front-End",
-    card2: {
-      header: "Client Dashboard",
-      desc: "Where Clients can see their upcoming appointments, favorited therapist and total appointments.",
-      image: "/assets/Talkthroughit/BrowseTherapist_Talkthroughit.png",
-      alt: "Talk Through it - Client Dashboard"
-    },
-    card3: {
-      header: "Browse Page",
-      desc: "The page where clients and Therapist can view. You can book appointments and favorite on this page.",
-      image: "/assets/Talkthroughit/BrowseTherapist_Talkthroughit.png",
-      alt: "Talk Through it - Browse Page"
-    }, 
+    cards: [
+      {
+        header: "Landing Page",
+        desc: "An app made to help therapist and clients keep track of connect and get better mental health. Therapist and clients have their own portals. Therapist portal allows them to create dynamic schedules, accept bookings and list their services. Clients can browse therapist, favorites ones they like, book appointments and view upcoming ones.",
+        image: "/assets/Talkthroughit/talkthroughit.png",
+        alt: "Talk Through it - Landing Page",
+      },
+      {
+        header: "Client Dashboard",
+        desc: "Where Clients can see their upcoming appointments, favorited therapist and total appointments.",
+        image: "/assets/Talkthroughit/BrowseTherapist_Talkthroughit.png",
+        alt: "Talk Through it - Client Dashboard"
+      },
+      {
+        header: "Browse Page",
+        desc: "The page where clients and Therapist can view. You can book appointments and favorite on this page.",
+        image: "/assets/Talkthroughit/BrowseTherapist_Talkthroughit.png",
+        alt: "Talk Through it - Browse Page"
+      }, 
+    ],
     link: "/projects/talkthroughit",
   },
   {
