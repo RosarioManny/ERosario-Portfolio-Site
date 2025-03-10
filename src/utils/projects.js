@@ -13,10 +13,13 @@ export const projects = [
   {
     id: 1,
     title: "TalkThrough.It",
-    header_desc: "An app made to help therapist and clients keep track of connect and get better mental health. Therapist and clients have their own portals. Therapist portal allows them to create dynamic schedules, accept bookings and list their services. Clients can browse therapist, favorites ones they like, book appointments and view upcoming ones.",
-    header_image: "/assets/Talkthroughit/talkthroughit.png",
-    header_alt: "Talk Through it - Landing Page",
     tech_stack: [react_logo, javascript_logo, tailwind_logo, vite_logo],
+    card1: {
+      header: "Landing Page",
+      desc: "An app made to help therapist and clients keep track of connect and get better mental health. Therapist and clients have their own portals. Therapist portal allows them to create dynamic schedules, accept bookings and list their services. Clients can browse therapist, favorites ones they like, book appointments and view upcoming ones.",
+      image: "/assets/Talkthroughit/talkthroughit.png",
+      alt: "Talk Through it - Landing Page",
+    },
     github: "https://github.com/RosarioManny/TalkThrough.it-Front-End",
     card2: {
       header: "Client Dashboard",
