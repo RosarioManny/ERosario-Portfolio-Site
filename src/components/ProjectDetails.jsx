@@ -54,13 +54,16 @@ return (
         </h1>
 
         {/* Loop through cards and render each one */}
-        {project.cards && project.cards.map((card, index) => (
+        {project.cards && project.cards.map((card, idx) => (
           <Card
-            key={index}
+            key={idx}
             card={card}
             meta_BASE_URL={meta_BASE_URL}
             darkMode={darkMode}
             theme={theme}
+            tech_stack={idx === 0 ? project.tech_stack : []}
+            github={ idx === 0 ? project.github : ""}
+            isFirstCard={idx === 0}
           />
         ))}
 

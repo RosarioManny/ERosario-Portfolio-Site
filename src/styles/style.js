@@ -38,7 +38,7 @@ export const theme = {
   },
   container: {
     default: "p-3 p m-4 border-[1px] border-frost transition-all duration-500",
-    img: "p-3 transition-all duration-500 border-10 border-solid border-white ",
+    img: "p-3 transition-all duration-500 ",
     nav: "sticky p-2 justify-between items-center flex top-0 right-0 left-0 transition-all duration-500",
     footer: "items-center text-frost text-base font-Pixelify p-2 transition-all duration-500",
     socialsLogos: "p-2",
@@ -46,7 +46,7 @@ export const theme = {
   },
   button: {
     default: "flex w-fit p-3 rounded mb-2 py-1 text-base font-Pixelify transition-color duration-500",
-    largeButton: "flex justify-center gap-2  place-items-center inline-block  py-1 text-sm font-bold transition-color duration-500"
+    largeButton: "flex justify-center gap-2  place-items-center inline-block  py-1 text-sm font-bold transition-color duration-300"
   }, 
   navMenu: {
     burger: "bg-sunburst transition-all duration-300 ease-in-out transform h-1 w-7",
@@ -58,7 +58,7 @@ export const theme = {
     subheading: "text-sunburst",
     highlight: "text-aqua",
     background: "bg-royal",
-    container: "bg-midnight rounded ",
+    container: "bg-midnight rounded max-h ",
     button: "bg-sunburst text-midnight",
     hoverCard: "hover:shadow-2xl hover:border-solid hover:border-aqua hover:border-2",
     hoverButton: "hover:box-border hover:bg-midnight hover:text-sunburst ",
