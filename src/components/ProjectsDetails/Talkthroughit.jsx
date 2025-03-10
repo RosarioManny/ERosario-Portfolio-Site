@@ -3,11 +3,13 @@ import { theme } from "../../styles/style";
 import { useDarkMode } from "../../utils/DarkModeContext";
 import { useState, useEffect} from "react"
 import { useResponsive } from "../../utils/ResponsiveContext";
+import { projects } from "../../utils/projects";
 
 const TalkThorughtit = () => {
 const {darkMode, toggleDarkMode } = useDarkMode();
 const [isAnimated, setIsAnimated] = useState(false)
 const isMobile = useResponsive();
+const meta_BASE_URL = import.meta.env.BASE_URL;
 
 useEffect(() => {
   const timer = setTimeout(() => {

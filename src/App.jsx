@@ -13,6 +13,7 @@ import Footer from './components/partials/_Footer'
 import Artfolio from './components/ProjectsDetails/Artfolio'
 import Whataduudle from './components/ProjectsDetails/Whataduudle'
 import Talkthroughit from './components/ProjectsDetails/Talkthroughit'
+import ProjectDetails from './components/ProjectDetails.jsx'
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,7 +21,7 @@ function App() {
     setDarkMode(!darkMode)
   };
 
-  console.log("dMode?", darkMode)
+  // console.log("dMode?", darkMode)
   return (
     <ResponsiveProvider>
       <DarkModeContext.Provider 
@@ -38,6 +39,7 @@ function App() {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/about" element={<About />} />
+                <Route path="/projects/:project_id" element={<ProjectDetails />}/>
                 <Route path="/projects/artfolio" element={<Artfolio />} />
                 <Route path="/projects/whataduudle" element={<Whataduudle />} />
                 <Route path="/projects/talkthroughit" element={<Talkthroughit />} />
