@@ -59,7 +59,7 @@ style={{ visibility: isAnimated ? "visible" : "hidden", }}>
 {`${project.title}`} 
 </h1>
 <div className="mx-4 mt-6" >
-<img src={`${meta_BASE_URL}/${project.header_image}`} alt="Talk Throught It - Landing Page" />
+<img src={`${meta_BASE_URL}/${project.header_image}`} alt={`${project.header_alt}`} />
 </div>
 <div className={`
 ${theme.container.description} 
