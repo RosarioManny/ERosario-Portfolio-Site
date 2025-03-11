@@ -7,43 +7,24 @@ Black - #141414
 White - #EEF0F2 
 */
 
-#root {
-  /* height: 100%;
-  width: 100%; */
-  /* overscroll-behavior: none; */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
-/* General class for shared properties */
-/* Cursor */
-.cursor{
-    /* position: relative; */
-    width: 1rem;
-    margin: 0 auto;
-    border-right: 2px solid rgba(255,255,255,.75);
-    /* font-size: 30px; */
-    /* text-align: center; */
-    white-space: nowrap;
-    overflow: hidden;
-    /* transform: translateY(-50%);     */
-}
-/* Animation */
-.typewriter-animation {
-  animation: 
-    typewriter 1s steps(var(--steps)) 1s 1 normal both, 
-    blinkingCursor 1s steps(1) 2s 1 infinite forwards;
-}
-@keyframes typewriter {
-  from { width: 0; }
-  to { width: var(--word-width)}
-}
-@keyframes blinkingCursor{
-  from { border-right-color: rgba(255,255,255,.75); }
-  to { border-right-color: rgba(0,0,0,0); }
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
 }
 
-/* Specific classes for different text lengths and timings */
-.typewriter-home {
-  width: var(--word-width);
-  border-right: 3px solid;
-  animation: typing .7s steps(var(--steps)), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout .5s 1s forwards;
+.typewriter {
+  overflow: hidden; /* Hide overflow */
+  white-space: nowrap; /* Prevent text from wrapping */
+  border-right: 1ch solid; /* Blinking cursor */
+  animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
 }

@@ -37,33 +37,16 @@ const Home = () => {
     <div className="mx-9 pb-20">
       <section className="flex-col">
         <div>
-          <div>
-          <h1 style={{width: "var(--word-width)"}}ref={typewriterRef} className={`
-          mt-96
-          cursor typewriter-animation
-            ${ isMobile ? 
-              `${theme.heading.home} text-8xl `
-              : 
-              `${theme.heading.home} 
-                mt-20 flex flex-col`
-            }
-            ${darkMode ? theme.darkMode.mainText : theme.lightMode.mainText} 
-            ` 
-          }>
-            Emmanuel Rosario 
-          </h1>
-          </div>
-          <div className={`
-            ${isMobile ? 
-              `${theme.subheading.home} !text-2xl` 
-              :
-              `${theme.subheading.home}`
-            }
-            ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading}`
-          }>
-            <h3 className="">
-              
-            </h3>
+          <div >
+            <h1 
+            style={{width: "var(--word-width)"}} ref={typewriterRef} className={`
+              ${isMobile ? `${theme.heading.home} text-8xl `: `${theme.heading.home} mt-20 flex flex-col`}
+              ${darkMode ? theme.darkMode.mainText : theme.lightMode.mainText} 
+              typewriter
+            `}>
+              Emmanuel Rosario 
+            </h1>
+            <h1>Full-Stack Developer</h1>
           </div>
         </div>
         <div className="flex flex-col place-items-center m-2">
