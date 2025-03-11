@@ -9,7 +9,9 @@ const Projects = () => {
   const [isAnimated, setIsAnimated] = useState(false)
   const { darkMode, toggleDarkMode } = useDarkMode();
   const isMobile = useResponsive();
+  const [loading, setLoading] = useState(true)
 
+console.log(projects[0].cards[0].image)
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsAnimated(true); 
@@ -31,8 +33,8 @@ const Projects = () => {
           Projects
         </h1>
         <section className={isMobile ? "grid grid-cols-2 max-w-6xl" : ""}>
-          {projects.map((project, index) => (
-            <div key={index} className={`
+          {projects.map((project, idx) => (
+            <div key={idx} className={`
             ${theme.card.projects} 
             ${darkMode ? 
               `${theme.darkMode.hoverCard}`
@@ -40,11 +42,11 @@ const Projects = () => {
               `${theme.lightMode.hoverCard}`}
             `
             }>
-              <Link to={project.link}>
+              <Link to={`/projects/${project.id}`}>
                 <img 
                   className="w-full"
-                  src={`${import.meta.env.BASE_URL}${project.image}`}
-                  alt={`${import.meta.env.BASE_URL}${project.alt}`}
+                  src={`${import.meta.env.BASE_URL}${project.cards[0].image}`}
+                  alt={`${project.cards[0].alt}`}
                 />
                 <div className={`
                   ${theme.container.img} 
@@ -59,9 +61,8 @@ const Projects = () => {
                     ${darkMode ? theme.darkMode.subheading :  theme.lightMode.subheading}`
                   }
                   >
-                    {project.name}
+                    {project.title}
                   </div>
-                    <p>{project.description}</p>
                 </div>
               </Link>
             </div>

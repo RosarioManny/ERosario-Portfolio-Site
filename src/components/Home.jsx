@@ -1,14 +1,10 @@
 import { Link } from "react-router-dom";
 import { theme } from "/src/styles/style.js";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useDarkMode } from "../utils/DarkModeContext";
 import { useResponsive } from "../utils/ResponsiveContext";
 import GitHubCalendar from 'react-github-calendar';
 
-const ANIMATION_TIMING = {
-  firstName: 801,
-  lastName: 2001
-};
 
 // Github Chart Year to date
 const currentYear = new Date().getFullYear()
@@ -21,31 +17,30 @@ const themeGithub = {
 
 const Home = () => {
   const { darkMode, toggleDarkMode } = useDarkMode();
-  const [nameAnimations, setNameAnimations] = useState({
-    firstName: false,
-    lastName: false
-  });
-  const isMobile = useResponsive();
 
+  const isMobile = useResponsive();
+  const typewriterRef = useRef(null)
+  // Length of title
   useEffect(() => {
-    const timers = [
-      setTimeout(
-        () => setNameAnimations(prev => ({ ...prev, firstName: true })),
-        ANIMATION_TIMING.firstName
-      ),
-      setTimeout(
-        () => setNameAnimations(prev => ({ ...prev, lastName: true })),
-        ANIMATION_TIMING.lastName
-      )
-    ];
-    return () => timers.forEach(clearTimeout);
+    if (typewriterRef.current) {
+      const word = typewriterRef.current.textContent;
+      const wordWidth = typewriterRef.current.scrollWidth;
+      const steps = word.length;
+
+      // Set CSS variables
+      typewriterRef.current.style.setProperty("--word-width", `${wordWidth}`);
+      typewriterRef.current.style.setProperty("--steps", steps);
+    }
   }, []);
 
   return(
-    <section className="h-screen mx-9">
+    <div className="mx-9 pb-20">
       <section className="flex-col">
         <div>
-          <h1 className={`      
+          <div>
+          <h1 style={{width: "var(--word-width)"}}ref={typewriterRef} className={`
+          mt-96
+          cursor typewriter-animation
             ${ isMobile ? 
               `${theme.heading.home} text-8xl `
               : 
@@ -53,18 +48,11 @@ const Home = () => {
                 mt-20 flex flex-col`
             }
             ${darkMode ? theme.darkMode.mainText : theme.lightMode.mainText} 
-            `
+            ` 
           }>
-            <p className="typewriter typewriter-firstname font-Pixelify ">
-              Emmanuel
-            </p> 
-            <p className={`typewriter typewriter-lastname` }
-                style={{
-                visibility: nameAnimations.firstName ? "visible" : "hidden", 
-            }}>
-              Rosario 
-            </p> 
+            Emmanuel Rosario 
           </h1>
+          </div>
           <div className={`
             ${isMobile ? 
               `${theme.subheading.home} !text-2xl` 
@@ -74,12 +62,7 @@ const Home = () => {
             ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading}`
           }>
             <h3 className="">
-              <p className={`typewriter typewriter-title` }
-                style={{
-                  visibility: nameAnimations.lastName ? "visible" : "hidden", 
-              }}>
-                Full-Stack Software Developer
-              </p> 
+              
             </h3>
           </div>
         </div>
@@ -116,19 +99,21 @@ const Home = () => {
               Github Activity 
             </p>
           </div>
-          <GitHubCalendar 
-          className="place-items-center transition-all duration-500 "
-          username="RosarioManny" 
-          year={currentYear}
-          blockRadius={0}
-          colorScheme={`${darkMode ? 'dark' : 'light'}`}
-          theme={themeGithub}
-          style={githubStyle}
-          blockSize={16}
-          />
+          <div className="w-3/4">
+            <GitHubCalendar 
+            className="place-items-center transition-all duration-500 "
+            username="RosarioManny" 
+            year={currentYear}
+            blockRadius={0}
+            colorScheme={`${darkMode ? 'dark' : 'light'}`}
+            theme={themeGithub}
+            style={githubStyle}
+            blockSize={16}
+            />
+          </div>
         </div>
       </section>
-    </section>
+    </div>
   )
 }
 

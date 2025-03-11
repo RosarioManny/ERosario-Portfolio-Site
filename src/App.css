@@ -14,67 +14,36 @@ White - #EEF0F2
 }
 
 /* General class for shared properties */
-.typewriter {
-  white-space: nowrap;
-  overflow: hidden;
-  /* animation: typing 2s steps(30), blink 1s step-end infinite; */
+/* Cursor */
+.cursor{
+    /* position: relative; */
+    width: 1rem;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    /* font-size: 30px; */
+    /* text-align: center; */
+    white-space: nowrap;
+    overflow: hidden;
+    /* transform: translateY(-50%);     */
+}
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 1s steps(var(--steps)) 1s 1 normal both, 
+    blinkingCursor 1s steps(1) 2s 1 infinite forwards;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: var(--word-width)}
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: rgba(0,0,0,0); }
 }
 
 /* Specific classes for different text lengths and timings */
-.typewriter-firstname {
-  width: 8.7ch;
+.typewriter-home {
+  width: var(--word-width);
   border-right: 3px solid;
-  animation: typing .7s steps(8), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout .5s 1s forwards;
-}
-
-.typewriter-lastname {
-  width: 7ch;
-  border-right: 3px solid;
-  animation: typing .6s steps(7), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout .5s 3s forwards;
-  animation-delay: .8s; 
-}
-
-.typewriter-title {
-  width: 26ch;
-  animation: typing 1.5s steps(26), blink 1s step-end infinite ;
-  animation-delay: 2s; 
-  border-right: 2px solid;
-}
-
-.typewriter-projects {
-  width: 8.2ch;
-  animation: typing .7s steps(8), blink 1s step-end infinite ;
-  border-right: 2px solid;
-  animation-delay: .5s; 
-}
-.typewriter-projects-talkthroughit {
-  width: 13.6ch;
-  animation: typing .8s steps(15), blink 1s step-end infinite ;
-  border-right: 2px solid;
-  animation-delay: .6s; 
-}
-
-.typewriter-projects-whataduudle {
-  width: 11ch;
-  animation: typing 1s steps(11), blink 1s step-end infinite ;
-  border-right: 2px solid;
-  animation-delay: .6s; 
-}
-/* Reused keyframes */
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
-
-@keyframes cursor-fadeout {
-  1%, 100% {
-    border-right: transparent;
-  }
+  animation: typing .7s steps(var(--steps)), blink 1s steps(1) 2s 1 normal forwards, cursor-fadeout .5s 1s forwards;
 }

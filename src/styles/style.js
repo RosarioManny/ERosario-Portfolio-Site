@@ -25,7 +25,7 @@ export const theme = {
   subheading: {
     default: "text-frost text-lg font-Pixelify transition-all duration-500",
     home: "text-xl my-2 mx-4 font-Pixelify transition-all duration-500",
-    card: "font-bold text-xl mb-2 transition-all duration-500",
+    card: "font-bold text-2xl text-center mb-2 transition-all duration-500",
     nav: "text-2xl font-Pixelify transition-all duration-500",
   },
   bodyText: {
@@ -46,7 +46,7 @@ export const theme = {
   },
   button: {
     default: "flex w-fit p-3 rounded mb-2 py-1 text-base font-Pixelify transition-color duration-500",
-    largeButton: "flex justify-center gap-2  place-items-center inline-block  py-1 text-sm font-bold transition-color duration-300"
+    largeButton: "flex justify-center gap-2 rounded place-items-center inline-block  py-1 text-sm font-bold transition-color duration-300"
   }, 
   navMenu: {
     burger: "bg-sunburst transition-all duration-300 ease-in-out transform h-1 w-7",
@@ -58,7 +58,7 @@ export const theme = {
     subheading: "text-sunburst",
     highlight: "text-aqua",
     background: "bg-royal",
-    container: "bg-midnight rounded max-h ",
+    container: "bg-midnight",
     button: "bg-sunburst text-midnight",
     hoverCard: "hover:shadow-2xl hover:border-solid hover:border-aqua hover:border-2",
     hoverButton: "hover:box-border hover:bg-midnight hover:text-sunburst ",

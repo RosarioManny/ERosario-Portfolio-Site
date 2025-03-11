@@ -1,6 +1,6 @@
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { useDarkMode } from "../utils/DarkModeContext";
-import { useState, useEffect} from "react"
+import { useState, useEffect, useRef} from "react"
 import { useResponsive } from "../utils/ResponsiveContext";
 import { projects } from "../utils/projects";
 import { theme } from "../styles/style";
@@ -11,9 +11,10 @@ const {darkMode, toggleDarkMode } = useDarkMode();
 const [isAnimated, setIsAnimated] = useState(false)
 const isMobile = useResponsive();
 const [loading, setLoading] = useState(true);
+const [project, setProject] = useState({})
+
 
 const meta_BASE_URL = import.meta.env.BASE_URL;
-const [project, setProject] = useState({})
 // Grab param number and subtract one. Find project by indeces
 const projectId = (useParams().project_id - 1)
 
@@ -33,24 +34,41 @@ const fetchProject = async () => {
 useEffect(() => {
   fetchProject();
 }, [])
+
+const typewriterRef = useRef(null)
+// Length of title
+useEffect(() => {
+  if (typewriterRef.current) {
+    const word = typewriterRef.current.textContent;
+    const wordWidth = typewriterRef.current.scrollWidth;
+    const steps = word.length;
+
+    // Set CSS variables
+    typewriterRef.current.style.setProperty("--word-width", `${wordWidth}`);
+    typewriterRef.current.style.setProperty("--steps", steps);
+  }
+}, []);
 // Timer for title Animation
 useEffect(() => {
   const timer = setTimeout(() => {
     setIsAnimated(true); 
-  }, 601); 
+  }); 
 
   return () => clearTimeout(timer); 
 }, []);
 
 if (loading) {
-  return <div>Loading...</div>;
+  return <div className={`text-center ${theme.heading.default} ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading}`}>Loading...</div>;
 }
 return (
   <div className="place-items-center"> 
     <section className={`place-items-center ${isMobile ? "w-1/2" : ""}`}>
-        <h1 className={`${theme.heading.default} ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} typewriter typewriter-projects-talkthroughit`}
-          style={{ visibility: isAnimated ? "visible" : "hidden" }}>
-          {project.title || "Loading..."}
+        <h1 
+          className={`${theme.heading.default} ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} typewriter typewriter-projects`}
+          style={{ width: "var(--word-width)", visibility: isAnimated ? "visible" : "hidden" }}
+          ref={typewriterRef}
+          >
+          {project.title}
         </h1>
 
         {/* Loop through cards and render each one */}
@@ -61,6 +79,7 @@ return (
             meta_BASE_URL={meta_BASE_URL}
             darkMode={darkMode}
             theme={theme}
+            isMobile={isMobile}
             tech_stack={idx === 0 ? project.tech_stack : []}
             github={ idx === 0 ? project.github : ""}
             isFirstCard={idx === 0}
