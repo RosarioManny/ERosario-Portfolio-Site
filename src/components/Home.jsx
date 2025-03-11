@@ -1,14 +1,13 @@
 import { Link } from "react-router-dom";
 import { theme } from "/src/styles/style.js";
-import { useEffect, useState, useRef } from "react";
 import { useDarkMode } from "../utils/DarkModeContext";
 import { useResponsive } from "../utils/ResponsiveContext";
+import { useEffect, useState } from "react";
 import GitHubCalendar from 'react-github-calendar';
-
+import Typewriter from "../utils/Typewriter";
 
 // Github Chart Year to date
 const currentYear = new Date().getFullYear()
-
 const githubStyle = {color: `#EAF6FF`, font: 'Pixelify Sans'}
 const themeGithub = {
   dark: ['hsl(15 3% 25.9%)', 'hsl(39 100% 50%)'],
@@ -17,36 +16,36 @@ const themeGithub = {
 
 const Home = () => {
   const { darkMode, toggleDarkMode } = useDarkMode();
-
+  const [isAnimated, setIsAnimated] = useState(false);
   const isMobile = useResponsive();
-  const typewriterRef = useRef(null)
-  // Length of title
-  useEffect(() => {
-    if (typewriterRef.current) {
-      const word = typewriterRef.current.textContent;
-      const wordWidth = typewriterRef.current.scrollWidth;
-      const steps = word.length;
 
-      // Set CSS variables
-      typewriterRef.current.style.setProperty("--word-width", `${wordWidth}`);
-      typewriterRef.current.style.setProperty("--steps", steps);
-    }
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsAnimated(!isAnimated); 
+    }, 1501); 
+
+    return () => clearTimeout(timer); 
   }, []);
 
   return(
     <div className="mx-9 pb-20">
       <section className="flex-col">
         <div>
-          <div >
-            <h1 
-            style={{width: "var(--word-width)"}} ref={typewriterRef} className={`
+          <div className="place-items-center">
+            <Typewriter 
+            text="Emmanuel Rosario "
+            className={`
+              
               ${isMobile ? `${theme.heading.home} text-8xl `: `${theme.heading.home} mt-20 flex flex-col`}
               ${darkMode ? theme.darkMode.mainText : theme.lightMode.mainText} 
-              typewriter
-            `}>
-              Emmanuel Rosario 
-            </h1>
-            <h1>Full-Stack Developer</h1>
+            `}/>
+            <Typewriter
+            text="Full-Stack Developer "
+            className={` text-center
+              ${isMobile ? `${theme.subheading.home} `: `${theme.subheading.home}`}
+              ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} 
+            `}/>
+            
           </div>
         </div>
         <div className="flex flex-col place-items-center m-2">

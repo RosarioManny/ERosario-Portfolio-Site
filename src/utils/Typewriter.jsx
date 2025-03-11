@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 
-const Typewriter = ({ text, className}) => {
+const Typewriter = ({ text, className, delay = 0}) => {
   const typewriterRef = useRef(null);
   const [animationStyle, setAnimationStyle] = useState({});
 
@@ -8,15 +8,17 @@ const Typewriter = ({ text, className}) => {
     if(typewriterRef.current) {
       // Width of text
       const textWidth = typewriterRef.current.scrollWidth; 
+      console.log("TW >>", textWidth)
       // Characters in text
       const steps = text.length;
 
       setAnimationStyle ({
-        animtion: `typing ${steps * 0.1}s steps(${steps}, end), blink 0.75s step-end infinite`,
-        width: `${textWidth}px`,
+        animation: `typing ${steps * 0.1}s steps(${steps}), blink 0.75s step-end infinite`,
+        maxWidth: `${textWidth}px`,
+        animationDelay: `${delay}s`
       });
     }
-  }, [text])
+  }, [text, delay])
 
 
   return (
@@ -29,3 +31,5 @@ const Typewriter = ({ text, className}) => {
     </h1>
   )
 }
+
+export default Typewriter

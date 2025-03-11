@@ -10,9 +10,6 @@ import Projects from './components/Projects'
 import Contacts from './components/Contacts'
 import About from './components/About'
 import Footer from './components/partials/_Footer'
-import Artfolio from './components/ProjectsDetails/Artfolio'
-import Whataduudle from './components/ProjectsDetails/Whataduudle'
-import Talkthroughit from './components/ProjectsDetails/Talkthroughit'
 import ProjectDetails from './components/ProjectDetails.jsx'
 
 function App() {
@@ -40,9 +37,6 @@ function App() {
                 <Route path="/contacts" element={<Contacts />} />
                 <Route path="/about" element={<About />} />
                 <Route path="/projects/:project_id" element={<ProjectDetails />}/>
-                <Route path="/projects/artfolio" element={<Artfolio />} />
-                <Route path="/projects/whataduudle" element={<Whataduudle />} />
-                <Route path="/projects/talkthroughit" element={<Talkthroughit />} />
               </Routes>
             </div>
             <Footer element={Footer}/>

@@ -2,6 +2,7 @@ import { theme } from "../styles/style";
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef} from "react";
 import { useDarkMode } from "../utils/DarkModeContext";
+import Typewriter from "../utils/Typewriter";
 import emailjs from '@emailjs/browser';
 
 const emailjsServiceID = import.meta.env.VITE_SERVICE_ID;
@@ -60,14 +61,15 @@ const Contacts = () => {
     <>
       <section className="place-items-center">
         <div className=" flex-auto flex-col justify-items-center space-y-4">
-        <h1 className={`
+        <Typewriter 
+        text="Contacts"
+        className={`
         ${theme.heading.default}
         ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} 
           typewriter typewriter-projects`
           }
-          style={{ visibility: isAnimated ? "visible" : "hidden", }}>
-            Contacts 
-        </h1>
+          style={{ visibility: isAnimated ? "visible" : "hidden", }} />
+
         <p className={`${theme.subheading.default} !text-xl`}>Phone: (718)619-2138</p>
         <p className={`${theme.subheading.default} !text-xl`}>Email: rosario.emm47@gmail.com</p>
         <div className={`${theme.container.socialsLogos} grid grid-cols-3 gap-6`}>

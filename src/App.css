@@ -9,10 +9,10 @@ White - #EEF0F2
 
 @keyframes typing {
   from {
-    width: 0;
+    max-width: 0;
   }
   to {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -25,6 +25,7 @@ White - #EEF0F2
 .typewriter {
   overflow: hidden; /* Hide overflow */
   white-space: nowrap; /* Prevent text from wrapping */
-  border-right: 1ch solid; /* Blinking cursor */
-  animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+  border-right: 4px solid;
+  animation: typing 1.5s, blink 0.75s step-end infinite;
+  animation-delay: var(--delay, 0s);
 }
