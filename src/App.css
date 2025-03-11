@@ -26,6 +26,6 @@ White - #EEF0F2
   overflow: hidden; /* Hide overflow */
   white-space: nowrap; /* Prevent text from wrapping */
   border-right: 4px solid;
-  animation: typing 1.5s, blink 0.75s step-end infinite;
+  animation: typing 1s steps(40, end), blink 0.75s step-end infinite;
   animation-delay: var(--delay, 0s);
 }

@@ -24,7 +24,7 @@ export const theme = {
   },
   subheading: {
     default: "text-frost text-lg font-Pixelify transition-all duration-500",
-    home: "text-3xl my-2 mx-4 font-Pixelify transition-all duration-500",
+    home: "text-4xl my-2 mx-4 font-Pixelify transition-all duration-500",
     card: "font-bold text-2xl text-center mb-2 transition-all duration-500",
     nav: "text-2xl font-Pixelify transition-all duration-500",
   },

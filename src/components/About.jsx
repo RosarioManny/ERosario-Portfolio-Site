@@ -1,56 +1,31 @@
-import { Link } from "react-router-dom";
+import { logos } from "../utils/logos";
 import { theme } from "../styles/style";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useDarkMode } from "../utils/DarkModeContext";
 import { useResponsive } from "../utils/ResponsiveContext";
+import Typewriter from "../utils/Typewriter";
 
 const About = () => {
   const [isDropdown, setIsDropdown] = useState(false);
-  const [isAnimated, setIsAnimated] = useState(false);
   const { darkMode, toggleDarkMode } = useDarkMode(); 
   const isMobile = useResponsive();
-
-  const logos = [
-    { src: '/assets/Logos/js.png', alt: 'JavaScript Logo', delay: 150},
-    { src: '/assets/Logos/icons8-python-96.png', alt: 'Python Logo', delay: 150},
-    { src: '/assets/Logos/icons8-tailwind-css-96.png', alt: 'Tailwind CSS Logo', delay: 150},
-    { src: '/assets/Logos/postman-icon.png', alt: 'Postman API Logo', delay: 150},
-    { src: '/assets/Logos/icons8-html-logo-96.png', alt: 'HTML Logo', delay: 150},
-    { src: '/assets/Logos/icons8-css-logo-96.png', alt: 'CSS Logo', delay: 150},
-    { src: '/assets/Logos/icons8-node-js-96.png', alt: 'Node JS Logo', delay: 150},
-    { src: '/assets/Logos/icons8-react-native-96.png', alt: 'React Native Logo', delay: 300},
-    { src: '/assets/Logos/icons8-figma-96.png', alt: 'Figma Logo', delay: 300},
-    { src: '/assets/Logos/icons8-visual-studio-96.png', alt: 'Visual Studio Code Logo', delay: 300},
-    { src: '/assets/Logos/icons8-ejs-96.png', alt: 'EJS Logo', delay: 500},
-    { src: '/assets/Logos/icons8-django-100.png', alt: 'Django Logo', delay: 500},
-    { src: '/assets/Logos/icons8-postgresql-96.png', alt: 'PostgreSQL Logo', delay: 500},
-    { src: '/vite.svg', alt: 'Vite Logo', delay: 500}
-  ]
 
   const topThreeLogos = isMobile ? "4" : "3"
   const handleClick = () => {
     setIsDropdown(!isDropdown)
   }
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsAnimated(!isAnimated); 
-    }, 501); 
-
-    return () => clearTimeout(timer); 
-  }, []);
-
   return(
     <>
       <section className="place-items-center">
-      <h1 className={`
+      <Typewriter 
+      text="About Me"
+      className={`
         ${theme.heading.default} 
         ${darkMode ? "text-tangerine" : "text-sunburst"} 
         typewriter typewriter-projects`
         }
-        style={{ visibility: isAnimated ? "visible" : "hidden", }}>
-          About Me 
-        </h1>
+        />
         <div>
           <p className={`
             ${theme.bodyText.default} 

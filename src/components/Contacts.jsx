@@ -68,7 +68,7 @@ const Contacts = () => {
         ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} 
           typewriter typewriter-projects`
           }
-          style={{ visibility: isAnimated ? "visible" : "hidden", }} />
+        />
 
         <p className={`${theme.subheading.default} !text-xl`}>Phone: (718)619-2138</p>
         <p className={`${theme.subheading.default} !text-xl`}>Email: rosario.emm47@gmail.com</p>

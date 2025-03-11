@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { useResponsive } from "../utils/ResponsiveContext";
 import { useDarkMode } from "../utils/DarkModeContext";
 import { projects } from "../utils/projects";
+import Typewriter from "../utils/Typewriter";
 
 const Projects = () => {
   const [isAnimated, setIsAnimated] = useState(false)
@@ -23,15 +24,15 @@ console.log(projects[0].cards[0].image)
   return (
     <>
       <section className="place-items-center">
-        <h1 className={`
+        <Typewriter 
+        text="Projects"
+        className={`
           ${theme.heading.default} 
           ${darkMode ? "text-tangerine" : "text-sunburst"} 
           typewriter typewriter-projects`
         } 
           style={{ visibility: isAnimated ? "visible" : "hidden" }}
-        >
-          Projects
-        </h1>
+        />
         <section className={isMobile ? "grid grid-cols-2 max-w-6xl" : ""}>
           {projects.map((project, idx) => (
             <div key={idx} className={`

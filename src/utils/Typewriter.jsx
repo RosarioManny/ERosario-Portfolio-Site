@@ -11,9 +11,8 @@ const Typewriter = ({ text, className, delay = 0}) => {
       console.log("TW >>", textWidth)
       // Characters in text
       const steps = text.length;
-
       setAnimationStyle ({
-        animation: `typing ${steps * 0.1}s steps(${steps}), blink 0.75s step-end infinite`,
+        animation: `typing ${steps * .3}s, blink 0.75s step-end infinite`,
         maxWidth: `${textWidth}px`,
         animationDelay: `${delay}s`
       });
