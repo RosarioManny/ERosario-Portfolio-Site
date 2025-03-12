@@ -27,9 +27,7 @@ console.log(projects[0].cards[0].image)
         className={`
           ${theme.heading.default} 
           ${darkMode ? "text-tangerine" : "text-sunburst"} 
-          typewriter typewriter-projects`
-        } 
-        isMobile={`${isMobile ? "" : "text-4xl"}`}
+          `} 
         />
         <section className={isMobile ? "grid grid-cols-2 max-w-6xl" : ""}>
           {projects.map((project, idx) => (

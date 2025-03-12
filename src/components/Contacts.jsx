@@ -54,7 +54,6 @@ const Contacts = () => {
       <section className="place-items-center">
         <div className=" flex-auto flex-col justify-items-center space-y-4">
           <Typewriter 
-          isMobile={`${isMobile ? "" : "!text-4xl"}`}
           text="Contacts"
           className={`${theme.heading.default} ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} `}
           />

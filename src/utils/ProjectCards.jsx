@@ -27,7 +27,7 @@ const Card = ({ card, meta_BASE_URL, darkMode, github, tech_stack, isFirstCard, 
         <div className="">
           <div className="flex w-auto flex-cols space-x-6 justify-center px-3 my-3">
               {tech_stack.map((tech, idx) => (
-                <img className={`${isMobile ? `w-24 min-w-16` : `w-16 min-w-10`}`} key={idx} src={`${meta_BASE_URL}/${tech}`} alt={`${tech} Logo`} />
+                <img className={`${isMobile ? `w-24 min-w-16` : `w-16 min-w-10`}`} key={idx} src={`${meta_BASE_URL}${tech}`} alt={`${tech} Logo`} />
               ))}
           </div>
         </div>

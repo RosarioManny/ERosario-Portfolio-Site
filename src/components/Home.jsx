@@ -33,18 +33,17 @@ const Home = () => {
         <div>
           <div className="place-items-center">
             <Typewriter 
-              isMobile={`${isMobile ? "" : "!text-4xl"}`}
-              text="Emmanuel Rosario "
+              isMobile={`${isMobile ? "text-[5rem]" : "text-[2.8rem]"}`}
+              text="Emmanuel Rosario"
               className={`
                 ${isMobile ? `${theme.heading.home} `: `${theme.heading.home} mt-20 flex flex-col`}
                 ${darkMode ? theme.darkMode.mainText : theme.lightMode.mainText} 
             `}/>
             <Typewriter
-              isAnimated={{visibility: isAnimated ? "visible" : "hidden" }}
               delay="1"
-              isMobile={`${isMobile ? "" : "text-sm"}`}
+              isMobile={`${isMobile ? "text-[3rem]" : "text-[2rem]"}`}
               text="Full-Stack Developer "
-              className={` text-center
+              className={` 
                 ${isMobile ? `${theme.subheading.home} `: `${theme.subheading.home}`}
                 ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} 
             `}/>

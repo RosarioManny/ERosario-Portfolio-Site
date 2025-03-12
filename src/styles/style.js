@@ -20,11 +20,11 @@ export const theme = {
   // Text
   heading: {
     default: "text-4xl mt-6 font-Pixelify transition-colors duration-500",
-    home: "text-frost text-6xl mt-20 mx-4 font-Pixelify transition-colors duration-500",
+    home: "text-frost mt-20 mx-4 font-Pixelify transition-colors duration-500",
   },
   subheading: {
     default: "m-2 text-center text-frost text-2xl font-Pixelify transition-all duration-500",
-    home: "text-4xl my-2 mx-4 font-Pixelify transition-all duration-500",
+    home: " mx-4 font-Pixelify transition-all duration-500",
     card: "font-bold text-2xl text-center mb-2 transition-all duration-500",
     nav: "text-2xl font-Pixelify  transition-all duration-500",
   },
