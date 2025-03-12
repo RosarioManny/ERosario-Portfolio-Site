@@ -4,7 +4,7 @@ import { useState, useEffect, useRef} from "react"
 import { useResponsive } from "../utils/ResponsiveContext";
 import { projects } from "../utils/projects";
 import { theme } from "../styles/style";
-import Card from "./ProjectCards";
+import Card from "../utils/ProjectCards";
 import Typewriter from "../utils/Typewriter";
 
 const ProjectDetails = () => {

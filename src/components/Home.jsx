@@ -33,20 +33,20 @@ const Home = () => {
         <div>
           <div className="place-items-center">
             <Typewriter 
-            isMobile={`${isMobile ? "" : "!text-4xl"}`}
-            text="Emmanuel Rosario "
-            className={`
-              ${isMobile ? `${theme.heading.home} `: `${theme.heading.home} mt-20 flex flex-col`}
-              ${darkMode ? theme.darkMode.mainText : theme.lightMode.mainText} 
+              isMobile={`${isMobile ? "" : "!text-4xl"}`}
+              text="Emmanuel Rosario "
+              className={`
+                ${isMobile ? `${theme.heading.home} `: `${theme.heading.home} mt-20 flex flex-col`}
+                ${darkMode ? theme.darkMode.mainText : theme.lightMode.mainText} 
             `}/>
             <Typewriter
-            isAnimated={{visibility: isAnimated ? "visible" : "hidden" }}
-            delay="1"
-            isMobile={`${isMobile ? "" : "text-sm"}`}
-            text="Full-Stack Developer "
-            className={` text-center
-              ${isMobile ? `${theme.subheading.home} `: `${theme.subheading.home}`}
-              ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} 
+              isAnimated={{visibility: isAnimated ? "visible" : "hidden" }}
+              delay="1"
+              isMobile={`${isMobile ? "" : "text-sm"}`}
+              text="Full-Stack Developer "
+              className={` text-center
+                ${isMobile ? `${theme.subheading.home} `: `${theme.subheading.home}`}
+                ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} 
             `}/>
           </div>
         </div>
@@ -56,10 +56,8 @@ const Home = () => {
             ${theme.bodyText.default} 
             ${theme.container.default} 
             ${darkMode ? 
-            `${theme.darkMode.container} ${theme.darkMode.mainText}` 
-            : 
-            `${theme.lightMode.container} ${theme.lightMode.mainText}`} `
-          }> 
+            `${theme.darkMode.container} ${theme.darkMode.mainText}`:`${theme.lightMode.container} ${theme.lightMode.mainText}`} `}
+            > 
             <p className="text-2xl ">
               Hello,
             </p>

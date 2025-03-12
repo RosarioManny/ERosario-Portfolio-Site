@@ -13,6 +13,7 @@ const Card = ({ card, meta_BASE_URL, darkMode, github, tech_stack, isFirstCard, 
           <img className="rounded-md" src={`${meta_BASE_URL}${card.image}`} alt={card.alt} />
         </div>
       <h2 className={`
+        !text-2xl
         ${theme.subheading.default} 
         ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading}`
       }>

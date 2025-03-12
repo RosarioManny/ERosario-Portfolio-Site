@@ -16,16 +16,15 @@ const About = () => {
   }
 
   return(
-    <>
       <section className="place-items-center">
-      <Typewriter 
-      text="About Me"
-      isMobile={`${isMobile ? "" : "!text-4xl"}`}
-      className={`
-        ${theme.heading.default} 
-        ${darkMode ? "text-tangerine" : "text-sunburst"} 
-        typewriter typewriter-projects`
-        }
+        <Typewriter 
+        text="About Me"
+        isMobile={`${isMobile ? "" : "!text-4xl"}`}
+        className={`
+          ${theme.heading.default} 
+          ${darkMode ? "text-tangerine" : "text-sunburst"} 
+          typewriter typewriter-projects`
+          }
         />
         <div>
           <p className={`
@@ -72,26 +71,22 @@ const About = () => {
         <div className={`
           ${theme.button.default}
           ${darkMode ? 
-            `${theme.darkMode.button} ${theme.darkMode.hoverButton}` 
-            : 
-            `${theme.lightMode.button}  ${theme.lightMode.hoverButton}`} 
-          `}
-          >
+            `${theme.darkMode.button} ${theme.darkMode.hoverButton}` : `${theme.lightMode.button}  ${theme.lightMode.hoverButton}`}`}
+        >
           <button
           onClick={handleClick}
           >
-          {isDropdown ? "Show Less" : "Show More"}
+            {isDropdown ? "Show Less" : "Show More"}
           </button>
         </div>
         <h2 className={`${theme.subheading.default}`}>Resume:</h2>
-          <div className="m-9">
-            <img className={`${theme.container.img}  ${darkMode ? "bg-charcoal" : "bg-midnight"}`} 
-            src={`${import.meta.env.BASE_URL}/Rosario_Emmanuel_Resume_2025.png`}
-            alt="Emmanuel Rosario's Resume" 
-          />
-          </div>
+        <div className="m-9">
+          <img className={`${theme.container.img}  ${darkMode ? "bg-charcoal" : "bg-midnight"}`} 
+          src={`${import.meta.env.BASE_URL}/Rosario_Emmanuel_Resume_2025.png`}
+          alt="Emmanuel Rosario's Resume" 
+        />
+        </div>
       </section>
-    </>
   )
 }
 
