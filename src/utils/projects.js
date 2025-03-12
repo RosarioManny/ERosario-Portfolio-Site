@@ -1,13 +1,13 @@
-const figma_logo = "public/assets/Logos/icons8-figma-96.png"
-const react_logo = "public/assets/Logos/icons8-react-native-96.png"
-const javascript_logo = "public/assets/Logos/js.png"
-const python_logo = "public/assets/Logos/icons8-python-96.png"
-const html_logo = "public/assets/Logos/icons8-html-logo-96.png"
-const css_logo = "public/assets/Logos/icons8-css-logo-96.png"
-const django_logo = "public/assets/Logos/icons8-django-100.png"
-const ejs_logo = "public/assets/Logos/icons8-ejs-96.png"
-const tailwind_logo = "public/assets/Logos/icons8-tailwind-css-96.png"
-const vite_logo = "public/vite.svg"
+const figma_logo = "/assets/Logos/icons8-figma-96.png"
+const react_logo = "/assets/Logos/icons8-react-native-96.png"
+const javascript_logo = "/assets/Logos/js.png"
+const python_logo = "/assets/Logos/icons8-python-96.png"
+const html_logo = "/assets/Logos/icons8-html-logo-96.png"
+const css_logo = "/assets/Logos/icons8-css-logo-96.png"
+const django_logo = "/assets/Logos/icons8-django-100.png"
+const ejs_logo = "/assets/Logos/icons8-ejs-96.png"
+const tailwind_logo = "/assets/Logos/icons8-tailwind-css-96.png"
+const vite_logo = "/vite.svg"
 
 export const projects = [
   // TalkThroughit

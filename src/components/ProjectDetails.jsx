@@ -9,7 +9,6 @@ import Typewriter from "../utils/Typewriter";
 
 const ProjectDetails = () => {
 const {darkMode, toggleDarkMode } = useDarkMode();
-const [isAnimated, setIsAnimated] = useState(false)
 const isMobile = useResponsive();
 const [loading, setLoading] = useState(true);
 const [project, setProject] = useState({})
@@ -50,13 +49,7 @@ useEffect(() => {
   }
 }, []);
 // Timer for title Animation
-useEffect(() => {
-  const timer = setTimeout(() => {
-    setIsAnimated(true); 
-  }); 
 
-  return () => clearTimeout(timer); 
-}, []);
 
 if (loading) {
   return <div className={`text-center ${theme.heading.default} ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading}`}>Loading...</div>;
@@ -67,7 +60,6 @@ return (
         <Typewriter
           text={`${project.title}`}
           className={`${theme.heading.default} ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} typewriter typewriter-projects`}
-          style={{ width: "var(--word-width)", visibility: isAnimated ? "visible" : "hidden" }}
           ref={typewriterRef}
           />
         {/* Loop through cards and render each one */}

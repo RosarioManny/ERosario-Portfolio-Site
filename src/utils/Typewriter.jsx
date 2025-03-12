@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 
-const Typewriter = ({ text, className, isMobile, isAnimated, delay = 0}) => {
+const Typewriter = ({ text, className, isMobile, delay = 0}) => {
   const typewriterRef = useRef(null);
   const [animationStyle, setAnimationStyle] = useState({});
 
@@ -29,7 +29,7 @@ const Typewriter = ({ text, className, isMobile, isAnimated, delay = 0}) => {
     <h1 
     ref={typewriterRef}
     className={`typewriter ${className} ${isMobile}`}
-    style={{animationStyle, isAnimated }}
+    style={{animationStyle }}
     >
       {text}
     </h1>
