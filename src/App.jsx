@@ -30,7 +30,7 @@ function App() {
           ${darkMode ? theme.darkMode.background : theme.lightMode.background}
           `}>
             <Navbar element={Navbar} />
-            <div className=''>
+            <div className={`${darkMode ? "gradient_dark" : "gradient"}`}>
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />

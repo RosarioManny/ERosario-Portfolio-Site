@@ -22,7 +22,7 @@ const Home = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsAnimated(!isAnimated); 
-    }, 1501); 
+    }, 1000); 
 
     return () => clearTimeout(timer); 
   }, []);
@@ -33,19 +33,21 @@ const Home = () => {
         <div>
           <div className="place-items-center">
             <Typewriter 
+            isMobile={`${isMobile ? "" : "!text-4xl"}`}
             text="Emmanuel Rosario "
             className={`
-              
-              ${isMobile ? `${theme.heading.home} text-8xl `: `${theme.heading.home} mt-20 flex flex-col`}
+              ${isMobile ? `${theme.heading.home} `: `${theme.heading.home} mt-20 flex flex-col`}
               ${darkMode ? theme.darkMode.mainText : theme.lightMode.mainText} 
             `}/>
             <Typewriter
+            isAnimated={{visibility: isAnimated ? "visible" : "hidden" }}
+            delay="1"
+            isMobile={`${isMobile ? "" : "text-sm"}`}
             text="Full-Stack Developer "
             className={` text-center
               ${isMobile ? `${theme.subheading.home} `: `${theme.subheading.home}`}
               ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} 
             `}/>
-            
           </div>
         </div>
         <div className="flex flex-col place-items-center m-2">

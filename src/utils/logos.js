@@ -13,7 +13,7 @@ export const logos = [
     { src: '/assets/Logos/icons8-django-100.png', alt: 'Django Logo', delay: 300},
     { src: '/assets/Logos/icons8-postgresql-96.png', alt: 'PostgreSQL Logo', delay: 300},
     { src: '/assets/Logos/icons8-c-96.png', alt:'C Logo', delay: 300},
-    { src: '/assets/Logos/icons8-flask-96.png', alt:'C Logo', delay: 500},
-    { src: '/assets/Logos/icons8-mysql-96.png', alt:'C Logo', delay: 500},
+    { src: '/assets/Logos/icons8-flask-96.png', alt:'Flask Logo', delay: 500},
+    { src: '/assets/Logos/icons8-mysql-96.png', alt:'MySQL Logo', delay: 500},
     { src: '/vite.svg', alt: 'Vite Logo', delay: 500},
 ]

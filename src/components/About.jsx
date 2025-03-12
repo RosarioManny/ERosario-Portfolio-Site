@@ -20,6 +20,7 @@ const About = () => {
       <section className="place-items-center">
       <Typewriter 
       text="About Me"
+      isMobile={`${isMobile ? "" : "!text-4xl"}`}
       className={`
         ${theme.heading.default} 
         ${darkMode ? "text-tangerine" : "text-sunburst"} 

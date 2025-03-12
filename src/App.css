@@ -1,10 +1,17 @@
-/* 
-Color Pallete
-Yellow - #EEC643
-Dark Blue - #011638
-Blue - #0D21A1
-Black - #141414
-White - #EEF0F2 
+/* Crash Site:
+Color     -  Hex Code   -  Tailwind
+Yellow    >  #EEC643    >  sunburst
+Dark Blue >  #011638    >  midnight
+Blue      >  #0D21A1    >  royal
+Light Blue > #97DBFF    >  aqua
+White     >  #EEF0F2    >  frost
+Dark Mode:
+Color     -  Hex Code   -  Tailwind
+White     >  #EAF6FF    >  glacier 
+Baby Blue >  #009FFD    >  skyline
+Grey      >  #444140    >  charcoal
+Orange    >  #FFA400    >  tangerine
+Mat Black >  #1E1E24    >  onyx 
 */
 
 @keyframes typing {
@@ -28,4 +35,27 @@ White - #EEF0F2
   border-right: 4px solid;
   animation: typing 1s steps(40, end), blink 0.75s step-end infinite;
   animation-delay: var(--delay, 0s);
+}
+
+.gradient {
+  background: linear-gradient(-45deg, #011e4c, #0D21A1, #2f24c7, #1f35c6 );
+  background-size: 400% 400%;
+  animation: gradient 15s ease-in-out infinite;
+}
+.gradient_dark {
+  background: linear-gradient(-45deg, #1E1E24, #212132, #131320, #222223 );
+  background-size: 400% 400%;
+  animation: gradient 15s ease-in-out infinite;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
 }

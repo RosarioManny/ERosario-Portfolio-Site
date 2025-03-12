@@ -7,10 +7,8 @@ import { projects } from "../utils/projects";
 import Typewriter from "../utils/Typewriter";
 
 const Projects = () => {
-  const [isAnimated, setIsAnimated] = useState(false)
   const { darkMode, toggleDarkMode } = useDarkMode();
   const isMobile = useResponsive();
-  const [loading, setLoading] = useState(true)
 
 console.log(projects[0].cards[0].image)
   useEffect(() => {
@@ -31,7 +29,7 @@ console.log(projects[0].cards[0].image)
           ${darkMode ? "text-tangerine" : "text-sunburst"} 
           typewriter typewriter-projects`
         } 
-          style={{ visibility: isAnimated ? "visible" : "hidden" }}
+        isMobile={`${isMobile ? "" : "text-4xl"}`}
         />
         <section className={isMobile ? "grid grid-cols-2 max-w-6xl" : ""}>
           {projects.map((project, idx) => (

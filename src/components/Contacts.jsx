@@ -2,6 +2,7 @@ import { theme } from "../styles/style";
 import { Link } from "react-router-dom";
 import { useState, useEffect, useRef} from "react";
 import { useDarkMode } from "../utils/DarkModeContext";
+import { useResponsive } from "../utils/ResponsiveContext";
 import Typewriter from "../utils/Typewriter";
 import emailjs from '@emailjs/browser';
 
@@ -12,6 +13,7 @@ const emailjsPublicKey = import.meta.env.VITE_PUBLIC_KEY;
 const Contacts = () => {
   const [isAnimated, setIsAnimated] = useState(false);
   const { darkMode, toggleDarkMode } = useDarkMode();
+  const isMobile = useResponsive()
   const form = useRef();
   const socials = [
     {
@@ -62,11 +64,12 @@ const Contacts = () => {
       <section className="place-items-center">
         <div className=" flex-auto flex-col justify-items-center space-y-4">
         <Typewriter 
+        isMobile={`${isMobile ? "" : "!text-4xl"}`}
         text="Contacts"
         className={`
         ${theme.heading.default}
         ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} 
-          typewriter typewriter-projects`
+        `
           }
         />
 

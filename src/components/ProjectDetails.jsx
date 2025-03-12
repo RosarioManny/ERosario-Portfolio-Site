@@ -5,6 +5,7 @@ import { useResponsive } from "../utils/ResponsiveContext";
 import { projects } from "../utils/projects";
 import { theme } from "../styles/style";
 import Card from "./ProjectCards";
+import Typewriter from "../utils/Typewriter";
 
 const ProjectDetails = () => {
 const {darkMode, toggleDarkMode } = useDarkMode();
@@ -63,14 +64,12 @@ if (loading) {
 return (
   <div className="place-items-center"> 
     <section className={`place-items-center ${isMobile ? "w-1/2" : ""}`}>
-        <h1 
+        <Typewriter
+          text={`${project.title}`}
           className={`${theme.heading.default} ${darkMode ? theme.darkMode.subheading : theme.lightMode.subheading} typewriter typewriter-projects`}
           style={{ width: "var(--word-width)", visibility: isAnimated ? "visible" : "hidden" }}
           ref={typewriterRef}
-          >
-          {project.title}
-        </h1>
-
+          />
         {/* Loop through cards and render each one */}
         {project.cards && project.cards.map((card, idx) => (
           <Card

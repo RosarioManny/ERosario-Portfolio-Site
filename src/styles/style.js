@@ -26,7 +26,7 @@ export const theme = {
     default: "text-frost text-lg font-Pixelify transition-all duration-500",
     home: "text-4xl my-2 mx-4 font-Pixelify transition-all duration-500",
     card: "font-bold text-2xl text-center mb-2 transition-all duration-500",
-    nav: "text-2xl font-Pixelify transition-all duration-500",
+    nav: "text-2xl font-Pixelify  transition-all duration-500",
   },
   bodyText: {
     default: "text-lg font-Pixelify transition-all duration-500",
@@ -39,7 +39,7 @@ export const theme = {
   container: {
     default: "p-3 p m-4 border-[1px] border-frost transition-all duration-500",
     img: "p-3 transition-all duration-500 ",
-    nav: "sticky p-2 justify-between items-center flex top-0 right-0 left-0 transition-all duration-500",
+    nav: "sticky p-2  shadow-white justify-between items-center flex top-0 right-0 left-0 transition-all duration-500",
     footer: "items-center text-frost text-base font-Pixelify p-2 transition-all duration-500",
     socialsLogos: "p-2",
     description: "text-frost mx-4 mb-6 flex ",
