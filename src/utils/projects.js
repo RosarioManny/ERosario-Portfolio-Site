@@ -8,12 +8,15 @@ const django_logo = "/assets/Logos/icons8-django-100.png"
 const ejs_logo = "/assets/Logos/icons8-ejs-96.png"
 const tailwind_logo = "/assets/Logos/icons8-tailwind-css-96.png"
 const vite_logo = "/vite.svg"
-
+const flask_logo = "/assets/Logos/icons8-flask-96.png"
+const jinja_logo = "/assets/Logos/jinja-logo.png"
 export const projects = [
   // TalkThroughit
   {
     id: 1,
     title: "TalkThrough.It",
+    cover: "/assets/Talkthroughit/Talkthroughit-cover.png",
+    cover_alt: "Talkthroughtit - Cover Logo",
     tech_stack: [react_logo, javascript_logo, tailwind_logo, vite_logo],
     github: "https://github.com/RosarioManny/TalkThrough.it-Front-End",
     link: "/projects/talkthroughit",
@@ -42,6 +45,8 @@ export const projects = [
   // Artfolio
   {
     id: 2,
+    cover: "/assets/Artfolio/Artfolio-cover.png",
+    cover_alt: "Artfolio - Cover Logo",
     title: "Artfolio",
     tech_stack: [ejs_logo, html_logo, css_logo, figma_logo],
     github: "https://github.com/RosarioManny/Artfolio.git",
@@ -68,8 +73,11 @@ export const projects = [
     ],
     
   },
+  // Whataduudle
   {
     id: 3,
+    cover: "/assets/Whataduudle/whataduudle-cover.png",
+    cover_alt: "Whataduudle - Cover Logo",
     title: "Whataduudle",
     tech_stack: [python_logo, react_logo, tailwind_logo, django_logo, figma_logo],
     github: "https://github.com/RosarioManny/duudle-backend",
@@ -94,5 +102,41 @@ export const projects = [
       }, 
     ],
     link: "",
+  },
+  // Waffles N' Scoop
+  {
+    id: 4,
+    cover: "/assets/WafflesNScoop/WNS.Cover.png",
+    cover_alt: "Waffles & Scoop - Cover Logo",
+    title: "Waffles N' Scoop",
+    tech_stack: [python_logo, jinja_logo, flask_logo, javascript_logo ],
+    github: "https://github.com/RosarioManny/Waffles-N-Scoop_IND.git",
+    cards: [
+      {
+        header: "Landing Page",
+        desc: "A Landing Page for the company. Showcasing their slogan, latest specials and images of their customer favorites.",
+        image: "/assets/WafflesNScoop/WNS-Home-page.png",
+        alt: "Waffles & Scoop - Landing Page",
+      },
+      {
+        header: "Shop Page",
+        desc: "Shop page allowing the user to browse and add items to their cart that they wish to purchase. ",
+        image: "/assets/WafflesNScoop/WNS-Shop-Page.png",
+        alt: "Waffles & Scoop - Shop page"
+      },
+      {
+        header: "About Page",
+        desc: "The about page showcases the address of the buisness, it's origin story as well as a carousol of photos of customers who enjoying the product",
+        image: "/assets/WafflesNScoop/WNS-About-Page.png",
+        alt: "Waffles & Scoop - About page "
+      }, 
+      {
+        header: "Cart Page",
+        desc: "The cart page where users can view, remove or checkout items. ",
+        image: "/assets/WafflesNScoop/WNS-Cart-Page.png",
+        alt: "Waffles & Scoop - Cart page"
+      }, 
+    ],
+    link: "https://wafflesnscoop.onrender.com/",
   },
 ];

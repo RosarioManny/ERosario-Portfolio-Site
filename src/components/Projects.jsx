@@ -10,15 +10,6 @@ const Projects = () => {
   const { darkMode, toggleDarkMode } = useDarkMode();
   const isMobile = useResponsive();
 
-console.log(projects[0].cards[0].image)
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsAnimated(true); 
-    }, 501); 
-
-    return () => clearTimeout(timer); 
-  }, []);
-
   return (
     <>
       <section className="place-items-center">
@@ -42,8 +33,8 @@ console.log(projects[0].cards[0].image)
               <Link to={`/projects/${project.id}`}>
                 <img 
                   className="w-full"
-                  src={`${import.meta.env.BASE_URL}${project.cards[0].image}`}
-                  alt={`${project.cards[0].alt}`}
+                  src={`${import.meta.env.BASE_URL}${project.cover}`}
+                  alt={`${project.cover_alt}`}
                 />
                 <div className={`
                   ${theme.container.img} 

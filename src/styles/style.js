@@ -37,9 +37,9 @@ export const theme = {
     projects: "min-w-sm max-w-2xl h-min box-border transition-all overflow-hidden mx-4 my-6",
   },
   container: {
-    default: "p-3 p m-4 border-[1px] border-frost transition-all duration-500",
+    default: "p-3 p m-4 rounded-md transition-all duration-500",
     img: "p-3 transition-all duration-500 ",
-    nav: "sticky p-2  shadow-white justify-between items-center flex top-0 right-0 left-0 transition-all duration-500",
+    nav: " p-2 shadow-white justify-between items-center flex top-0 right-0 left-0 transition-all duration-500",
     footer: "items-center text-frost text-base font-Pixelify p-2 transition-all duration-500",
     socialsLogos: "p-2",
     description: "text-frost mx-4 mb-6 flex ",
@@ -60,9 +60,9 @@ export const theme = {
     background: "bg-royal",
     container: "bg-midnight",
     button: "bg-sunburst text-midnight",
-    hoverCard: "hover:shadow-2xl hover:border-solid hover:border-aqua hover:border-2",
-    hoverButton: "hover:box-border hover:bg-midnight hover:text-sunburst ",
-    hoverText: "hover:text-aqua"
+    hoverCard: " hover:cursor-pointer hover:shadow-2xl hover:border-solid hover:border-aqua hover:border-2",
+    hoverButton: "hover:animate-pulse motion-safe:none hover:cursor-pointer hover:box-border hover:bg-midnight hover:text-sunburst ",
+    hoverText: "hover:animate-pulse motion-safe:none hover:cursor-pointer hover:text-aqua"
   }, 
   darkMode: {
     mainText: "text-glacier",
@@ -71,8 +71,8 @@ export const theme = {
     background: "bg-onyx",
     container: "bg-charcoal",
     button: "bg-tangerine text-onyx",
-    hoverCard: "hover:shadow-2xl hover:border-solid hover:border-skyline hover:border-2",
-    hoverButton: "hover:box-border hover:bg-charcoal hover:text-tangerine ",
-    hoverText: "hover:text-skyline"
+    hoverCard: " hover:cursor-pointer hover:shadow-2xl hover:border-solid hover:border-skyline hover:border-2",
+    hoverButton: "hover:animate-pulse motion-safe:none hover:cursor-pointer hover:box-border hover:bg-charcoal hover:text-tangerine ",
+    hoverText: "hover:animate-pulse motion-safe:none hover:cursor-pointer hover:text-skyline"
   },
 }

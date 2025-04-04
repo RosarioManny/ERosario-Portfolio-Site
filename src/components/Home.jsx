@@ -16,31 +16,28 @@ const themeGithub = {
 
 const Home = () => {
   const { darkMode, toggleDarkMode } = useDarkMode();
-  const [isAnimated, setIsAnimated] = useState(false);
   const isMobile = useResponsive();
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setIsAnimated(!isAnimated); 
-    }, 1000); 
-
-    return () => clearTimeout(timer); 
-  }, []);
 
   return(
     <div className="mx-9 pb-20">
       <section className="flex-col">
         <div>
           <div className="place-items-center">
-            <Typewriter 
+            {/* <Typewriter 
               isMobile={`${isMobile ? "text-[5rem]" : "text-[2.8rem]"}`}
               text="Emmanuel Rosario"
               className={`
-                ${isMobile ? `${theme.heading.home} `: `${theme.heading.home} mt-20 flex flex-col`}
-                ${darkMode ? theme.darkMode.mainText : theme.lightMode.mainText} 
-            `}/>
+                ${isMobile ? `${theme.heading.home} `: `${theme.heading.home}`}
+                ${darkMode ? theme.darkMode.mainText : theme.lightMode.mainText} `}
+            /> */}
+            <h1 className={`
+            fall-in
+              ${theme.heading.home}
+              ${isMobile ? `text-[6rem] `: `text-[2.8rem]`}
+              ${darkMode ? `${theme.darkMode.mainText}` : `${theme.lightMode.mainText}`} `}>Emmanuel Rosario</h1>
             <Typewriter
-              delay="1"
+              delay="1.5"
               isMobile={`${isMobile ? "text-[3rem]" : "text-[2rem]"}`}
               text="Full-Stack Developer "
               className={` 

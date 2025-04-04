@@ -29,21 +29,56 @@ Mat Black >  #1E1E24    >  onyx
   }
 }
 
+
+@keyframes slide-r {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.slide-in-r {
+  animation: slide-r 1s ease-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fade-in 1s ease-out;
+}
+@keyframes fall-in {
+  0% {
+    transform: translateY(-200%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+.fall-in {
+  animation: fall-in 1s ease-out;
+}
 .typewriter {
   overflow: hidden; /* Hide overflow */
   white-space: nowrap; /* Prevent text from wrapping */
   border-right: 4px solid;
-  animation: typing 1s steps(40, end), blink 0.75s step-end infinite;
+  animation: typing 2s steps(40, end), blink 0.75s step-end infinite;
   animation-delay: var(--delay, 0s);
 }
 
 .gradient {
-  background: linear-gradient(-45deg, #011e4c, #0D21A1, #2f24c7, #1f35c6 );
+  background: linear-gradient(-45deg, #2067d5, #0D21A1, #05398e, #011638 );
   background-size: 400% 400%;
   animation: gradient 15s ease-in-out infinite;
 }
 .gradient_dark {
-  background: linear-gradient(-45deg, #1E1E24, #212132, #131320, #222223 );
+  background: linear-gradient(-45deg, #6c6d6e, #4e4c4b, #1e1e24, #131318 );
   background-size: 400% 400%;
   animation: gradient 15s ease-in-out infinite;
 }

@@ -22,7 +22,7 @@ const projectId = (useParams().project_id - 1)
 const fetchProject = async () => {
   try {
     const project_data = await projects[projectId]
-    console.log(project_data)
+    
     setProject(project_data)
     setLoading(false)
   } catch (error){
@@ -76,10 +76,13 @@ return (
             isFirstCard={idx === 0}
           />
         ))}
-
+        
         {/* Back to Projects Link */}
-        <div className="flex justify-end mt-3">
-          <Link to="/projects" className={`${theme.button.default} ${darkMode ? `${theme.darkMode.button}` : `${theme.lightMode.button}`}`}>
+        <div className="flex gap-12 justify-end m-6">
+          <a href={`${project.link}`} className={`${theme.button.default} ${darkMode ? `${theme.darkMode.button} hover:bg-skyline` : `${theme.lightMode.button} hover:bg-aqua` }`}>
+            Visit the site!
+          </a>
+          <Link to="/projects" className={`${theme.button.default} ${darkMode ? `${theme.darkMode.button} hover:bg-skyline` : `${theme.lightMode.button} hover:bg-aqua` }`}>
             Back To Projects
           </Link>
         </div>

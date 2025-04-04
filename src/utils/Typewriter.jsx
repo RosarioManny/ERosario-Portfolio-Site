@@ -1,6 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 
-const Typewriter = ({ text, className, isMobile, delay = 0}) => {
+const Typewriter = ({ text,  className,isMobile, delay = 0}) => {
   const typewriterRef = useRef(null);
   const [animationStyle, setAnimationStyle] = useState({});
 
@@ -15,9 +15,9 @@ const Typewriter = ({ text, className, isMobile, delay = 0}) => {
       } else {
         steps = steps * 0.2
       }
-      console.log("TW >>", steps)
+      
       setAnimationStyle ({
-        animation: `typing ${steps}s, blink 0.75s step-end`,
+        animation: `typing ${steps}s, blink 2s step-end`,
         maxWidth: `${textWidth}px`,
         animationDelay: `${delay}s`
       });
@@ -30,6 +30,7 @@ const Typewriter = ({ text, className, isMobile, delay = 0}) => {
     ref={typewriterRef}
     className={`typewriter ${className} ${isMobile}`}
     style={{animationStyle }}
+    delay={delay}
     >
       {text}
     </h1>

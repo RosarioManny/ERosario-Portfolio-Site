@@ -21,9 +21,9 @@ const Navbar = () =>  {
         ${theme.container.nav} 
         ${theme.subheading.nav} 
         ${darkMode ? 
-          `${theme.darkMode.container} ${theme.darkMode.subheading}`
+          ` ${theme.darkMode.subheading}`
           : 
-          `${theme.lightMode.container} ${theme.lightMode.subheading}`
+          ` ${theme.lightMode.subheading}`
         } 
       `}
     >
@@ -78,7 +78,7 @@ const Navbar = () =>  {
             onClick={toggleDarkMode}
             className=
             {` w-6 h-6 p-[2px] text-center text-sm rounded-full font-semibold transition-all duration-700 
-            ${darkMode ? "bg-midnight text-frost " : "bg-charcoal"} 
+            // ${darkMode ? "bg-midnight text-frost " : "bg-charcoal"} 
             `}
           >
             {darkMode ?  "L" : "D"}
@@ -101,7 +101,13 @@ const Navbar = () =>  {
           key={link} 
           to={`/${link}`} 
           onClick={handleClick} 
-          className="hover:box-border hover:max-w-min hover:overflow-hidden hover:border-2 hover:border-glacier p-2"
+          className={`hover:animate-pulse p-2
+              ${darkMode ? 
+                theme.darkMode.hoverText
+                : 
+                theme.lightMode.hoverText
+              }
+            `}
         >
           {link.charAt(0).toUpperCase() + link.slice(1)}
         </Link>

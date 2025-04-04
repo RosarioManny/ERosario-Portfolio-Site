@@ -29,8 +29,8 @@ function App() {
           min-h-screen transition-colors duration-300 flex flex-grow flex-col
           ${darkMode ? theme.darkMode.background : theme.lightMode.background}
           `}>
-            <Navbar element={Navbar} />
             <div className={`${darkMode ? "gradient_dark" : "gradient"}`}>
+            <Navbar element={Navbar} />
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/projects" element={<Projects />} />

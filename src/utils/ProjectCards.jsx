@@ -7,10 +7,10 @@ const Card = ({ card, meta_BASE_URL, darkMode, github, tech_stack, isFirstCard, 
         ${theme.bodyText.default} 
         ${darkMode ? `${theme.darkMode.container} ${theme.darkMode.mainText}` : `${theme.lightMode.container} ${theme.lightMode.mainText}`}
         ${isMobile ? `min-h-[300px] min-w-[650px] `: `max-w-[600px] min-w-[300px] min-h-[200px]`}
-        p-4 rounded-md shadow-lg 
+        p-1 rounded-md shadow-lg 
       `}>
-        <div className="mx-auto w-full">
-          <img className="rounded-md" src={`${meta_BASE_URL}${card.image}`} alt={card.alt} />
+        <div className=" w-full">
+          <img className="rounded-t-md" src={`${meta_BASE_URL}${card.image}`} alt={card.alt} />
         </div>
       <h2 className={`
         !text-2xl
@@ -27,7 +27,7 @@ const Card = ({ card, meta_BASE_URL, darkMode, github, tech_stack, isFirstCard, 
         <div className="">
           <div className="flex w-auto flex-cols space-x-6 justify-center px-3 my-3">
               {tech_stack.map((tech, idx) => (
-                <img className={`${isMobile ? `w-24 min-w-16` : `w-16 min-w-10`}`} key={idx} src={`${meta_BASE_URL}${tech}`} alt={`${tech} Logo`} />
+                <img className={`${isMobile ? `w-auto h-16 min-w-16` : `w-auto h-12 min-w-10`}`} key={idx} src={`${meta_BASE_URL}${tech}`} alt={`${tech} Logo`} />
               ))}
           </div>
         </div>
