@@ -19,7 +19,7 @@ export const projects = [
     cover_alt: "Talkthroughtit - Cover Logo",
     tech_stack: [react_logo, javascript_logo, tailwind_logo, vite_logo],
     github: "https://github.com/RosarioManny/TalkThrough.it-Front-End",
-    link: "/projects/talkthroughit",
+    link: "https://talkthroughit.netlify.app/",
     cards: [
       {
         header: "Landing Page",
@@ -101,7 +101,7 @@ export const projects = [
         alt: "Canvas appears for the player to begin drawing"
       }, 
     ],
-    link: "",
+    link: "https://whataduudle.netlify.app/",
   },
   // Waffles N' Scoop
   {
